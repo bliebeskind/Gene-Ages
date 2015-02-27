@@ -42,6 +42,7 @@ def infer_gen(member_file,infile_list):
 					break
 			else:
 				sys.stderr.write("%s not found in any group\n" % taxID)
+				continue
 			if group in groups:
 				continue
 			else:
