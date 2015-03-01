@@ -32,7 +32,8 @@ def infer_gen(member_file,infile_list):
 				if len(groups) == num_groups: # all groups found
 					continue # skip to next iteration
 			else: # new kog
-				yield kog, groups
+				if not kog == None:
+					yield kog, groups
 				kog = curr_kog
 				groups = []
 			taxID = line[1].split(".")[0]
