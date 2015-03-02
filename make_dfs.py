@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 ### Two functions used to compare the distributions over functional categories that are
 ### present in each of the files created by funccat_counts. 
 ### 

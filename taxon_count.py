@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import sys,os
 
 ## To get the get the number of each group in each NOG associated with human diseases
