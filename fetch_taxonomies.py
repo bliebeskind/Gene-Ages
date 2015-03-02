@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 ## For download taxonomic information from NCBI for the species in eggnog
 ## To produce the file eggnogv4.taxonomies.txt, I used the following:
 ## grep -v "#" eggnogv4.species.txt | python fetch_taxonomies.py

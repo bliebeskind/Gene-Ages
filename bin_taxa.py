@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 ### Simple script to parse taxonomy files.
 
 import sys

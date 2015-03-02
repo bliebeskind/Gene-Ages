@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import sys
 from infer_ancNOGs import make_groups
 	

@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 ### For classifying NOGs by their taxonomic distribution. The executable portion 
 ### below is hard-coded to separate NOGs into four groups: those that are in both 
 ### Unikonts and Bikonts(LECA-specific NOGs); Unikonts, Bikonts, and Archaea; Unikonts,
