@@ -7,7 +7,9 @@ import sys,os
 ##
 ## awk 'NR==FNR{a[$2];next}($1 in a)' HumanNOGsDiseases.tsv NOG.members.txt | python taxon_count.py
 
-## TaxIDs 240176,931890 are not in eggnogv4.taxonomies.tsv
+## Minor problems:
+## 	TaxIDs 240176,931890 are not in eggnogv4.taxonomies.tsv
+##	No taxon level for Opisthokonts, i.e. Fungi are grouped with Dicty
 
 
 def taxon_id_gen(infile):
