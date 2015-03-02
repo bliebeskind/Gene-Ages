@@ -92,7 +92,7 @@ def infer_from_counts(infile,euk_order=["Bikont","Unikont","Metazoa","Bilateria"
 				
 if __name__ == '__main__':
 	infile = sys.argv[1]
-	for i in infer_from_count(infile):
+	for i in infer_from_counts(infile):
 		print i
 				
 #def _hard_coded_run():
