@@ -90,9 +90,7 @@ def taxon_count_gen(handle,taxa_file):
 			continue
 		line = line.strip().split("\t")
 		curr_kog = line[0].strip()
-		if curr_kog == kog:
-			pass
-		else: # new kog
+		if curr_kog != kog: # new kog
 			if not kog == None:
 				yield kog, group_counts
 			kog = curr_kog
