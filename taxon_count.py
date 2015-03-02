@@ -85,17 +85,22 @@ def taxon_count_gen(handle,taxa_file):
 	kog = None
 	taxD,group_set = taxonD(taxa_file) # taxonIDs mapped to groups
 	group_counts = {t:0 for t in group_set}
+	curr_taxIDs = []
 	for line in handle:
 		if line.startswith("#"): # skip header
 			continue
 		line = line.strip().split("\t")
 		curr_kog = line[0].strip()
-		if curr_kog != kog: # new kog
-			if not kog == None:
+		if curr_kog != kog: # new kog, yield and purge
+			if not kog == None: # if not first iteration
 				yield kog, group_counts
 			kog = curr_kog
 			group_counts = {g:0 for g in group_set}
+			curr_taxIDs = []
 		taxID = line[1].split(".")[0]
+		if taxID in curr_taxIDs: # ignore paralogs
+			continue # taxon already found
+		curr_taxIDs.append(taxID)
 		try:
 			group = taxD[taxID]
 			group_counts[group] += 1
