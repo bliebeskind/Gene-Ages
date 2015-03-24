@@ -106,6 +106,7 @@ def taxon_count_gen(handle,taxa_file):
 			group_counts[group] += 1
 		except KeyError: # TaxIDs 240176,931890 are not in eggnogv4.taxonomies.tsv
 			continue
+	yield kog, group_counts
 			
 def print_taxon_count(handle,taxa_file):
 	'''
