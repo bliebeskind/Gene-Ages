@@ -87,7 +87,7 @@ def infer_from_counts(infile,euk_order=["Bikont","Unikont","Metazoa","Bilateria"
 					assert count >0
 					yield "\t".join([nog,level])
 					break
-			else:# no breaks reached in for loop
+			else:# no breaks reached in for loop - NOT WORKING ??
 				raise Exception("all levels are zero: %n" % nog)
 				
 if __name__ == '__main__':
