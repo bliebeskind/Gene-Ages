@@ -7,17 +7,13 @@
 ### corresponding to these distributions.
 
 import sys
-
-def opener(infile):
-	with open(infile) as f:
-		firstline = f.readline() # skip header
-		euks = firstline.strip().split()[3:]
-		return f
 				
 def infer_from_counts(src,euk_order=["Bikont","Unikont","Metazoa","Bilateria","Vertebrata","Mammalia"]):
 	'''
 	For inferring from a file similar to HumanDiseaseNOGs_taxonCount.tsv
 	'''
+	firstline = src.next() # header
+	euks = firstline.strip().split()[3:] # get taxon levels from header
 	for line in src:
 		line = line.strip().split()
 		nog = line[0]
@@ -51,10 +47,11 @@ def infer_from_counts(src,euk_order=["Bikont","Unikont","Metazoa","Bilateria","V
 if __name__ == '__main__':
 	try:
 		infile = sys.argv[1]
-		gen = infer_from_counts(opener(infile))
+		with open(infile) as f:
+			for i in infer_from_counts(f):
+				print i
 	except IndexError:
 		infile = sys.stdin
-		gen = infer_from_counts(infile)
-	for i in gen:
-		print i
+		for i in infer_from_counts(infile):
+			print i
 
