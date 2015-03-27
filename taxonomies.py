@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 
+### to do: add error checking etc.
+
 import sys,os
 import pickle
 
