@@ -3,9 +3,10 @@
 import sys
 import pickle
 
-### BROKEN - taxD and groupset need to come from a pickle file made by taxonomies.py
+### To Do: modularize so that taxon_count_gen can read in data from
+### other databases.
 
-## To get the get the number of each group in each NOG associated with human diseases
+## To get the get the number of each group in each NOG.
 ## Groups are: Archaea,Bacteria,Bikont,Bilateria,Mammalia,Metazoa,Unikont,Vertebrata 
 ## Obviously these groups are nested, but "Vertebrate" means a non-mammal 
 ## Vertebrate, Bilateria means a non-vertebrate Bilaterian, etc.
@@ -13,7 +14,6 @@ import pickle
 ## awk 'NR==FNR{a[$2];next}($1 in a)' HumanNOGsDiseases.tsv NOG.members.txt | python taxon_count.py
 
 ## Minor problems:
-## 	TaxIDs 240176,931890 are not in eggnogv4.taxonomies.tsv
 ##	No taxon level for Opisthokonts, i.e. Fungi are grouped with Dicty
 		
 	
@@ -47,8 +47,8 @@ def taxon_count_gen(handle,taxD,group_set):
 		try:
 			group = taxD[taxID]
 			group_counts[group] += 1
-		except KeyError: # TaxIDs 240176,931890 are not in eggnogv4.taxonomies.tsv
-			continue
+		except KeyError:
+			raise Exception("tax ID %s not found" % taxID)
 	yield kog, group_counts
 			
 def print_taxon_count(handle,taxD,group_set):
