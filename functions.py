@@ -36,6 +36,17 @@ def id_convert(prot_stream,mapping=None):
 	for prot in prot_stream:
 		yield D[prot]
 		
+def pickle_2cols(col_stream,pickle_file):
+	'''Given an imput stream of length 2 tuples, make dictionary mapping first to second
+	element, and pickle the dictionary.'''
+	D = {}
+	count = 0
+	for tup in col_stream:
+		D[tup[0]] = tup[1]
+		count +=1
+	with open(pickle_file,'w') as f:
+		pickle.dump(D,f)
+	print "Pickled %i lines" % count
 	
 	
 if __name__ == '__main__':
