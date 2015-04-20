@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 import sys,pickle
+import os.path
 
 def flatten(tuple_gen,group_col=0,value_col=1):
 	'''
@@ -30,6 +31,7 @@ def id_convert(prot_stream,mapping=None):
 	Open mapping (a pickle file).'''
 	if mapping == None:
 		mapping = "/project/LECA/info_files/all_prot2gene.p"
+		assert os.path.exists(mapping), "No file %s" mapping
 	with open(mapping) as f:
 		D = pickle.load(f)
 		assert type(D) is dict, "Mapping must be pickled dictionary"
@@ -48,6 +50,18 @@ def pickle_2cols(col_stream,pickle_file):
 		pickle.dump(D,f)
 	print "Pickled %i lines" % count
 	
+def taxon_lookup(DB='eggnog'):
+	'''Return taxon lookup dictionary'''
+	db_taxonPath = {'eggnog':"/project/LECA/eggNOG/info_files/eggnogv4.taxonomies.p",
+	'phylomedb':"/project/LECA/eggNOG/info_files/eggnogv4.taxonomies.p",
+	'orthomcl':"/project/LECA/eggNOG/info_files/eggnogv4.taxonomies.p"}
+	db = DB.lower()
+	assert db in db_taxonPath, "Database %s not found" % DB
+	taxon_path = db_taxonD[db]
+	assert os.path.exists(taxon_path), "No file: %s" % taxon_path
+	with open(taxon_path) as f:
+		taxonD = pickle.load(f)
+	return taxonD
 	
 if __name__ == '__main__':
 	infile = sys.argv[1]
