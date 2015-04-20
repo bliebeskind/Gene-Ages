@@ -10,7 +10,7 @@ def phylome_parser(infile):
 			assert len(line) == len(values)
 			yield dict(zip(values,line))
 			
-def eggnog_parser(infile,header_string="#"):
+def eggnog_parser(infile,header_string=None):
 	'''Parses an eggnog .members.txt file. Returns generator of 
 	dicationaries for each line.'''
 	values = ("nog","taxonID","prot_name","start","end")
