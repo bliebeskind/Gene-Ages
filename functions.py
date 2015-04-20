@@ -31,7 +31,7 @@ def id_convert(prot_stream,mapping=None):
 	Open mapping (a pickle file).'''
 	if mapping == None:
 		mapping = "/project/LECA/info_files/all_prot2gene.p"
-		assert os.path.exists(mapping), "No file %s" mapping
+		assert os.path.exists(mapping), "No file %s" % mapping
 	with open(mapping) as f:
 		D = pickle.load(f)
 		assert type(D) is dict, "Mapping must be pickled dictionary"
