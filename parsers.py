@@ -17,7 +17,7 @@ def eggnog_parser(infile,header_string=None):
 	with open(infile) as f:
 		if header_string != None: 	# if header string
 			first = f.readline()	# skip header
-			assert first.startswith(header_string),"No header detected"
+			assert first.startswith(header_string),"No header starting with: %s" % header_string
 		for line in f:
 			line = line.strip().split("\t")
 			taxon,prot = line[1][:line[1].find(".")],line[1][line[1].find(".")+1:]
