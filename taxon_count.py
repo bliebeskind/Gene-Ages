@@ -54,17 +54,26 @@ def counter_stream(infile,db,taxonD):
 	'''Collect tuples from flat_stream and count occurrences of each taxon id 
 	in the second element. Return generator of tuples (group, {taxon1: 2, taxon2: 39,...})'''
 	for i,j in flat_stream(infile,db,taxonD):
-		yield i, dict(Counter(j))
+		yield i, Counter(j)
 		
 def print_taxon_count(infile,db,taxonD):
+	line_count = 0
 	taxon_list = sorted(list(set([i for i in taxonD.itervalues()]))) # unique taxa from taxonD
 	print "\t".join(["group"] + taxon_list)
 	for i,j in counter_stream(infile,db,taxonD):
-		print i,"\t","\t".join(str(j[taxon]) for taxon in taxon_list)
+		counts_list = [str(j[taxon]) for taxon in taxon_list]
+		assert len(counts_list) == len(taxon_list)
+		print i,"\t","\t".join(counts_list)
+		line_count +=1
+		if line_count % 100 == 0:
+			sys.stderr.write(str(line_count)+"\n")
 	
 		
 if __name__ == '__main__':
-	path_to_taxa = "/project/LECA/info_files/taxonomyD.p"
+	try:
+		path_to_taxa = sys.argv[3]
+	except IndexError:
+		path_to_taxa = "/project/LECA/info_files/taxonomyD.p"
 	infile,dbtype = sys.argv[1],sys.argv[2]
 	taxonD = get_taxonD(path_to_taxa)
 	print_taxon_count(infile,dbtype,taxonD)
