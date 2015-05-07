@@ -41,30 +41,33 @@ def get_stream(infile,db,phylomeDB_taxonD=None):
 	funcs = funcsD[db]
 	return funcs[0](funcs[1](**funcs[2]))
 	
-def taxon_stream(infile,db,taxonD):
+def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 	'''Convert taxonids to taxonomic names using a the dictionary taxonD.
 	Return (group,taxon) generator.'''
-	src = get_stream(infile,db)
+	src = get_stream(infile,db,phylomeDB_taxonD)
 	for i,j in src:
-		yield i,taxonD[j] # could add error handling?
+		try:
+			yield i,taxonD[j]
+		except KeyError:
+			sys.stderr.write("Could not find taxon %s\n" % j)
 		
-def flat_stream(infile,db,taxonD):
+def flat_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 	'''Flatten groups. Return generator of tuples (group, (taxon,taxon...))'''
 	unique_categories = []
-	src = taxon_stream(infile,db,taxonD)
+	src = taxon_stream(infile,db,taxonD,phylomeDB_taxonD)
 	return (i for i in functions.flatten(src))
 	
-def counter_stream(infile,db,taxonD):
+def counter_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 	'''Collect tuples from flat_stream and count occurrences of each taxon id 
 	in the second element. Return generator of tuples (group, {taxon1: 2, taxon2: 39,...})'''
-	for i,j in flat_stream(infile,db,taxonD):
+	for i,j in flat_stream(infile,db,taxonD,phylomeDB_taxonD):
 		yield i, Counter(j)
 		
-def print_taxon_count(infile,db,taxonD):
+def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None):
 	line_count = 0
 	taxon_list = sorted(list(set([i for i in taxonD.itervalues()]))) # unique taxa from taxonD
 	print "\t".join(["group"] + taxon_list)
-	for i,j in counter_stream(infile,db,taxonD):
+	for i,j in counter_stream(infile,db,taxonD,phylomeDB_taxonD):
 		counts_list = [str(j[taxon]) for taxon in taxon_list]
 		assert len(counts_list) == len(taxon_list)
 		print i,"\t","\t".join(counts_list)
@@ -78,6 +81,11 @@ if __name__ == '__main__':
 		path_to_taxa = sys.argv[3]
 	except IndexError:
 		path_to_taxa = "/project/LECA/info_files/taxonomyD.p"
+	try:
+		path_to_phylomeDB_taxa = sys.argv[4]
+		phylomeDB_taxonD = get_taxonD(path_to_phylomeDB_taxa)
+	except IndexError:
+		phylomeDB_taxonD = None
 	infile,dbtype = sys.argv[1],sys.argv[2]
 	taxonD = get_taxonD(path_to_taxa)
-	print_taxon_count(infile,dbtype,taxonD)
+	print_taxon_count(infile,dbtype,taxonD,phylomeDB_taxonD)
