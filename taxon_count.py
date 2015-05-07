@@ -2,7 +2,7 @@
 
 import sys
 import pickle
-import parsers,functions
+from LECA import parsers,functions
 from collections import Counter
 
 ## To get the get the number of each group in each NOG.
@@ -23,19 +23,23 @@ def filter_eggnog(src):
 	return ((i["nog"],i["taxonID"]) for i in src)
 
 def filter_phylomeDB(src):
-	### Have to turn "ortholog" values into taxon id for lookup
-	pass
-	#raise Exception("Haven't made second taxon lookup yet!!")
+	'''Read from phylome_parser and filter out just "gene" and "ortholog"
+	Return generator of tuples'''
+	return ((i["gene"],i["ortholog"]) for i in src)
 
-def get_stream(infile,db):
+def get_stream(infile,db,phylomeDB_taxonD=None):
 	'''Take database file and return (category,taxonid) tuples from parsers 
 	to feed to flatten()'''
 	db = db.lower()
-	funcsD = {'eggnog': (filter_eggnog, parsers.eggnog_parser),
-			'phylomedb': (filter_phylomeDB, parsers.phylome_parser)}
+	funcsD = {'eggnog':(filter_eggnog, 
+						parsers.eggnog_parser,
+						{"infile":infile}),
+			'phylomedb':(filter_phylomeDB, 
+						parsers.phylome_parser,
+						{"infile":infile,"as_taxid":True,"taxonD":phylomeDB_taxonD})}
 	assert db in funcsD, 'Database %s not found' % db
 	funcs = funcsD[db]
-	return funcs[0](funcs[1](infile))
+	return funcs[0](funcs[1](**funcs[2]))
 	
 def taxon_stream(infile,db,taxonD):
 	'''Convert taxonids to taxonomic names using a the dictionary taxonD.

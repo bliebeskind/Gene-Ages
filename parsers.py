@@ -1,14 +1,18 @@
 #! /usr/bin/env python
 
-def phylome_parser(infile):
+def phylome_parser(infile,as_taxid=False,taxonD=None):
 	'''For parsing a phylomeDB ortholog file'''
-	values = ("prot","ortholog","type","CS","trees","co-orthologs")
+	values = ("gene","ortholog","type","CS","trees","co-orthologs")
 	with open(infile) as f:
 		for line in f:
 			line = line.strip().split("\t")
 			line[-1] = line[-1].split(' ')
-			assert len(line) == len(values)
-			yield dict(zip(values,line))
+			lineD = dict(map(None,values,line))
+			if as_taxid:
+				assert taxonD != None, "Must specify a taxon dictionary"
+				lineD["ortholog"] = taxonD[lineD["ortholog"].split("_")[1]]
+			yield lineD
+		
 			
 def eggnog_parser(infile,header_string=None):
 	'''Parses an eggnog .members.txt file. Returns generator of 
