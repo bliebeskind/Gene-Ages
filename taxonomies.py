@@ -63,12 +63,15 @@ def taxonD(infile):
 			group_set.append(j)
 	return taxD, group_set
 	
-def pickle_taxonD(infile,pickle_file):
+def pickle_taxonD(infile,pickle_file,group_set=False):
 	D,group_set = taxonD(infile)
 	with open(pickle_file,'w') as f:
-		pickle.dump((D,group_set),f)
+		if group_set:
+			pickle.dump((D,group_set),f)
+		else:
+			pickle.dump(D,f)
 	
 if __name__ == '__main__':
-	path_to_taxa = "/project/LECA/eggNOG/info_files/eggnogv4.taxonomies.tsv"
-	pickle_file = sys.argv[1]
+	path_to_taxa = sys.argv[1]
+	pickle_file = sys.argv[2]
 	pickle_taxonD(path_to_taxa,pickle_file)
