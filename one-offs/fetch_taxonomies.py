@@ -13,23 +13,26 @@ import sys
 
 Entrez.email = "bliebeskind@austin.utexas.edu"
 
-try:
-	infile = sys.argv[1]
-	with open(infile) as f:
-		for line in f:
-			line = line.strip().split("\t")
-			taxon,taxID = line[0],line[1]
-			sys.stderr.write("Fetching %s\n" % taxon)
-			handle = Entrez.efetch(db="taxonomy",id=taxID)
-			record = Entrez.read(handle)
-			print ''.join([taxon,"\t",taxID,"\t",str(record[0]),'\n'])
-except IndexError:
-	infile = sys.stdin
-	for line in infile:
+def parse(src):
+	for line in src:
 		line = line.strip().split("\t")
 		taxon,taxID = line[0],line[1]
 		sys.stderr.write("Fetching %s\n" % taxon)
+		yield taxon,taxID
+			
+def fetch(src):
+	'''Takes a generator of taxon,taxonID tuples'''
+	for taxon,taxID in src:
 		handle = Entrez.efetch(db="taxonomy",id=taxID)
 		record = Entrez.read(handle)
 		print ''.join([taxon,"\t",taxID,"\t",str(record[0]),'\n'])
 
+if __name__ == '__main__':
+	try:
+		infile_name = sys.argv[1]
+		infile = open(infile_name)
+		fetch(parse(infile))
+		infile.close()
+	except IndexError:
+		infile = sys.stdin
+		fetch(parse(infile))
