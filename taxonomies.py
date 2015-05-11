@@ -63,10 +63,10 @@ def taxonD(infile):
 			group_set.append(j)
 	return taxD, group_set
 	
-def pickle_taxonD(infile,pickle_file,group_set=False):
+def pickle_taxonD(infile,pickle_file,pickle_groupSet=False):
 	D,group_set = taxonD(infile)
 	with open(pickle_file,'w') as f:
-		if group_set:
+		if pickle_groupSet:
 			pickle.dump((D,group_set),f)
 		else:
 			pickle.dump(D,f)
