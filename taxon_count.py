@@ -47,7 +47,7 @@ def get_stream(infile,db,phylomeDB_taxonD=None,type_filter=None):
 def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Convert taxonids to taxonomic names using a the dictionary taxonD.
 	Return (group,taxon) generator.'''
-	src = get_stream(infile,db,phylomeDB_taxonD)
+	src = get_stream(infile,db,phylomeDB_taxonD,type_filter)
 	for i,j in src:
 		try:
 			yield i,taxonD[j]
@@ -57,13 +57,13 @@ def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 def flat_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Flatten groups. Return generator of tuples (group, (taxon,taxon...))'''
 	unique_categories = []
-	src = taxon_stream(infile,db,taxonD,phylomeDB_taxonD)
+	src = taxon_stream(infile,db,taxonD,phylomeDB_taxonD,type_filter)
 	return (i for i in functions.flatten(src))
 	
-def counter_stream(infile,db,taxonD,phylomeDB_taxonD=None):
+def counter_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Collect tuples from flat_stream and count occurrences of each taxon id 
 	in the second element. Return generator of tuples (group, {taxon1: 2, taxon2: 39,...})'''
-	for i,j in flat_stream(infile,db,taxonD,phylomeDB_taxonD,type_filter=None):
+	for i,j in flat_stream(infile,db,taxonD,phylomeDB_taxonD,type_filter):
 		yield i, Counter(j)
 		
 def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
@@ -71,7 +71,7 @@ def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	line_count = 0
 	taxon_list = sorted(list(set([i for i in taxonD.itervalues()]))) # unique taxa from taxonD
 	yield "\t".join(["group"] + taxon_list)
-	for i,j in counter_stream(infile,db,taxonD,phylomeDB_taxonD):
+	for i,j in counter_stream(infile,db,taxonD,phylomeDB_taxonD,type_filter):
 		counts_list = [str(j[taxon]) for taxon in taxon_list]
 		assert len(counts_list) == len(taxon_list)
 		yield "\t".join([i] + counts_list)
