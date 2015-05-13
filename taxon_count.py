@@ -27,7 +27,7 @@ def filter_phylomeDB(src):
 	Return generator of tuples'''
 	return ((i["gene"],i["ortholog"]) for i in src)
 
-def get_stream(infile,db,phylomeDB_taxonD=None):
+def get_stream(infile,db,phylomeDB_taxonD=None,type_filter=None):
 	'''Take database file and return (category,taxonid) tuples from parsers 
 	to feed to flatten()'''
 	db = db.lower()
@@ -36,12 +36,15 @@ def get_stream(infile,db,phylomeDB_taxonD=None):
 						{"infile":infile}),
 			'phylomedb':(filter_phylomeDB, 
 						parsers.phylome_parser,
-						{"infile":infile,"as_taxid":True,"taxonD":phylomeDB_taxonD})}
+						{"infile":infile,
+						"as_taxid":True,
+						"taxonD":phylomeDB_taxonD,
+						"type_filter":type_filter})}
 	assert db in funcsD, 'Database %s not found' % db
 	funcs = funcsD[db]
 	return funcs[0](funcs[1](**funcs[2]))
 	
-def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None):
+def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Convert taxonids to taxonomic names using a the dictionary taxonD.
 	Return (group,taxon) generator.'''
 	src = get_stream(infile,db,phylomeDB_taxonD)
@@ -51,7 +54,7 @@ def taxon_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 		except KeyError:
 			sys.stderr.write("Could not find taxon %s\n" % j)
 		
-def flat_stream(infile,db,taxonD,phylomeDB_taxonD=None):
+def flat_stream(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Flatten groups. Return generator of tuples (group, (taxon,taxon...))'''
 	unique_categories = []
 	src = taxon_stream(infile,db,taxonD,phylomeDB_taxonD)
@@ -60,10 +63,10 @@ def flat_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 def counter_stream(infile,db,taxonD,phylomeDB_taxonD=None):
 	'''Collect tuples from flat_stream and count occurrences of each taxon id 
 	in the second element. Return generator of tuples (group, {taxon1: 2, taxon2: 39,...})'''
-	for i,j in flat_stream(infile,db,taxonD,phylomeDB_taxonD):
+	for i,j in flat_stream(infile,db,taxonD,phylomeDB_taxonD,type_filter=None):
 		yield i, Counter(j)
 		
-def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None):
+def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None,type_filter=None):
 	'''Return generator for printing output'''
 	line_count = 0
 	taxon_list = sorted(list(set([i for i in taxonD.itervalues()]))) # unique taxa from taxonD
@@ -71,7 +74,7 @@ def print_taxon_count(infile,db,taxonD,phylomeDB_taxonD=None):
 	for i,j in counter_stream(infile,db,taxonD,phylomeDB_taxonD):
 		counts_list = [str(j[taxon]) for taxon in taxon_list]
 		assert len(counts_list) == len(taxon_list)
-		yield i,"\t","\t".join(counts_list)
+		yield "\t".join([i] + counts_list)
 		line_count +=1
 		if line_count % 100 == 0:
 			sys.stderr.write(str(line_count)+"\n")
