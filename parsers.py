@@ -1,12 +1,19 @@
 #! /usr/bin/env python
 
-def phylome_parser(infile,as_taxid=False,taxonD=None):
+def phylome_parser(infile,as_taxid=False,taxonD=None,type_filter=None):
 	'''For parsing a phylomeDB ortholog file'''
 	values = ("gene","ortholog","type","CS","trees","co-orthologs")
 	with open(infile) as f:
 		for line in f:
 			line = line.strip().split("\t")
-			line[-1] = line[-1].split(' ')
+			if len(line) > 5:
+				line[-1] = line[-1].split(' ')
+			if type_filter:
+				types = ["many-to-many","many-to-one","one-to-many","one-to-one"]
+				type = line[2]
+				assert type in types, "type %s not recognized" % type
+				if type != type_filter.lower():
+					continue
 			lineD = dict(map(None,values,line))
 			if as_taxid:
 				assert taxonD != None, "Must specify a taxon dictionary"
