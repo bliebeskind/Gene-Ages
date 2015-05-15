@@ -38,6 +38,22 @@ def id_convert(prot_stream,mapping=None):
 	for prot in prot_stream:
 		yield D[prot]
 		
+def stream_2cols(infile,delim=None,header=False):
+	'''
+	Open a two column file and return a generator of tuples corresponding to the two columns.
+	delim: optional delimiter string, default is to split line on whitespace
+	header: default is False - if True, skip first line of infile
+	'''
+	with open(infile) as f:
+		if header:
+			f.next()
+		for line in f:
+			if delim:
+				line = line.strip().split(delim)
+			else:
+				line = line.strip().split()
+			yield line[0],line[1]
+
 def pickle_2cols(col_stream,pickle_file):
 	'''Given an imput stream of length 2 tuples, make dictionary mapping first to second
 	element, and pickle the dictionary.'''
