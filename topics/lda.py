@@ -1,5 +1,5 @@
 '''
-Topics modeling with Ben's protein evolution data (which I don't really understand yet...)
+Topic modeling with Ben's protein evolution data 
 Keegan Hines
 05/19/15
 '''
