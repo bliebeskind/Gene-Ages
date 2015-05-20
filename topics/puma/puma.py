@@ -10,7 +10,7 @@ from collections import Counter
 from itertools import groupby
 from functools import reduce  
 
-class puma():
+class model():
     def __init__(self):
         pass  
     
@@ -19,13 +19,13 @@ class puma():
         Simulate some fake data for sanity checks. Data drawn from 3 topics, D documents, with vocabulary of size 4.
         Superbly inflexible method for synthetic data generation, but all we need for now.
         '''
-        thetas = [ [.9,.1,0,0],[.25, .25, .25, .25],[0,.1,.1,8]]
+        thetas = [ [.9,.1,0,0],[.25, .25, .25, .25],[0,.1,.1,.8]]
         docs = []
         for i in range(D):
             pr = thetas[r.choice([0,1,2])]
             c = Counter(r.choice(range(len(pr)), size= r.poisson(15),p = pr  ))
-            documents.append( [c.get(s,0) for s in [0,1,2,3] ] )
-        return documents
+            docs.append( [c.get(s,0) for s in [0,1,2,3] ] )
+        return docs
             
         
     def probability_doc_given_topics(self,doc,topic_probs):
@@ -35,6 +35,7 @@ class puma():
             doc: List[Int]
             topics_probs: List[Double]
         '''
+       
         return reduce(lambda a,b:a*b, [b**a for (a,b) in zip(doc,topic_probs)])
     
     def topicSample(self, doc, params):
@@ -44,12 +45,13 @@ class puma():
             doc: List[Int]
             params
         '''
-        probabilties = []
+        probabilities = []
         for T in params:
-            probabilities.append( probability_doc_given_topics(doc,T) )
-        probabilities = probabilities/float(sum(probabilities))
+            
+            probabilities.append( self.probability_doc_given_topics(doc[1],T[1]) )
+        probabilities = [p/float(sum(probabilities)) for p in probabilities]
         draw = r.choice(range(len(params)),1,p=probabilities)
-        return (draw[0], doc)
+        return (draw[0], doc[1])
     
     def parameterSample(self, allData):
         '''
@@ -73,12 +75,16 @@ class puma():
         for i in range(iterations):
         
             # sample the parameters given the labels
+            
             topicParameters = self.parameterSample(labeledCorpus)
             
             # sample the labels given the parameters
             labeledCorpus = map(lambda doc: self.topicSample(doc,topicParameters) ,labeledCorpus)
-        return topicsParameters
+        return topicParameters
         
         
-        
-        
+if __name__ == '__main__':
+    p = model()
+    corp = p.simData(1800)
+    res = p.run(corp,num_topics=3,iterations=50)
+    print res    
