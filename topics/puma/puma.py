@@ -43,7 +43,7 @@ class model():
         Resample the topic label of the doc.
         Inputs
             doc: List[Int]
-            params
+            params: List[(Int, List[Float])]
         '''
         probabilities = []
         for T in params:
@@ -66,20 +66,27 @@ class model():
         
         
     def run(self,corpus,num_topics, iterations):
+        '''
+        Run Gibbs sampler for puma model.
+        Inputs
+            corpus: List[List[Int]]
+            num_topics: Int
+            iterations: Int
+        '''
         
-        # initial data structure as list of (label, [counts])
+        
+        #  transform corpus by adding randomized topic labes, resulting in list of (label, [counts])
         # ex [ (1, [0,1,0,8]),  (0, [2,5,0,0]), (1, [3,4,9,1])  ]
-        
         labeledCorpus = map( lambda c: (r.choice(range(num_topics)) ,c) ,corpus)
         
         for i in range(iterations):
         
             # sample the parameters given the labels
-            
             topicParameters = self.parameterSample(labeledCorpus)
             
             # sample the labels given the parameters
             labeledCorpus = map(lambda doc: self.topicSample(doc,topicParameters) ,labeledCorpus)
+            
         return topicParameters
         
         
