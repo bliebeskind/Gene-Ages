@@ -1,0 +1,1852 @@
+complex	Bikont	Bilateria	Euk+A	Euk+B	LECA	LUCA	Mammalia	Metazoa	Unikont	Vertebrata
+BCL6-HDAC4 complex	1	0	0	0	0	1	0	0	0	0
+BCL6-HDAC5 complex	1	0	0	0	0	1	0	0	0	0
+BCL6-HDAC7 complex	1	0	0	0	0	1	0	0	0	0
+Multisubunit ACTR coactivator complex	3	0	0	0	1	0	0	0	0	0
+13S condensin complex	0	3	0	2	0	0	0	0	0	0
+BLOC-3 (biogenesis of lysosome-related organelles complex 3)	0	0	1	0	1	0	0	0	0	0
+BLOC-2 (biogenesis of lysosome-related organelles complex 2)	2	0	1	0	0	0	0	0	0	0
+MUS81-CDS1 complex	0	1	0	1	0	0	0	0	0	0
+NCOR complex	0	0	0	3	2	0	0	0	0	1
+BLOC-1 (biogenesis of lysosome-related organelles complex 1)	3	3	1	0	1	0	0	0	0	0
+Arp2/3 protein complex	0	6	0	0	0	1	0	0	0	0
+PA28gamma complex	0	1	0	0	0	0	0	0	0	0
+PA28 complex	0	2	0	0	0	0	0	0	0	0
+PA700 complex	0	12	0	2	0	3	0	0	0	3
+Prefoldin	0	4	0	0	0	2	0	0	0	0
+AP1 adaptor complex	0	8	0	0	0	0	0	0	0	0
+Mi-2/NuRD-MTA2 complex	4	0	0	0	0	0	0	0	0	1
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN variant)	0	4	0	0	0	0	0	0	0	0
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN variant)	0	4	0	0	0	0	0	0	0	0
+DNMT3B complex	1	2	0	2	0	0	0	0	0	2
+SIN3 complex	0	3	0	2	0	0	0	0	0	2
+HDAC4-ERK1 complex	0	1	0	0	0	1	0	0	0	0
+HDAC4-ERK2 complex	0	1	0	0	0	1	0	0	0	0
+SMRT complex	0	0	0	2	2	0	0	0	0	1
+AP3 adapter complex	0	7	0	0	0	0	0	0	0	0
+Interferon-stimulated gene factor 3 transcription complex ISGF3	2	0	0	0	1	0	0	0	0	0
+Mi2/NuRD complex	2	0	0	3	0	0	0	0	0	2
+MeCP1 complex	3	0	0	3	0	0	0	0	0	2
+Mitotic 14S cohesin 1 complex	0	1	0	2	0	0	0	0	1	0
+Mitotic 14S cohesin 2 complex	0	1	0	2	0	0	0	0	1	0
+TRAP complex	4	0	2	0	2	0	0	0	0	0
+AP4 adaptor complex	0	4	0	0	0	0	0	0	0	0
+BCDX2 complex	0	0	0	2	0	1	0	0	0	1
+MRN complex (MRE11-RAD50-NBS1 complex)	1	1	0	0	0	0	0	0	0	1
+R/M complex (RAD50-MRE11 complex)	0	1	0	0	0	0	0	0	0	1
+MRN complex (MRE11-RAD50-NBN complex)	1	1	0	0	0	0	0	0	0	1
+TSC1-TSC2 complex	0	0	0	0	1	0	0	0	1	0
+Ubiquitin E3 ligase (Skp1A, Skp2, Cul1, Rbx1)	0	4	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (SKP1A, FBXW8, CUL7, RBX1)	0	2	1	1	0	0	0	0	0	0
+NUMAC complex (nucleosomal methylation activator complex)	0	4	0	1	1	0	0	0	3	1
+Nup 107-160 subcomplex	0	4	0	0	0	0	0	0	3	2
+Sec6/8 exocyst complex	0	7	0	0	0	0	0	0	1	0
+FA complex (Fanconi anemia complex), cytoplasmic	0	0	3	0	1	0	0	0	0	0
+CD28-transactivation complex	0	1	1	0	0	0	0	0	0	0
+Anaphase-promoting complex	0	4	0	2	0	0	0	0	0	2
+ATP-utilizing chromatin assembly and remodeling factor (hACF) complex	0	0	0	0	1	0	0	0	0	1
+Ku antigen-NARG1 complex	0	2	0	0	0	1	0	0	0	0
+Anaphase-promoting complex	0	5	0	2	0	0	0	0	0	2
+p300-MDM2-p53 protein complex	1	0	0	0	1	0	0	0	1	0
+hNURF complex	0	1	0	2	1	0	0	0	0	0
+RNA polymerase II holoenzyme complex	0	11	0	0	1	7	0	0	1	4
+RNA polymerase II core complex	0	5	0	0	0	5	0	0	0	2
+Polycomb repressive complex 2 (PRC 2)	0	1	0	3	0	0	0	0	1	0
+TFIIH transcription factor complex	0	6	0	0	0	0	0	0	1	2
+Prefoldin complex	0	4	0	0	0	2	0	0	0	0
+SNAPc (small nuclear RNA-activating protein) complex	1	1	3	0	0	0	0	0	0	0
+Polycomb repressive complex 1 (PRC1, hPRC-H)	1	3	3	0	3	0	0	0	0	2
+Polycomb repressive complex 1 (PRC1, hPRC-H)	2	3	3	0	3	0	0	0	0	2
+GPR56-CD81-Galphaq/11-Gbeta complex	1	2	0	0	0	0	0	0	1	4
+GPI-GnT activity complex	0	2	1	0	0	0	0	0	0	1
+Lymphotoxin beta receptor complex	2	1	0	0	0	0	0	0	0	0
+Rnase/Mrp complex	2	5	0	0	0	0	0	0	3	0
+CCT micro-complex	0	0	0	0	0	8	0	0	0	0
+NDC80 kinetochore complex	1	1	0	1	0	1	0	0	0	0
+PIDDsome complex	0	0	0	2	1	0	0	0	0	0
+Telosome complex	0	0	2	0	1	0	2	0	1	0
+E-box sequence-binding complex	1	0	1	0	1	0	1	0	0	0
+CD147-gamma-secretase complex (APH-1a, PS-1, PEN-2, NCT variant)	1	4	0	0	0	0	0	0	0	0
+APP-FE65-LRP complex	2	1	0	0	0	0	0	0	0	0
+Gamma-BAR-AP1 complex	0	8	1	0	0	0	0	0	0	0
+PBAF complex (Polybromo- and BAF containing complex)	0	6	1	0	0	0	0	0	4	1
+TFIIE complex	0	1	0	0	0	0	0	0	1	0
+TFIIF complex (transcription factor IIF)	0	1	0	0	1	0	0	0	0	0
+TFIID complex	2	3	0	1	0	1	0	0	2	0
+Retrotranslocation complex	0	2	0	0	1	0	0	0	0	0
+Condensin I complex	0	3	0	2	0	0	0	0	0	0
+Condensin I-PARP-1-XRCC1 complex	0	4	0	2	0	0	0	0	1	0
+Condensin II	0	3	0	2	0	0	0	0	0	0
+Conserved oligomeric Golgi (COG) complex	0	8	0	0	0	0	0	0	0	0
+Cohesin-SA2 complex	0	1	0	2	0	0	0	0	1	0
+Cohesin-SA1 complex	0	1	0	2	0	0	0	0	1	0
+Cohesin-SA1 complex	0	1	0	2	0	0	0	0	1	0
+Cohesin-SA2 complex	0	1	0	2	0	0	0	0	1	0
+Condensin I complex	0	3	0	2	0	0	0	0	0	0
+MRN complex (MRE11-RAD50-NBN complex)	1	1	0	0	0	0	0	0	0	1
+OGT-TRAK1-TRAK2 complex	1	1	0	0	0	0	0	0	0	1
+Respiratory chain complex I (holoenzyme), mitochondrial	2	7	5	7	12	0	1	0	3	7
+PNUTS-PP1 complex	1	1	0	0	0	0	0	0	0	0
+26S proteasome	0	2	0	0	0	10	0	0	0	10
+Wave-2 complex	0	3	0	0	1	0	0	0	0	0
+BAF complex	0	6	0	0	2	0	0	0	3	2
+Mitotic checkpoint complex (MCC)	0	1	0	1	0	0	0	0	1	1
+20S proteasome	0	0	0	0	0	7	0	0	0	7
+PA28-20S proteasome	0	2	0	0	0	7	0	0	0	7
+PA700-20S-PA28 complex	0	14	0	2	0	10	0	0	0	10
+PA28gamma-20S proteasome	0	1	0	0	0	7	0	0	0	7
+HUIC complex	0	0	1	0	1	0	0	0	0	0
+BRCA1-RAD50-MRE11-NBS1 complex	1	1	1	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (VHL, TCEB1, TCEB2, CUL2, RBX1)	1	3	0	0	1	0	0	0	0	0
+DNA ligase IV-XRCC4 complex	0	1	0	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (ASB2, TCEB1, TCEB2, CUL5, RNF7)	1	3	0	1	0	0	0	0	0	0
+Ubiquitin E3 ligase (ASB1, TCEB1, TCEB2, CUL5, RNF7)	1	3	0	1	0	0	0	0	0	0
+Ubiquitin E3 ligase (ASB6, TCEB1, TCEB2, CUL5, RNF7)	1	4	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (ASB7, TCEB1, TCEB2, CUL5, RNF7)	1	3	0	1	0	0	0	0	0	0
+Ubiquitin E3 ligase (ASB12, TCEB1, TCEB2, CUL5, RNF7)	1	3	0	1	0	0	0	0	0	0
+DNA ligase III-XRCC1 complex	0	0	0	0	0	0	0	0	1	1
+DNA ligase IV-XRCC1 complex	0	0	0	0	0	0	0	0	1	1
+Ubiquitin E3 ligase (WSB1, TCEB1, TCEB2, CUL5, RBX1)	1	3	0	1	0	0	0	0	0	0
+CRSP complex	2	1	1	0	3	0	0	0	1	0
+CRSP complex	2	1	1	0	3	0	0	0	1	0
+CAND1-CUL1-RBX1 complex	0	3	0	0	0	0	0	0	0	0
+ARF-Mule complex	1	0	0	0	1	0	1	0	0	0
+CAND1-CUL2-RBX1 complex	0	3	0	0	0	0	0	0	0	0
+CAND1-CUL3-RBX1 complex	0	3	0	0	0	0	0	0	0	0
+CAND1-CUL4A-RBX1 complex	0	3	0	0	0	0	0	0	0	0
+CAND1-CUL4B-RBX1 complex	0	3	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1)	0	3	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (SKP1A, BTRC, CUL1)	0	2	0	0	0	0	0	0	0	1
+SMCC complex	1	4	1	0	1	0	0	0	1	0
+NAT complex	1	4	0	0	1	0	0	0	1	0
+Mediator complex	8	9	1	0	9	0	1	0	4	0
+ARC complex	4	2	1	0	6	0	1	0	0	1
+HuCHRAC complex	0	2	0	0	1	0	0	0	0	1
+WICH complex	0	0	0	0	1	0	0	0	0	1
+SWI-SNF chromatin remodeling-related-BRCA1 complex	0	3	1	0	2	0	0	0	3	2
+BRCA1-CTIP-ZBRK1 repressor complex	0	1	1	0	0	0	0	0	0	0
+BLOC-3 (biogenesis of lysosome-related organelles complex 3)	0	0	1	0	1	0	0	0	0	0
+BRCA1-BACH1 complex	0	0	1	0	0	0	0	0	0	1
+RalBP1-CDC2-CCNB1 complex	1	2	0	0	0	0	0	0	0	0
+BRAFT complex	1	3	4	0	1	1	0	0	1	2
+FA core complex (Fanconi anemia core complex)	1	1	5	0	2	0	0	0	0	0
+BLM complex III	1	0	0	0	0	1	0	0	0	2
+RalBP1-CCNB1-AP2A-NUMB-EPN1 complex	1	4	0	0	1	0	0	0	0	0
+BRAFT complex	0	3	4	0	1	1	0	0	1	1
+BCDX2 complex	0	0	0	2	0	1	0	0	0	1
+RAD51C-XRCC3 complex	0	0	0	2	0	0	0	0	0	0
+RAD51C-XRCC3 complex	0	0	0	2	0	0	0	0	0	0
+TBPIP/HOP2-MND1 complex	0	2	0	0	0	0	0	0	0	0
+RAD51B-RAD51C complex	0	0	0	2	0	0	0	0	0	0
+BCDX2 complex	0	0	0	2	0	1	0	0	0	1
+RAD51C-XRCC3 complex	0	0	0	2	0	0	0	0	0	0
+RAD51B-RAD51C complex	0	0	0	2	0	0	0	0	0	0
+RAD51B-RAD51C-RAD51D-XRCC2-XRCC3 complex	0	0	0	3	0	1	0	0	0	1
+RAD51L3-XRCC2 complex	0	0	0	0	0	1	0	0	0	1
+R/M complex (RAD50-MRE11 complex)	0	1	0	0	0	0	0	0	0	1
+R/M complex (RAD50-MRE11 complex)	0	1	0	0	0	0	0	0	0	1
+ATR-ATRIP complex	1	1	0	0	0	0	0	0	0	0
+RAD17-RFC complex	0	0	0	0	0	0	0	0	0	5
+Checkpoint 9-1-1 complex	0	3	0	0	0	0	0	0	0	0
+Checkpoint Rad complex	0	3	0	0	0	0	0	0	0	5
+RAD17-RFC complex	0	0	0	0	0	0	0	0	0	5
+Checkpoint 9-1-1 complex	0	3	0	0	0	0	0	0	0	0
+RAD17-RFC-9-1-1 checkpoint supercomplex	0	3	0	0	0	0	0	0	0	5
+Checkpoint 9-1-1 complex	0	3	0	0	0	0	0	0	0	0
+Checkpoint 9-1-1 complex	0	3	0	0	0	0	0	0	0	0
+RFC complex	0	1	0	0	0	0	0	0	0	4
+RFC core complex	0	0	0	0	0	0	0	0	0	3
+RFC complex (activator A 1 complex)	0	1	0	0	0	0	0	0	0	4
+HMGB1-HMGB2-HSC70-ERP60-GAPDH complex	0	3	0	1	0	0	0	0	0	1
+NELF complex (Negative elongation factor complex)	0	0	0	0	2	0	0	0	2	0
+SNF2h-cohesin-NuRD complex	4	3	0	4	1	0	0	0	1	3
+Sin3 complex	0	3	0	2	0	0	0	0	0	2
+CRSP complex	3	2	1	0	3	0	1	0	1	0
+PCNA-MLH1-PMS1 complex	0	0	0	0	0	1	0	0	1	1
+PCNA-MSH2-MSH6 complex	0	0	0	2	0	1	0	0	0	0
+ARC-L complex	3	4	1	0	4	0	1	0	1	0
+ARC complex	3	4	1	0	5	0	1	0	1	0
+PCNA-MSH2-MSH6 complex	0	0	0	2	0	1	0	0	0	0
+MSH2-MLH1-PMS2-PCNA DNA-repair initiation complex	0	0	0	1	0	1	0	0	0	2
+MSH2-MLH1-PMS2 DNA-repair initiation complex	0	0	0	1	0	0	0	0	0	2
+MutL-alpha complex	0	0	0	0	0	0	0	0	0	2
+PCNA-DNA polymerase delta complex	1	1	0	0	0	1	0	0	1	1
+VEGF transcriptional complex	1	0	2	0	1	0	1	0	0	1
+IRF3-CBP complex	0	0	2	0	1	0	1	0	0	0
+PC2 complex	3	4	1	0	1	0	0	0	3	0
+SMCC complex	3	6	2	0	3	0	0	0	3	0
+INO80 chromatin remodeling complex	2	5	1	1	1	2	1	0	0	0
+SRCAP-associated chromatin remodeling complex	0	5	0	1	2	2	0	0	0	0
+40S ribosomal subunit, cytoplasmic	0	10	0	0	0	11	0	0	0	12
+Ribosome, cytoplasmic	0	25	0	0	0	35	1	0	0	18
+60S ribosomal subunit, cytoplasmic	0	15	0	0	0	24	1	0	0	6
+Cell cycle kinase complex CDC2	0	4	0	0	1	1	0	0	0	0
+Cell cycle kinase complex CDK2	0	1	0	1	1	1	0	0	0	0
+Cell cycle kinase complex CDK4	0	2	0	0	1	1	0	0	0	0
+Cell cycle kinase complex CDK5	0	2	0	1	1	1	0	0	0	0
+PCNA-p21 complex	0	0	0	0	1	1	0	0	0	0
+28S ribosomal subunit, mitochondrial	8	1	2	7	7	0	0	0	3	2
+55S ribosome, mitochondrial	14	11	2	18	12	2	1	0	11	5
+DNA-PK-Ku complex	0	3	0	0	0	0	0	0	0	0
+39S ribosomal subunit, mitochondrial	6	10	0	11	5	2	1	0	8	3
+Ku antigen complex	0	2	0	0	0	0	0	0	0	0
+PSF-p54(nrb) complex	2	0	0	0	0	0	0	0	0	0
+MRN complex (MRE11-RAD50-NBN complex)	1	1	0	0	0	0	0	0	0	1
+AK2-FADD-caspase-10 (AFAC10) complex	0	0	0	2	1	0	0	0	0	0
+p54(nrb)-PSF-matrin3 complex	2	0	1	0	0	0	0	0	0	0
+DNA ligase IV-XRCC4-AHNK complex	0	1	0	0	0	0	1	0	0	1
+40S ribosomal subunit, cytoplasmic	0	10	0	0	0	8	0	0	0	12
+Sarcoglycan-sarcospan complex SG-SPN	1	0	0	0	1	0	0	0	3	0
+DNA ligase IV-XRCC4 complex (LX complex)	0	1	0	0	0	0	0	0	0	1
+DNA ligase IV-XRCC4 complex (LX complex)	0	1	0	0	0	0	0	0	0	1
+DNA ligase IV-XRCC4-PNK complex	0	2	0	0	0	0	0	0	0	1
+Spliceosome	7	75	7	26	1	9	1	0	4	6
+DNA ligase IV-XRCC4 complex	0	1	0	0	0	0	0	0	0	1
+DNA ligase IV-condensin complex	0	0	0	2	0	0	0	0	0	1
+DNA ligase IV-XRCC4 complex	0	1	0	0	0	0	0	0	0	1
+DNA-PK-Ku antigen complex	0	3	0	0	0	0	0	0	0	0
+DNA-PK-Ku antigen complex	0	3	0	0	0	0	0	0	0	0
+DNA-PK-Ku antigen complex	0	3	0	0	0	0	0	0	0	0
+DNA ligase IV-XRCC4-XLF complex	1	1	0	0	0	0	0	0	0	1
+Artemis-DNA-PK complex	0	2	0	0	0	0	0	0	0	0
+Artemis-DNA-PK complex	0	2	0	0	0	0	0	0	0	0
+DNA ligase III-XRCC1-PNK-DNA-pol III multiprotein complex	0	1	0	0	0	0	0	0	1	2
+DNA ligase III-XRCC1 complex	0	0	0	0	0	0	0	0	1	1
+DNA ligase III-XRCC1 complex	0	0	0	0	0	0	0	0	1	1
+ERCC1-ERCC4-MSH2 complex	0	2	0	1	0	0	0	0	0	0
+MSH2-MSH6-PMS2-MLH1 complex	0	0	0	2	0	0	0	0	0	2
+MSH2-MSH6-PMS1-MLH1 complex	0	0	0	2	0	0	0	0	1	1
+MSH2-MSH6 complex	0	0	0	2	0	0	0	0	0	0
+MSH2-MSH3 complex	0	0	0	2	0	0	0	0	0	0
+PCNA-MutS-alpha-MutL-alpha-DNA complex	0	0	0	2	0	1	0	0	0	2
+PCNA-MutS-alpha-DNA initial complex	0	0	0	2	0	1	0	0	0	0
+MutS-beta complex	0	0	0	2	0	0	0	0	0	0
+MutL-alpha complex	0	0	0	0	0	0	0	0	0	2
+MutL-beta complex	0	0	0	0	0	0	0	0	1	1
+Ubiquitin E3 ligase (UBADC1, RNF123)	1	1	0	0	0	0	0	0	0	0
+MCM complex	0	0	0	0	0	6	0	0	0	0
+ORC complex (origin recognition complex)	0	4	0	0	0	2	0	0	0	0
+Ubiquitin E3 ligase (SKP1A, FBXW2, CUL1)	0	2	0	1	0	0	0	0	0	0
+Ubiquitin E3 ligase (DDB1, CUL4A, RBX1)	0	3	0	0	0	0	0	0	0	0
+Succinyl-CoA synthetase, GDP-forming	0	0	0	0	0	0	0	0	0	2
+Succinyl-CoA synthetase, ADP-forming	0	0	0	0	0	0	0	0	0	2
+Isocitrate dehydrogenase, cytoplasmic	0	0	0	1	0	0	0	0	0	0
+Guanylyl cyclase, soluble (GUCY1A2, GUCY1B3)	0	0	0	2	0	0	0	0	0	0
+Guanylyl cyclase, soluble (GUCY1A3, GUCY1B3)	0	0	0	2	0	0	0	0	0	0
+EXO1-MLH1-PMS2 complex	0	0	0	0	0	1	0	0	0	2
+Farnesyltransferase	0	1	0	0	0	0	0	0	0	0
+Beta-dystroglycan-caveolin-3 complex	2	0	0	0	0	0	0	0	0	0
+EXO1-MLH1-PMS2 complex	0	0	0	0	0	1	0	0	0	2
+EXO1-MLH1-PCNA complex	0	0	0	0	0	2	0	0	0	1
+MSH4-MSH5-GPS2 complex	0	0	0	2	1	0	0	0	0	0
+Meprin A	2	0	0	0	0	0	0	0	0	0
+Molybdopterin synthase	0	0	0	0	0	0	0	0	0	1
+Phosphatidylinositol 3-kinase complex (PIK3C3, PIK3R4)	0	2	0	0	0	0	0	0	0	0
+18S U11/U12 snRNP	0	15	1	3	1	2	1	0	0	0
+MSH2-MSH6-PMS2-MLH1 complex	0	0	0	2	0	0	0	0	0	2
+N-NOS-CHIP-HSP70-1 complex	0	0	0	2	0	0	0	0	0	1
+BASC complex (BRCA1-associated genome surveillance complex)	1	3	1	2	0	1	0	0	0	4
+BASC (Ab 80) complex (BRCA1-associated genome surveillance complex)	0	1	1	2	0	1	0	0	0	3
+BASC (Ab 81) complex (BRCA1-associated genome surveillance complex)	0	2	1	0	0	0	0	0	0	3
+BASC (Ab C-20) complex (BRCA1-associated genome surveillance complex)	0	0	1	1	0	0	0	0	0	1
+GCN5-TRRAP histone acetyltransferase complex	1	1	1	3	0	0	0	0	4	0
+TFTC-type histone acetyl transferase complex	4	1	1	0	5	0	0	0	0	0
+BP-SMAD complex	2	0	1	1	2	0	0	0	0	2
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	5	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	5	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	5	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	5	0
+CRB1-MPP5-INADL complex	0	2	0	0	0	0	0	0	1	0
+MPP4-MPP5-CRB1 complex	0	3	0	0	0	0	0	0	0	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	5	0
+TFIID-beta complex	2	4	0	1	0	1	0	0	3	0
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN)	0	4	0	0	0	0	0	0	0	0
+Gamma-secretase complex (APH1B, PSEN2, PSENEN, NCSTN)	0	4	0	0	0	0	0	0	0	0
+Gamma-secretase complex (APH1A, PSEN2, PSENEN, NCSTN)	0	4	0	0	0	0	0	0	0	0
+TFIID-beta complex	2	5	0	1	0	1	0	0	3	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	7	0	2	0	0	0	0	5	0
+PCAF complex	1	4	0	1	0	0	0	0	4	0
+Prolyl 4-hydroxylase (alpha(I)-type)	0	2	0	0	0	0	0	0	0	0
+Prolyl 4-hydroxylase (alpha(III)-type)	0	2	0	0	0	0	0	0	0	0
+STAGA complex (SPT3-TAF9-GCN5 acetyltransferase complex)	3	4	0	1	0	0	0	0	4	0
+STAGA complex (SPT3-TAF9-GCN5 acetyltransferase complex)	4	4	0	1	0	0	0	0	4	0
+PCAF complex	1	4	0	1	0	0	0	0	4	0
+STAGA core complex (SPT3-TAF9-GCN5 acetyltransferase complex)	1	0	0	0	0	0	0	0	2	0
+TFIID complex	2	4	0	1	0	1	0	0	3	0
+TFIID complex, B-cell specific	3	4	0	1	0	1	0	0	3	0
+WIP-WASp-actin-myosin-IIa complex	0	2	1	0	0	0	0	0	2	1
+TFIIA complex	0	2	0	0	0	0	0	0	0	0
+TFIIA complex	0	2	0	0	0	0	0	0	0	0
+DA complex	2	7	1	1	0	1	0	0	3	0
+DAB complex	2	7	1	1	0	2	0	0	3	0
+TAF4-TAF12 subcomplex of TFIID complex	1	1	0	0	0	0	0	0	0	0
+TFIID complex	2	3	0	1	0	1	0	0	3	0
+TFIID complex	2	4	0	1	0	1	1	0	3	0
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	3	6	0	2	0	0	0	0	6	0
+TFIID-beta complex	2	4	0	1	0	1	0	0	4	0
+Kinase-scaffold-phosphatase complex, PKA-AKAP79-CaN	0	1	1	1	0	0	0	0	0	0
+AKAP250-PKA-PDE4D complex	0	4	1	0	0	0	0	0	0	0
+AMY-1-S-AKAP84-RII-beta complex	0	1	1	1	0	0	0	0	0	0
+KCNQ1 macromolecular complex	0	7	1	2	0	0	0	0	0	0
+Polycystin-1-E-cadherin-beta-catenin complex	2	1	0	0	0	0	0	0	0	0
+Polycystin-1-E-cadherin-beta-catenin-Flotillin-2 complex	2	1	0	1	0	0	0	0	0	0
+TIP60 histone acetylase complex	0	3	0	0	0	2	0	0	0	0
+TRPC3-TRPC4 channel complex, redox-sensitive	0	0	0	0	0	0	0	0	2	0
+NuA4/Tip60 HAT complex	1	8	1	0	3	2	0	0	0	0
+NuA4/Tip60 HAT complex	1	9	1	0	3	2	0	0	0	0
+XPA-ERCC1-ERCC4 complex	0	2	0	0	0	0	0	0	1	0
+IMP3-IMP4-MPP10 complex	0	1	0	0	1	0	0	0	0	1
+TRAP complex	4	4	2	0	4	0	0	0	2	0
+TRPC1-TRPC3-TRPC7 complex	0	0	0	0	0	0	0	0	3	0
+IGF1-IGFBP3-ALS complex	0	0	0	1	2	0	0	0	0	0
+SMCC complex	3	3	2	0	4	0	0	0	2	0
+DRIP complex	4	2	1	0	7	0	0	0	0	0
+DRIP complex	4	2	1	0	7	0	0	0	0	0
+NOS3-CAV1-NOSTRIN complex	1	1	0	1	0	0	0	0	0	0
+TDT-TDIF2-core-histone complex	0	2	1	0	0	0	0	0	0	1
+IFNB1-IFNAR1-IFNAR2- complex	0	0	2	0	1	0	0	0	0	0
+RHOA-IP3R-TRPC1 complex	0	1	0	0	0	0	0	0	2	0
+PBAF complex (Polybromo- and BAF containing complex)	0	4	1	0	0	0	0	0	4	1
+BAF complex	0	4	0	0	1	0	0	0	3	1
+PBAF complex (Polybromo- and BAF containing complex)	0	3	1	0	0	0	0	0	4	1
+TRP1-G alpha-11-IP3R3-CAV1 signaling complex	1	1	0	0	0	0	0	0	2	0
+Channel complex TRPM6-TRPM7	0	0	0	0	0	0	0	0	2	0
+Decapping complex	0	2	0	1	1	0	0	0	1	0
+LSm1-7 complex	0	3	0	0	0	4	0	0	0	0
+LSm2-8 complex	0	3	0	0	0	4	0	0	0	0
+F1F0-ATP synthase (EC 3.6.3.14), mitochondrial	1	2	1	5	1	0	1	0	3	1
+BAF complex	0	5	0	0	1	0	0	0	3	2
+PBAF complex (Polybromo- and BAF containing complex)	0	5	1	0	0	0	0	0	4	1
+BAF complex	0	6	0	0	1	0	0	0	3	1
+Nuclear pore complex	0	6	0	1	2	0	0	0	3	3
+p300-CBP-p270-SWI/SNF complex	2	0	0	0	1	0	0	0	3	1
+p300-CBP-p270 complex	2	0	0	0	1	0	0	0	0	0
+ABIN2-NFKB1-MAP3K8 complex	0	2	1	0	0	0	0	0	0	0
+FHL2-p53-HIPK2 complex	0	2	0	0	0	0	0	0	1	0
+Mi2/NuRD-BCL6-MTA3 complex	3	0	0	1	0	0	0	0	0	1
+NuRD.1 complex	3	0	0	3	0	0	0	0	0	1
+SAP complex (Sin3-associated protein complex)	0	2	0	3	1	0	0	0	0	2
+SAP complex (Sin3-associated protein complex)	0	2	0	3	1	0	0	0	1	2
+Kv4.2-DPP10 channel complex	1	0	0	1	0	0	0	0	0	0
+SIN3-HDAC-SAP30-ARID4 complex	0	2	0	2	1	0	0	0	0	2
+TIM (TIMM17ab, TIMM23, TIMM44) complex, mitochondrial	0	4	0	0	0	0	0	0	0	0
+MSL complex	1	2	0	0	1	0	0	0	0	0
+CTF18-CTF8-DCC1 complex	0	2	0	0	0	0	0	0	0	0
+CTF18-CTF8-DCC1-RFC3 complex	0	2	0	0	0	0	0	0	0	1
+NRD complex (Nucleosome remodeling and deacetylation complex)	1	1	0	3	0	0	0	0	0	2
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1)	0	3	0	0	0	0	0	0	0	0
+CASK-LIN7C-APBA1 complex	1	1	0	0	0	0	0	0	1	0
+MRN complex (MRE11-RAD50-NBN complex)	1	1	0	0	0	0	0	0	0	1
+MRE11A-RAD50-NBN-TRF2 complex	1	1	1	0	0	0	0	0	0	1
+CoREST-HDAC complex	0	1	1	1	1	0	0	0	1	2
+AKAP250-PKA-PDE4D complex	0	4	1	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (VHL, TCEB1, TCEB2, CUL2)	1	2	0	0	1	0	0	0	0	0
+TIM (TIMM9, TIMM10) complex, mitochondrial	0	2	0	0	0	0	0	0	0	0
+LSD1-CoREST complex	0	0	0	1	0	0	0	0	1	0
+LSD1 complex	0	2	3	2	2	0	0	0	2	2
+MRN-TRRAP complex (MRE11A-RAD50-NBN-TRRAP complex)	1	2	0	0	0	0	0	0	0	1
+BLM-TRF2 complex	0	0	0	0	0	2	0	0	0	0
+Tacc1-chTOG-AuroraA  complex	0	2	0	1	0	0	0	0	0	0
+Anti-HDAC2 complex	2	4	2	4	3	0	0	0	1	2
+anti-BHC110 complex	0	1	2	1	4	0	0	0	1	2
+XFIM complex	0	0	1	1	1	0	0	0	0	2
+AGPS-GNPAT complex	0	0	0	1	0	0	0	0	0	1
+BHC complex	0	1	1	1	0	0	0	0	1	2
+RANBPM-Muskelin-TWA1-HSMpp8 complex	0	1	0	1	0	0	0	0	2	0
+RANBPM-SMP1 complex	0	1	0	0	0	0	0	0	1	0
+CtBP complex	0	1	3	4	4	0	0	0	3	2
+CtBP core complex	0	1	0	3	1	0	0	0	2	2
+ASPP1-SAM68 complex	0	1	0	1	0	0	0	0	0	0
+HDAC1-associated protein complex	3	1	0	3	0	0	0	0	1	1
+HDAC1-associated core complex cI	0	0	0	1	0	0	0	0	1	1
+HDAC1-associated core complex cII	3	1	0	2	2	0	0	0	1	1
+HDAC2-asscociated core complex	2	1	0	2	2	0	0	0	0	1
+AP3-BLOC1 complex	3	10	1	0	1	0	0	0	0	0
+BLOC1-BLOC2 complex	5	3	2	0	1	0	0	0	0	0
+HSF1-HSF2 complex	0	2	0	0	0	0	0	0	0	0
+VPS35-VPS29-VPS26A complex	0	2	0	0	0	0	0	0	0	1
+Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26A)	0	2	0	0	0	2	0	0	0	1
+MeCP1 complex	3	0	0	3	1	0	0	0	0	2
+TIM (TIMM23, TIMM50) complex, mitochondrial	0	2	0	0	0	0	0	0	0	0
+BKCA-beta2AR-AKAP79 signaling complex	1	1	1	0	0	0	0	0	0	0
+BKCA-beta2AR complex	1	1	0	0	0	0	0	0	0	0
+GINS complex	0	4	0	0	0	0	0	0	0	0
+RANBMP-CD39 complex	0	2	0	0	0	0	0	0	0	0
+(C-CFTR)2-NHERF-ezrin complex	0	1	0	0	0	0	0	0	2	0
+C-CFTR-NHERF(PDZ1 domain)-ezrin complex	0	1	0	0	0	0	0	0	2	0
+C-CFTR-NHERF(PDZ2 domain)-ezrin complex	0	1	0	0	0	0	0	0	2	0
+PAX9-MSX1 complex	0	1	0	0	1	0	0	0	0	0
+MeCP1 complex	3	0	0	3	1	0	0	0	0	2
+CFTR-NHERF-beta(2)AR signaling complex	1	1	0	0	0	0	0	0	1	0
+SIN3-SAP25 complex	0	3	0	3	1	0	0	0	1	2
+SIN3-HDAC-SAP30-ARID4 complex	0	2	0	2	1	0	0	0	0	2
+BRMS1-SIN3-HDAC complex	0	3	0	2	0	0	0	0	1	2
+BRMS1-RBP1 complex	0	0	0	0	1	0	0	0	1	0
+SIN3-HDAC-SAP30-ARID4 complex	0	2	0	2	1	0	0	0	0	2
+ARD1-NATH complex	0	1	0	0	0	1	0	0	0	0
+SNARE complex (RINT1, ZW10, p31)	0	3	0	0	0	0	0	0	0	0
+SNARE complex (HGS, SNAP25, STX13)	1	1	0	0	0	0	0	0	0	1
+SNARE complex (VAMP2, SNAP25, STX13)	0	2	0	0	0	0	0	0	0	1
+Brg1-associated complex I	0	6	0	0	1	0	0	0	3	1
+Brm-associated complex	0	6	0	0	1	0	0	0	3	1
+BRG1-SIN3A complex	0	7	0	1	1	0	0	0	3	2
+BRM-SIN3A complex	0	7	0	1	1	0	0	0	3	3
+PU.1-SIN3A-HDAC complex	0	1	1	0	0	0	0	0	0	1
+PU.1-TBP complex	0	0	1	0	0	1	0	0	0	0
+MRG15-PAM14-RB complex	0	2	0	0	0	0	1	0	0	0
+MAF1 complex	0	2	0	0	0	0	1	0	0	0
+MAF2 complex	0	2	0	0	0	0	0	0	0	0
+P2X7 receptor signalling complex	0	5	0	2	0	0	0	0	2	2
+DDB2 complex	0	11	0	2	0	0	0	0	0	0
+CSA complex	0	11	0	2	0	0	0	0	0	0
+CSA-POLIIa complex	0	11	0	2	0	0	0	0	0	1
+Ubiquitin E3 ligase (FBXO31, SKP1A, CUL1, RBX1)	1	3	0	0	0	0	0	0	0	0
+SNARE complex (STX4, SNAP23, VAMP1)	0	2	0	0	0	0	0	0	0	1
+SNARE complex (STX4, SNAP23, VAMP2)	0	2	0	0	0	0	0	0	0	1
+SIN3 complex	0	3	0	2	0	0	0	0	0	2
+SNARE complex (STX4, VAMP1, VAMP7)	0	2	0	0	0	0	0	0	0	1
+SIN3-ING1b complex I	0	4	0	2	1	0	0	0	0	2
+SIN3-ING1b complex II	0	6	0	2	2	0	0	0	3	3
+Exon junction complex, EIF4A3-MLN51-MAGOH-Y14 (RNA-protein complex)	0	1	1	1	0	0	0	0	0	1
+NCOR-HDAC3 complex	0	0	0	2	2	0	0	0	0	1
+eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7)	0	9	1	2	0	0	0	0	0	0
+SIN3-SAP25 complex	0	3	0	3	1	0	0	0	1	2
+Exon junction complex (EIF4A3-MLN51-MAGOH-Y14)	0	1	1	1	0	0	0	0	0	1
+NCOR-SIN3-RPD3 complex	0	2	0	0	1	0	0	0	0	1
+C/EBPalpha-HNF6 complex	0	0	0	0	2	0	0	0	0	0
+NCOR-SIN3-HDAC1 complex	0	1	0	0	1	0	0	0	0	1
+TRAF6-TAK1 complex	0	0	0	1	0	0	0	0	1	0
+MeCP2-SIN3A-HDAC complex	0	1	1	0	0	0	0	0	0	2
+SMRT core complex	0	0	0	1	1	0	0	0	0	1
+UTM-SGCE-DAG1-CAV1-NOS3 complex	3	1	0	1	0	0	0	0	0	0
+Exon junction complex (EIF4A3-MLN51-UPF3B-MAGOH-Y14)	0	1	1	1	0	0	0	0	0	1
+Exon junction complex (F4A3-MLN51-UPF3B-MAGOH-Y14-PYM)	0	1	1	1	1	0	0	0	0	1
+Prune-Gelsolin complex	0	1	0	0	0	0	0	0	0	1
+Prune-GSK3beta complex	0	1	0	0	0	0	0	0	0	1
+Prune/Nm23-H1 complex	0	0	0	0	0	0	0	0	0	2
+Apoptosis- and splicing-associated protein complex (ASAP-L), SAP18-RNPS1-Acinus-L	0	1	1	0	0	0	1	0	0	0
+Apoptosis- and splicing-associated protein complex (ASAP-S), SAP18-RNPS1-Acinus-S	0	1	1	0	0	0	1	0	0	0
+Y14-Magoh complex	0	1	0	1	0	0	0	0	0	0
+Dysferlin-affixin complex	2	0	0	0	0	0	0	0	0	0
+Exon junction complex (EIF4A3-MLN51-MAGOH-Y14),  RNA-protein complex	0	1	1	1	0	0	0	0	0	1
+TREX complex	0	5	0	2	0	0	0	0	0	1
+NDPKA-AMPKalpha1 complex	0	1	0	0	0	0	0	0	0	1
+eIF4AIII-Btz complex	0	0	1	0	0	0	0	0	0	1
+Y14-Magoh complex	0	1	0	1	0	0	0	0	0	0
+THO complex	0	4	0	1	0	0	0	0	0	0
+CBC complex (cap binding complex)	0	2	0	0	0	0	0	0	0	0
+LARC complex (LCR-associated remodeling complex)	4	4	1	2	2	0	0	0	3	3
+URI complex (Unconventional prefoldin RPB5 Interactor)	0	5	1	0	1	2	0	0	0	0
+ITCH-FAM/USP9x complex	0	1	0	0	0	0	0	0	1	0
+SMG-1-Upf1-eRF1-eRF3 complex (SURF)	0	1	0	2	0	0	0	0	1	1
+Exon junction complex	0	2	2	1	0	0	1	0	0	2
+MR-UBC9-SRC1 complex	0	1	0	0	2	0	0	0	0	0
+NuA4/Tip60-HAT complex B	1	5	0	0	0	2	0	0	0	0
+Exosome	0	0	0	1	0	6	0	0	0	3
+Exosome	0	1	0	1	0	6	0	0	0	3
+DDB complex	0	1	0	1	0	0	0	0	0	0
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX1)	0	2	0	0	1	0	0	0	0	1
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX2)	0	2	0	0	1	0	0	0	0	1
+SNARE complex (STX11, VAMP2, SNAP23)	0	2	0	0	0	0	0	0	0	1
+NuA4/Tip60-HAT complex A	2	7	1	0	3	2	0	0	0	0
+DMAP1-associated complex	1	4	0	1	2	2	0	0	0	0
+SNARE complex (STX2, SNAP23)	0	1	0	0	0	0	0	0	0	1
+BRG1-SIN3A-HDAC containing SWI/SNF remodeling complex I	0	5	0	0	1	0	0	0	3	2
+SNARE complex (STX4, SNAP23)	0	1	0	0	0	0	0	0	0	1
+BRM-SIN3A-HDAC complex	0	6	0	0	1	0	0	0	3	2
+BRG1-associated complex	0	4	0	0	1	0	0	0	3	1
+BRM-associated complex	0	5	0	0	1	0	0	0	3	1
+eRF1-eRF3-GTP-Mg(2+) complex	0	0	0	2	0	0	0	0	0	1
+FCP1-associated protein complex	0	3	0	0	1	0	0	0	2	1
+FCP1-associated protein complex	0	3	0	0	1	0	0	0	2	1
+Upf complex (UPF1, UPF2, UPF3a)	0	2	0	0	1	0	0	0	0	0
+Upf complex (UPF1, UPF2, UPF3b)	0	2	1	0	0	0	0	0	0	0
+Postsplicing complex	0	2	1	1	1	0	1	0	1	0
+MRIP-MBS-RHOA complex	0	2	0	0	1	0	0	0	0	0
+MRIP-RHOA complex	0	1	0	0	1	0	0	0	0	0
+MRIP-MBS complex	0	1	0	0	1	0	0	0	0	0
+20S methylosome-SmD complex	0	4	0	0	0	0	0	0	0	0
+SNARE complex (STX6, SNAP23)	0	2	0	0	0	0	0	0	0	0
+mRNA decay complex (UPF1, UPF2, UPF3B, DCP2, XRN1, XRN2, EXOSC2, EXOSC4, EXOSC10, PARN)	0	7	1	0	0	1	0	0	0	1
+Anti-SMN protein complex	0	2	1	0	1	0	0	0	0	1
+JBP1-pICln complex	0	3	0	0	0	0	0	0	0	0
+PAR-3-VE-cadherin-beta-catenin complex	1	1	0	0	1	0	0	0	0	0
+NgR-TROY-LINGO1 complex	1	1	1	0	0	0	0	0	0	0
+TRPC1-STIM1-ORAI1 complex	2	0	0	0	0	0	0	0	1	0
+PAR-6-VE-cadherin complex, endothelial	3	0	0	0	0	0	0	0	0	0
+PAR-6-PAR-3-VE-cadherin complex, endothelial	3	0	0	0	1	0	0	0	0	0
+Anti-Sm protein complex	0	4	1	0	1	0	0	0	0	1
+6S methyltransferase complex	0	3	0	0	0	0	0	0	0	0
+20S methylosome and RG-containing Sm protein complex	0	6	0	0	0	0	0	0	0	0
+6S methyltransferase and RG-containing Sm proteins complex	0	5	0	0	0	2	0	0	0	0
+20S methyltransferase core complex	0	2	0	0	0	0	0	0	0	0
+20S methyltransferase complex	0	2	0	0	0	0	0	0	1	0
+LIN9-BMYB complex	0	1	0	0	1	0	0	0	0	0
+PCI-PSA-SCG2 complex	0	1	0	0	0	0	0	0	1	1
+RICH1/AMOT polarity complex, Flag-Rich1 precipitated	0	5	1	0	0	0	0	0	3	0
+RICH1-PAR3-aPKC polarity complex	0	1	0	1	1	0	0	0	0	0
+RICH1/AMOT polarity complex, Flag-Amot precipitated	0	2	2	1	0	1	0	0	2	0
+DNMT1-G9a-PCNA complex	0	2	0	0	0	1	0	0	0	0
+DNMT1-G9a complex	0	2	0	0	0	0	0	0	0	0
+TRAP-SMCC mediator complex	5	1	1	0	2	0	0	0	1	0
+BRAF53-BRCA2 complex	0	2	1	1	0	0	0	0	1	2
+SNARE complex (STX1A, SNAP29)	0	1	0	0	0	0	0	0	0	1
+SNARE complex (VAMP3, VAMP4, VAMP8, STX6)	0	4	0	0	0	0	0	0	0	0
+SNARE complex (VAMP3, VAMP4, STX16)	0	2	0	0	0	0	0	0	0	1
+SNARE complex (VAMP3, STX6, VTI1A)	0	3	0	0	0	0	0	0	0	0
+SNARE complex (VAMP4, STX6, STX16, VTI1a, VTI1b)	0	4	0	0	0	0	0	0	0	1
+PRKAC-AKAP5-ADRB1 complex	1	3	1	0	0	0	0	0	0	0
+MTA1 complex	2	0	0	2	0	0	0	0	0	1
+MTA2 complex	2	2	0	3	0	0	0	0	0	2
+MTA1-HDAC core complex	1	0	0	2	0	0	0	0	0	1
+hMediator complex (MED23, CDK8, CCNC, MED7)	0	3	0	0	1	0	0	0	0	0
+hMediator complex (MED23, CDK8, CCNC)	0	2	0	0	1	0	0	0	0	0
+CDK8-CyclinC-Mediator complex	0	2	0	0	0	0	0	0	0	0
+Mediator complex 1	1	3	0	0	1	0	0	0	0	0
+Mediator complex 2	1	1	0	0	1	0	0	0	0	0
+RET-Rai complex	1	0	0	0	1	0	0	0	0	0
+SHC3-GAB1 complex	1	0	0	0	1	0	0	0	0	0
+ADAR1-CDK2 complex	0	1	0	1	0	0	0	0	0	0
+ARC92-Mediator complex	4	3	1	0	4	0	1	0	0	0
+CRSP-Mediator 2 complex	3	3	0	0	3	0	1	0	0	0
+SNARE complex (SNAP23, STX1A)	0	1	0	0	0	0	0	0	0	1
+CERF complex (CECR2-containing remodeling factor complex)	0	1	0	0	1	0	0	0	0	0
+PAR3-PAR6-PALS1 complex	1	1	0	0	1	0	0	0	0	0
+hNURF complex	0	1	0	2	1	0	0	0	0	0
+Remodeling and spacing factor (RSF) complex	0	0	0	1	0	0	0	0	0	1
+SNF2L-RSF1 complex	0	1	0	1	0	0	0	0	0	0
+Toposome	0	4	1	1	0	0	0	0	0	1
+WCRF complex	0	0	0	0	1	0	0	0	0	1
+SCRIB-LGL2 complex	1	1	0	0	0	0	0	0	0	0
+CENP-A nucleosome associated complex	2	0	1	0	0	2	1	0	0	0
+SCRIB-VANGL2 complex	1	1	0	0	0	0	0	0	0	0
+CEN complex	5	15	5	2	1	3	0	0	3	3
+Scrib-beta-PIX-GIT1 complex	1	1	0	0	0	0	0	0	1	0
+SCRIB-APC complex	0	1	1	0	0	0	0	0	0	0
+FACT-NEK9 complex	0	2	0	1	0	0	0	0	0	0
+FACT complex	0	2	0	0	0	0	0	0	0	0
+FACT complex, UV-activated	0	5	0	0	0	0	0	0	0	0
+Class C Vps complex (VPS11, VPS18, STX7)	0	2	0	0	0	0	0	0	0	1
+Class C Vps complex (VPS11, VPS18, VPS16)	0	3	0	0	0	0	0	0	0	0
+CDC7-DBF7 complex	0	1	0	0	1	0	0	0	0	0
+LLGL2-PAR-6B-PRKCI complex	2	0	0	1	0	0	0	0	0	0
+PAR-3-PAR-6B-PRKCI complex	1	0	0	1	1	0	0	0	0	0
+LLGL1-PAR-6B-PRKCI complex	2	0	0	1	0	0	0	0	0	0
+BRCA1-RAD50-MRE11-NBS1 complex	1	1	1	0	0	0	0	0	0	1
+MRN complex (MRE11-RAD50-NBS1 complex)	1	1	0	0	0	0	0	0	0	1
+EED-EZH2 complex	0	1	1	2	0	0	0	0	1	0
+GAA1-GPI8-PIGT-PIG-PIGS complex	0	5	0	0	0	0	0	0	0	0
+Polycomb repressive complex 3 (PRC3)	0	1	0	3	0	0	0	0	1	0
+Polycomb repressive complex 2 (PRC2)	0	1	0	3	0	0	0	0	1	0
+KIN17-PCNA-RPA70 complex	0	2	0	0	0	1	0	0	0	0
+p23 protein complex	0	2	0	0	0	0	0	0	0	0
+TorsinA-TorsinB complex	0	0	0	2	0	0	0	0	0	0
+RC complex (Replication competent complex)	0	3	0	1	0	0	0	0	0	5
+RC complex during S-phase of cell cycle	0	7	0	1	0	0	0	0	1	4
+RC complex during G2/M-phase of cell cycle	0	9	0	0	0	0	0	0	1	3
+CAK core complex (Cdk-activating kinase core complex)	0	2	0	0	0	0	0	0	0	0
+CAK complex (Cdk-activating kinase complex)	0	2	0	0	0	0	0	0	1	0
+TFIIH transcription factor complex	0	7	0	0	0	0	0	0	1	2
+CAK complex (Cdk-activating kinase complex)	0	2	0	0	0	0	0	0	1	0
+HNF4A-SUB1 complex	1	1	0	0	0	0	0	0	0	0
+TFIIH transcription factor complex	0	7	0	0	0	0	0	0	1	2
+CAK-ERCC2 complex	0	2	0	0	0	0	0	0	1	1
+ORC complex (origin recognition complex)	0	4	0	0	0	2	0	0	0	0
+ORC 2-4 complex (origin recognition 2-4 complex)	0	2	0	0	0	1	0	0	0	0
+ORC complex (origin recognition complex)	0	4	0	0	0	2	0	0	0	0
+ORC 2-5 complex (origin recognition 2-5 complex)	0	3	0	0	0	1	0	0	0	0
+TFIIH transcription factor complex	0	6	0	0	0	0	0	0	1	2
+TFIIH transcription factor core complex	0	4	0	0	0	0	0	0	0	1
+ORC 1-5 complex (origin recognition 1-5 complex)	0	3	0	0	0	2	0	0	0	0
+PCNA-PAF complex	0	0	0	0	1	1	0	0	0	0
+p33ING1b-PCNA complex	0	1	0	0	1	0	0	0	0	0
+SRA-SRC-1 ribonucleoprotein complex	0	0	0	0	2	0	0	0	0	0
+Snurportin-CRM1-RanGTP complex	0	2	0	0	1	0	0	0	0	0
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, RBX1)	0	4	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (FBXW11, SKP1A, CUL1, RBX1)	0	3	0	0	0	0	0	0	0	1
+ESR1-RELA-BCL3-NCOA3 complex	1	1	0	0	2	0	0	0	0	0
+ZNF198-PML complex	0	0	0	0	1	0	1	0	0	0
+ZNF198-SUMO1 complex	0	1	0	0	1	0	0	0	0	0
+DIPA-MCRS1 complex	1	1	0	0	0	0	0	0	0	0
+SNX complex (SNX1, SNX6)	0	0	0	0	0	2	0	0	0	0
+Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26A)	0	2	0	0	0	2	0	0	0	1
+Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26B)	0	2	0	0	0	2	0	0	0	1
+BAR-BCL2-CASP8 complex	0	0	1	1	1	0	0	0	0	0
+GRASP-GRP1 complex	0	1	1	0	0	0	0	0	0	0
+IFP35-NMI complex	0	0	2	0	0	0	0	0	0	0
+CD8A-LCK complex	0	0	1	1	0	0	0	0	0	0
+12S U11 snRNP	1	7	1	0	1	2	1	0	1	0
+FIF-FGR2 complex	1	1	0	0	0	0	0	0	0	0
+SNX complex (SNX1a, SNX2, SNX4)	0	0	0	0	0	3	0	0	0	0
+PKD2-FPC complex	0	0	0	0	0	0	0	0	1	0
+SNX complex (SNX2), oligomeric	0	0	0	0	0	1	0	0	0	0
+MSH2-MSH6 complex	0	0	0	2	0	0	0	0	0	0
+P-TEFb.1 complex	0	2	0	0	0	0	0	0	0	0
+P-TEFb.2 complex	0	2	0	0	0	0	0	0	0	0
+MRN complex (MRE11-RAD50-NBN complex)	1	1	0	0	0	0	0	0	0	1
+P-TEFb.1 complex	0	2	0	0	0	0	0	0	0	0
+P-TEFb.4 complex	0	1	0	0	0	0	0	0	1	0
+DNA repair complex NEIL2-PNK-Pol(beta)-LigIII(alpha)-XRCC1	0	0	0	1	0	0	0	0	1	3
+DNA repair complex NEIL1-PNK-Pol(beta)-LigIII(alpha)-XRCC1	0	1	0	0	0	0	0	0	1	3
+BIRC5-AURKB-INCENP-EVI5 complex	0	2	1	0	0	0	0	0	1	0
+PRNP-ApolopoproteinE3 complex	0	0	1	0	0	0	0	0	0	0
+VAM1-VELI1 complex	0	0	0	1	0	0	0	0	1	0
+APLG1-Rababtin5 complex	0	1	0	0	0	2	0	0	0	0
+SNX complex (SNX1a, SNX2, SNX4, LEPR)	1	0	0	0	0	3	0	0	0	0
+PCNA-KU antigen complex	0	2	0	0	0	1	0	0	0	0
+SNX complex (SNX1a, SNX2, SNX4, INSR)	1	0	0	0	0	3	0	0	0	0
+SNX complex (SNX1a, SNX2, SNX4, EGFR)	0	0	0	0	0	3	0	0	1	0
+SNX complex (SNX1,1a,2,4, PDGF receptor)	0	1	0	0	0	3	0	0	0	0
+eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7, PCID1)	0	10	1	2	0	0	0	0	0	0
+DNA synthesome complex (13 subunits)	1	8	0	0	0	2	0	0	1	2
+DNA synthesome complex (17 subunits)	1	12	0	0	0	2	0	0	1	2
+DNA polymerase alpha-primase complex	0	2	0	0	0	1	0	0	0	1
+TFIIIC containing complex TFIIIC2	0	2	0	0	2	0	0	0	1	0
+SNX complex (SNX1a, SNX2, SNX4, TFRC)	0	0	0	0	0	3	0	0	0	1
+TFIIIC containing complex	0	2	0	0	2	0	0	0	1	0
+TFIIIC containing-TOP1-SUB1 complex	0	4	0	0	2	0	0	0	1	0
+DNA synthesome core complex	1	4	0	0	0	2	0	0	1	2
+DNA synthesome complex (15 subunits)	1	8	0	0	0	2	0	0	1	3
+DNA synthesome complex (17 subunits)	1	12	0	0	0	2	0	0	1	2
+5S-DNA-TFIIIA-TFIIIC2 subcomplex	0	2	0	0	2	0	0	0	2	0
+5S-DNA-TFIIIA-TFIIIC2-TFIIIB subcomplex	0	3	0	0	2	2	0	0	2	0
+CRM1-Survivin-AuroraB mitotic complex	0	2	0	0	0	0	0	0	1	0
+CRM1-Survivin mitotic complex	0	1	0	0	0	0	0	0	1	0
+Chromosomal passenger complex CPC (INCENP, CDCA8, BIRC5, AURKB)	1	1	1	0	0	0	0	0	1	0
+Chromosomal passenger complex CPC (INCENP, CDCA8, BIRC5, AURKB)	1	1	1	0	0	0	0	0	1	0
+Chromosomal passenger complex CPC (INCENP, CDCA8, BIRC5)	1	0	1	0	0	0	0	0	1	0
+WNK1-OSR1 complex	0	0	1	1	0	0	0	0	0	0
+WNK1-SPAk complex	0	1	1	0	0	0	0	0	0	0
+Hip1R-cortactin complex	0	0	0	1	0	0	0	0	1	0
+RFC2-RIalpha complex	0	0	0	1	0	0	0	0	0	1
+RFC2-RIalpha complex	0	0	0	1	0	0	0	0	0	1
+ATR-HDAC2 complex	0	1	0	0	0	0	0	0	0	1
+ATR-HDAC2-CHD4 complex	0	1	0	1	0	0	0	0	0	1
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX1, CPLX3)	0	2	1	0	1	0	0	0	0	1
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX3, CPLX4)	0	2	2	0	0	0	0	0	0	1
+SNARE complex (VAMP2, SNAP25, STX1a, STX3, CPLX1, CPLX3, CPLX4)	0	2	2	0	1	0	0	0	0	2
+Complexin complex (STX3, CPLX1, CPLX3)	0	0	1	0	1	0	0	0	0	1
+CF IIAm complex (Cleavage factor IIAm complex)	3	6	2	1	0	1	0	0	1	2
+SMN complex	0	5	1	0	0	2	0	0	0	1
+SMN complex	2	5	2	1	1	2	0	0	1	1
+Cleavage and polyadenylation factor (CPSF)	0	2	1	0	0	0	0	0	0	2
+Cleavage stimulation factor	0	2	0	0	0	0	0	0	0	1
+Polyadenylation complex (CSTF1, CSTF2, CSTF3, SYMPK CPSF1, CPSF2, CPSF3)	0	4	0	0	0	0	0	0	0	3
+snRNP-free U1A (SF-A) complex	2	0	0	2	0	0	0	0	0	0
+Histone H3.1 complex	0	5	1	1	1	0	0	1	0	1
+Histone H3.3 complex	0	6	0	1	1	0	0	0	0	1
+FA complex (Fanconi anemia complex)	0	1	4	0	2	1	0	0	0	0
+Integrator complex	2	2	1	0	3	0	0	0	2	2
+DSS1 complex	0	4	1	0	3	0	0	0	2	2
+Integrator-RNAPII complex	2	2	1	0	3	0	0	0	2	4
+p33ING1b-p300 complex	1	1	0	0	0	0	0	0	0	0
+p33ING1b-HDAC1 complex	0	1	0	0	0	0	0	0	0	1
+ING1-p300-PCNA complex	1	1	0	0	0	1	0	0	0	0
+Ubiquitin E3 ligase (DDB1, DDB2, CUL4A, CUL4B, RBX1)	0	4	0	1	0	0	0	0	0	0
+ING1-PCNA complex	0	1	0	0	0	1	0	0	0	0
+RNF20-RNF40-UbE2E1 complex	0	2	0	0	0	1	0	0	0	0
+p400-associated complex	0	4	0	0	1	2	0	0	0	0
+Paf complex	0	3	0	1	0	1	0	0	0	0
+SKI complex	0	0	0	2	0	0	0	0	0	1
+SNARE complex (STX4, VAMP8, VAMP3, SNAP23)	0	3	0	0	0	0	0	0	0	1
+cMYC-ATPase-helicase complex	0	3	0	0	0	2	0	0	0	0
+c-MYC-ATPase-helicase complex	0	3	0	0	0	2	0	0	0	0
+CBC complex (cap binding complex)	0	2	0	0	0	0	0	0	0	0
+TIP49-TIP48-BAF53 complex	0	1	0	0	0	2	0	0	0	0
+PHAX-CBC complex (cap binding complex)	0	2	0	0	1	0	0	0	0	0
+TRRAP-BAF53-HAT complex	0	2	0	0	0	0	0	0	0	0
+CRM1-RAN-PHAX-CBC complex (cap binding complex)	0	4	0	0	1	0	0	0	0	0
+Polycomb repressive complex 4 (PRC4)	0	0	0	1	0	0	0	0	1	1
+BCOR complex	1	5	1	0	0	0	0	0	0	1
+CENP-A NAC-CAD complex	2	2	4	0	1	2	1	0	1	0
+C complex spliceosome	1	44	5	16	0	5	0	0	2	4
+CDC5L core complex	0	3	0	1	0	0	0	0	0	2
+CDC5L complex	3	17	1	4	1	0	0	0	1	2
+EGFR-containing signaling complex	0	2	0	0	0	0	0	0	2	0
+ESCRT-III complex	0	10	0	0	0	0	0	0	0	0
+ESCRT-II complex	0	3	0	0	0	0	0	0	0	0
+SMRT core complex	0	0	0	1	1	0	0	0	0	1
+DNA double-strand break end-joining complex	1	4	0	0	0	0	0	0	0	2
+NCBP-NIP1 complex	1	1	0	0	0	0	0	0	0	0
+RNA pol II containing coactivator complex Tat-SF	1	3	0	0	0	0	0	0	0	1
+ESCRT-I complex	0	2	0	0	0	0	0	0	1	0
+Rap1 complex	0	4	1	0	1	0	0	0	0	1
+E2F-6 complex	1	6	0	0	3	0	1	0	1	0
+Exon junction complex (mRNA splicing-dependent)	0	1	1	0	0	0	0	0	0	0
+RAD51C-XRCC3 complex	0	0	0	2	0	0	0	0	0	0
+TRF1-TIN2 complex	0	0	2	0	1	0	2	0	1	0
+TIN2 complex	0	0	1	0	0	0	2	0	1	0
+Oligosaccharyltransferase complex (Stt3A variant)	0	5	0	0	0	1	0	0	0	0
+Oligosaccharyltransferase complex (Stt3B variant)	0	6	0	0	0	1	0	0	0	0
+TRF1-TIN2 complex	0	0	1	0	0	0	2	0	1	0
+TRF1 telomere length regulation complex	0	0	1	1	0	0	1	0	0	0
+Rap1 complex	0	0	2	0	1	0	2	0	1	1
+TRF2-Rap1 complex III	0	0	1	0	1	0	0	0	0	0
+TRF-Rap1 complex I, 2MD	0	0	2	1	1	0	1	0	1	0
+TRF2-Rap1 complex II	0	0	1	0	1	0	1	0	1	0
+Ubiquitin E3 ligase (AHR, ARNT, DDB1, TBL3, CUL4B, RBX1)	1	3	0	1	1	0	0	0	0	0
+Ubiquitin E3 ligase (DET1, DDB1, CUL4A, RBX1, COP1)	0	5	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (FBXW7, CUL1, SKP1A, RBX1)	0	3	0	1	0	0	0	0	0	0
+WRN-TRF2 complex	0	0	1	0	0	0	0	0	0	1
+BLM-TRF2 complex	0	0	1	0	0	1	0	0	0	0
+Tankyrin 1-tankyrin 2-TRF1 complex	0	1	1	1	0	0	0	0	0	0
+TRF2-Ku complex	0	2	1	0	0	0	0	0	0	0
+TFIIA-TRF2 complex	0	2	1	0	0	0	0	0	0	0
+H2AX complex, isolated from cells without IR exposure	1	11	0	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (BMI1, SPOP, CUL3)	0	3	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (H2AFY, SPOP, CUL3)	0	3	0	0	0	0	0	0	0	0
+H2AX complex I	1	4	0	1	0	0	0	0	0	1
+H2AX complex II	1	7	1	0	0	0	0	0	0	1
+WINAC complex	1	5	1	0	2	0	0	0	3	2
+FIB-associated protein complex	0	2	0	1	0	1	0	0	2	0
+REST-CoREST-mSIN3A complex	0	1	1	0	0	0	0	0	1	0
+CoREST-HDAC2 complex	0	0	0	0	0	0	0	0	1	1
+BAF complex	0	3	0	0	1	0	0	0	3	2
+PBAF complex (Polybromo- and BAF containing complex)	0	3	1	0	0	0	0	0	4	1
+EBAFb complex	0	4	1	0	1	0	0	0	3	1
+Ubiquitin E3 ligase (SPOP, DAXX, CUL3)	0	2	0	0	0	0	1	0	0	0
+Protein phosphatase 4 complex	0	1	0	0	1	0	0	0	0	0
+Apoptosome	0	0	0	1	0	0	0	0	0	1
+pRB-E2F-1 complex	0	2	0	0	0	0	0	0	0	0
+BAF complex	0	3	0	0	1	0	0	0	3	2
+EBAFa complex	0	4	1	0	1	0	0	0	3	1
+Ubiquitin E3 ligase (FBXW7, CUL1, SKP1A, RBX1)	0	3	0	1	0	0	0	0	0	0
+Menin-associated histone methyltransferase complex	0	2	0	2	1	0	0	0	1	1
+Ubiquitin E3 ligase (SIAH1, SIP, SKP1A, TBL1X)	0	3	0	1	0	0	0	0	0	0
+MLL-HCF complex	0	1	2	2	0	0	0	0	1	1
+ALL-1 supercomplex	3	8	1	5	0	2	0	0	4	5
+Ubiquitin E3 ligase (GLMN, FBXW8, SKP1A, RBX1)	0	2	0	1	1	0	0	0	0	0
+Chromatin assembly complex (CAF-1 complex)	0	0	1	1	0	0	0	0	0	1
+Neddylin ligase (FBXO11, SKP1, CUL1, RBX1)	0	3	0	0	0	1	0	0	0	0
+SRm160/300 complex	1	1	1	1	0	0	0	0	0	0
+HNRPF-HNRPH1 complex	0	2	0	0	0	0	0	0	0	0
+DCS complex (PTBP1, PTBP2, HNRPH1, HNRPF)	0	4	0	0	0	0	0	0	0	0
+IPO13-RBM8A-MAGOH complex	0	2	0	1	0	0	0	0	0	0
+DCP1A-DCP2 Decapping complex	0	1	0	0	1	0	0	0	0	0
+MKK4-ARRB2-ASK1 complex	0	2	0	0	0	0	0	0	1	0
+MKK4-ARRB2-JNK3 complex	0	2	0	0	0	0	0	0	1	0
+POSH-MLK3 complex	0	0	0	1	1	0	0	0	0	0
+CRLR-RAMP1 complex	1	0	0	0	1	0	0	0	0	0
+CRLR-RAMP1 complex	1	0	0	0	1	0	0	0	0	0
+PIN1-AUF1 complex	0	1	0	1	0	0	0	0	0	0
+Multiprotein complex (mRNA turnover)	2	3	0	0	0	0	0	0	0	0
+PABPC1-HSPA8-HNRPD-EIF4G1 complex	0	3	0	0	0	0	0	0	0	1
+Transcription initiation factor complex (TAF1, TAF5, TAF11, TAF12, TBP)	1	2	0	1	0	1	0	0	0	0
+Transcription initiation factor complex (TAF5, TAF6, TAF9, TAF11, TBP)	0	2	0	1	0	1	0	0	1	0
+Large Drosha complex	7	3	3	3	0	0	1	0	1	2
+SNW1 complex	2	5	1	3	1	2	0	0	0	4
+FOXO3-PCAF complex, oxidative stress stimulated	1	0	1	0	0	0	0	0	0	0
+Septin complex	0	0	0	0	0	0	0	0	5	0
+NPC subcomplex (NUP98, NUP107, NUP133, NUP160)	0	2	0	0	0	0	0	0	2	0
+GLE1-NUPL2-NUP155 complex	0	1	0	0	1	0	0	0	1	0
+ING4 complex (ING4, MYST2, C1orf149, PHF17)	0	2	0	0	1	0	0	0	1	0
+Rb-tal-1-E2A-Lmo2-Ldb1 complex	2	1	0	0	2	0	0	0	0	0
+hASC-1 complex	0	4	0	0	0	0	0	0	0	0
+GALNS-lysosomal hydrolase 1.27 MDa complex	0	0	0	3	0	0	0	0	0	1
+Elongator holo complex	0	2	0	0	0	1	0	0	0	1
+DICER1-NCOA6-AGO2 complex	0	1	1	0	0	1	0	0	0	0
+TTP-AGO4 complex	0	1	1	0	0	0	0	0	0	0
+TTP-AGO2 complex	0	1	1	0	0	0	0	0	0	0
+WDR5-ASH2L-RBBP5-MLL2 complex	0	0	0	2	0	0	1	0	1	0
+ASCOM complex	0	1	2	1	0	0	1	0	2	0
+MOF complex	1	3	2	2	0	0	1	0	1	0
+NCOR1 complex	0	3	0	1	1	0	0	0	3	2
+PTGS2 homodimer complex	0	1	0	0	0	0	0	0	0	0
+MCM2-MCM6-MCM7 complex	0	0	0	0	0	3	0	0	0	0
+AFF1-MLLT1-CBX8 complex	0	0	3	0	0	0	0	0	0	0
+SNF2h-HDAC12 complex	0	0	0	0	0	0	0	0	0	2
+hPRC1L complex	0	3	0	0	1	0	0	0	0	0
+Mis12 centromere complex	2	2	1	0	0	0	0	0	1	0
+pRb2/p130-multimolecular complex (DNMT1, E2F5, SuV39H1, HDAC1, RBL2)	0	4	0	0	0	0	0	0	0	1
+pRb2/p130-multimolecular complex (RB2, E2F5, HDAC1, SUV39H1, P300)	1	3	0	0	0	0	0	0	0	1
+E2F5-RB2-DP1 complex	0	2	0	0	0	0	0	0	1	0
+SMAD3/4-E2F4/5-p107-DP1 complex	2	3	0	0	0	0	0	0	1	0
+Nrp1-PlexinD1 complex	2	0	0	0	0	0	0	0	0	0
+DNMT1-RB1-HDAC1-E2F1 complex	0	3	0	0	0	0	0	0	0	1
+DAXX-DNMT1-DMAP1 complex	0	2	0	0	0	0	1	0	0	0
+RGS6-DNMT1-DMAP1 complex	0	3	0	0	0	0	0	0	0	0
+BHC110 complex	0	1	2	1	3	0	0	0	1	2
+PID complex	2	0	0	2	0	0	0	0	0	1
+NCOR2 complex	0	2	0	0	2	0	0	0	0	3
+BCL6-ZBTB17 complex	2	0	0	0	0	0	0	0	0	0
+IL4-IL4R complex	0	0	1	0	0	0	1	0	0	0
+IL4-IL4R-IL2RG complex	0	0	2	0	0	0	1	0	0	0
+IL6ST-PRKCD-STAT3 complex	2	1	0	0	0	0	0	0	0	0
+STAT3-NLK-MAP3K7 complex	1	1	0	1	0	0	0	0	0	0
+STAT3 homodimer copmplex	1	0	0	0	0	0	0	0	0	0
+Girdin homo-oligomer complex	0	0	0	0	0	0	0	0	0	1
+G protein complex (GNG2, GNB2L1, RAF1)	0	1	0	1	1	0	0	0	0	0
+PPP2CA-PPP2R1A complex	0	1	0	1	0	0	0	0	0	0
+PPP2CA-PPP2R1A-PPP2R3A complex	0	2	0	1	0	0	0	0	0	0
+IPO13-RAN-EIF1AX complex	0	2	0	0	0	1	0	0	0	0
+TNPO2-RAN-NXF1 complex	0	2	0	0	0	0	0	0	1	0
+RANBP1-RAN-KPNB1 complex	0	3	0	0	0	0	0	0	0	0
+NMI-POLR1B-RRN3 complex	0	1	1	0	0	0	0	0	0	1
+POLR1B-RRN3 complex	0	1	0	0	0	0	0	0	0	1
+NMI homodimer complex	0	0	1	0	0	0	0	0	0	0
+Vigilin-DNA-PK-Ku antigen complex	0	4	0	0	0	0	0	0	0	0
+PLXNA1-RANBPM complex	1	0	0	0	0	0	0	0	1	0
+Heterotrimeric G protein complex (GNG2, GNB1, GNAS)	0	0	0	0	1	0	0	0	0	1
+G protein complex (MCF2, GNB1, GNG2)	0	0	0	0	1	0	0	0	1	1
+G protein complex (BTK, GNG1, GNG2)	0	0	0	0	1	0	0	0	1	1
+G protein complex (CACNA1A, GNB1, GNG2)	1	0	0	0	1	0	0	0	0	1
+G protein complex (PTHR1, GNB1, GNG2)	1	0	0	0	1	0	0	0	0	1
+G protein complex (HDAC5, GNB1, GNG2)	0	0	0	0	1	1	0	0	0	1
+G protein complex (HDAC4, GNB1, GNG2)	0	0	0	0	1	1	0	0	0	1
+FA core complex 1 (Fanconi anemia core complex 1)	0	0	4	0	1	0	0	0	0	0
+FA core complex (Fanconi anemia core complex)	0	1	5	0	2	1	0	0	0	0
+FA core complex (Fanconi anemia core complex)	0	0	4	0	2	1	0	0	0	0
+CyclinD1-CDK4-CDK6 complex	0	2	0	1	0	0	0	0	0	0
+p16-cyclin D2-CDK4 complex	0	2	0	0	0	0	0	0	0	0
+p27-cyclinE-CDK2 complex	0	1	0	1	1	0	0	0	0	0
+E2F4-p107-cyclinA complex	0	3	0	0	0	0	0	0	0	0
+FAK-beta5 integrin complex, VEGF induced	0	1	0	0	0	0	0	0	1	0
+SCAMP1-SCAMP2 complex	0	2	0	0	0	0	0	0	0	0
+ABL2-HRAS-RIN1 complex	0	2	1	0	0	0	0	0	0	0
+IGHM-VPREB1-IGLL1 complex	0	0	2	0	1	0	0	0	0	0
+IL2-IL2RA-IL2RB complex	0	0	2	0	0	0	1	0	0	0
+TICAM1-TICAM2-TLR4 complex	0	0	1	1	1	0	0	0	0	0
+CTCF-nucleophosmin-PARP-HIS-KPNA-LMNA-TOP complex	1	5	0	1	1	1	0	0	0	0
+TLE1 corepressor complex (MASH1 promoter-corepressor complex)	2	4	0	0	0	0	0	0	1	3
+PRMT1 complex	0	0	0	1	0	0	0	0	0	0
+SF3A1-SF3A2-SF3A3 complex	0	2	0	0	0	0	0	0	0	0
+SF3b complex	0	5	0	3	0	0	0	0	0	0
+(E.F.G) complex	0	0	0	0	0	2	0	0	0	0
+SMN complex	1	6	1	1	1	2	0	0	1	1
+SMN containing complex	0	4	1	0	3	0	0	0	0	0
+PRMT5 complex	0	1	0	0	0	0	0	0	0	0
+SMN-PolII-RHA complex	0	4	0	1	1	2	0	0	0	2
+PPP4C-PPP4R2-Gemin3-Gemin4 complex	0	1	0	0	2	0	0	0	0	1
+SMN complex	1	2	2	2	1	0	0	0	1	1
+SMN complex	1	1	2	0	1	0	0	0	1	1
+TOP1-PSF-P54 complex	2	1	0	0	0	0	0	0	0	0
+CPSF6-ITCH-NUDT21-POLR2A-UBAP2L complex	1	2	0	0	1	0	0	0	0	1
+CPSF6-EWSR1-ITCH-NUDT21-POLR2A-UBAP2L complex	1	2	1	0	1	0	0	0	0	1
+CPSF6-ITCH-NUDT21-POLR2A complex	1	2	0	0	0	0	0	0	0	1
+MICB-KLRK1-HCST complex	0	1	1	0	0	0	1	0	0	0
+ULBP3-KLRK1-HCST complex	0	1	1	0	0	0	1	0	0	0
+MICA-KLRK1-HCST complex	0	1	1	0	0	0	1	0	0	0
+ULBP2-KLRK1-HCST complex	0	1	1	0	0	0	1	0	0	0
+TGF-beta-receptor-PAR6 complex	1	2	0	0	0	0	0	0	0	0
+RNF11-SMURF2-STAMBP complex	0	3	0	0	0	0	0	0	0	0
+Nogo-potassium channel complex	3	0	0	1	0	0	0	0	0	0
+LINGO-1-Nogo-66-p75 signaling complex	1	2	0	0	0	0	0	0	0	0
+SORT1-NGFR complex	0	2	0	0	0	0	0	0	0	0
+SORT1-NGFR-NGFB complex	0	2	0	0	1	0	0	0	0	0
+eNOS-HSP90-AKT complex, VEGF induced	0	1	0	1	0	0	0	0	0	0
+ITGA4-PXN-GIT1 complex	2	0	0	0	0	0	0	0	1	0
+AXIN-MEKK4-CCD1 complex	1	1	0	0	0	0	0	0	1	0
+MAD1L1 homodimer complex	0	0	0	0	0	0	0	0	0	1
+MAD1L1-MAD2L1 complex	0	1	0	0	0	0	0	0	0	1
+JUN-TCF4-CTNNB1 complex	2	1	0	0	0	0	0	0	0	0
+SMAD3-HEF1-APC10-CDH1 complex	2	1	0	0	1	0	0	0	0	0
+PML-SMAD2/3-SARA complex	2	0	0	0	1	0	1	0	0	0
+TGF-beta receptor I-Axin-SMAD3 complex	2	1	0	0	0	0	0	0	0	0
+PIAS3-SMAD3-P300 complex	2	1	0	0	0	0	0	0	0	0
+ITGAE-ITGB7-CDH1 complex	2	0	0	0	0	0	0	0	1	0
+BUB1-BUB3 complex	0	0	0	0	0	0	0	0	1	1
+CDCA5-PDS5A-RAD21-SMC1A-PDS5B-SMC3 complex	0	2	1	2	0	0	0	0	1	0
+TSG101-VPS37B-VPS28 complex	0	2	0	0	0	0	0	0	1	0
+SNARE complex (SNAP25, VAMP3, VAMP2, NAPB, STX13)	0	4	0	0	0	0	0	0	0	1
+ELK1-SRF-ELK4 complex	0	0	2	0	1	0	0	0	0	0
+mTOR-RICTOR complex	0	1	0	1	0	0	0	0	1	0
+RICTOR-mTOR complex	0	1	0	1	0	0	0	0	0	0
+RAPTOR-mTOR complex	0	2	0	1	0	0	0	0	0	0
+NTF4 homodimer complex	0	0	0	0	1	0	0	0	0	0
+APC-DLG4 complex	0	1	1	0	0	0	0	0	0	0
+PKD2-PACS1 complex	0	0	0	0	1	0	0	0	1	0
+CIN85-CBL-SH3GL2 complex	0	1	0	0	0	0	0	0	2	0
+NEK2-NEK11 complex	0	2	0	0	0	0	0	0	0	0
+SH3P2/OSTF1-CBL-SRC complex	0	0	0	1	1	0	0	0	1	0
+IRAK1-IRAK2 complex	0	2	0	0	0	0	0	0	0	0
+IRAK1-IRAK3 complex	0	2	0	0	0	0	0	0	0	0
+DAP12 signaling homodimer complex	0	0	1	0	0	0	0	0	0	0
+eNOS-HSP90 complex, VEGF induced	0	0	0	1	0	0	0	0	0	0
+BMP4-TWSG1 complex	1	0	0	0	1	0	0	0	0	0
+BMP4-BGN complex	1	0	0	1	0	0	0	0	0	0
+MTNR1A homodimer complex	1	0	0	0	0	0	0	0	0	0
+MTNR1B homodimer complex	1	0	0	0	0	0	0	0	0	0
+MTNR1A-MTNR1B complex	2	0	0	0	0	0	0	0	0	0
+CACY homodimer  complex	0	0	0	0	0	0	0	0	1	0
+PEX14 homodimer complex	0	0	0	0	1	0	0	0	0	0
+AIRE homodimer complex	0	0	1	0	0	0	0	0	0	0
+Endoglin homodimer complex	0	0	0	0	1	0	0	0	0	0
+MYOM1 homodimer complex	1	0	0	0	0	0	0	0	0	0
+BANF1 homodimer protein	1	0	0	0	0	0	0	0	0	0
+PGRMC1-SCAP complex	1	1	0	0	0	0	0	0	0	0
+PRMT2 homodimer complex	0	0	0	1	0	0	0	0	0	0
+LEPR homodimer complex	1	0	0	0	0	0	0	0	0	0
+SLC1A2 homotrimer complex	0	0	0	0	0	0	0	0	0	1
+BAX homo-oligomer complex	1	0	0	0	0	0	0	0	0	0
+NOD1 homodimer complex	0	0	0	0	0	0	0	0	1	0
+COX1 homodimer complex	0	1	0	0	0	0	0	0	0	0
+C1D homodimer protein	0	1	0	0	0	0	0	0	0	0
+PTPRA homodimer complex	0	1	0	0	0	0	0	0	0	0
+PRNP homo-oligomer complex	0	0	1	0	0	0	0	0	0	0
+AXL homodimer complex	0	1	0	0	0	0	0	0	0	0
+STAT5B homodimer complex	1	0	0	0	0	0	0	0	0	0
+IL12A homodimer complex	0	0	1	0	0	0	0	0	0	0
+IL12A-IL12B complex	0	0	1	0	1	0	0	0	0	0
+IL12A-IL12B-IL12RB1 complex	0	0	1	0	1	0	1	0	0	0
+IL12B-IL12RB1-IL12RB2 complex	1	0	0	0	1	0	1	0	0	0
+IL12A-IL12B-IL12RB2 complex	1	0	1	0	1	0	0	0	0	0
+STAT5A homodimer complex	1	0	0	0	0	0	0	0	0	0
+IL12RB1-IL12RB2 complex	1	0	0	0	0	0	1	0	0	0
+JAK2-IL12RB2 complex	1	0	0	0	0	0	0	0	1	0
+BNIP2-ARHGAP8 complex	0	2	0	0	0	0	0	0	0	0
+MALT1 oligomer complex	1	0	0	0	0	0	0	0	0	0
+BCL10 oligomer complex	0	0	1	0	0	0	0	0	0	0
+BCL10-MALT1 complex	1	0	1	0	0	0	0	0	0	0
+CASP8-FADD-MALT1-BCL10 complex	1	0	1	1	1	0	0	0	0	0
+CASP8-CHUK-IKBKB-MALT1-BCL10 complex	1	2	1	1	0	0	0	0	0	0
+BCL10-CHUK-BCL10-IKBKB complex	0	2	1	1	0	0	0	0	0	0
+TNFRSF11A-TRAF6-SRC complex	0	1	0	0	1	0	0	0	1	0
+TRAF6 oligomer complex	0	0	0	0	0	0	0	0	1	0
+B-raf-MAP3K11 complex	0	0	0	1	0	0	0	0	0	0
+NFKB1-NFKB2-REL-RELA-RELB complex	3	2	0	0	0	0	0	0	0	0
+NFKB1-NFKB2-RELA-RELB complex	2	2	0	0	0	0	0	0	0	0
+CHUK-IKBKB-MAP3K14 complex	0	2	1	0	0	0	0	0	0	0
+IKKA-IKKB complex	0	2	0	0	0	0	0	0	0	0
+IKKB-NIK complex	0	1	1	0	0	0	0	0	0	0
+IkappaB kinase complex (IKBKB, CHUK, IKBKAP, NFKBIA, RELA, MAP3K14)	1	4	1	0	0	0	0	0	0	0
+CDC37-HSP90AA1-HSP90AB1-MAP3K11 complex	0	1	0	2	0	0	0	0	0	0
+CHUK-ERC1-IKBKB-IKBKG	0	2	0	1	0	0	0	0	0	1
+CHUK-IKBKB-IKBKG complex	0	2	0	1	0	0	0	0	0	0
+IKBKG homodimer complex	0	0	0	1	0	0	0	0	0	0
+IKK-alpha--ER-alpha-AIB1 complex	0	1	0	0	2	0	0	0	0	0
+DNAJB2-HSPA8-PSMA3 complex	0	0	0	1	0	1	0	0	0	1
+MAP2K5-PRKCI-SQSTM1 complex	1	1	0	1	0	0	0	0	0	0
+HSF1-YWHAE complex	0	2	0	0	0	0	0	0	0	0
+ARNT-HLF complex	1	1	0	0	0	0	0	0	0	0
+ITGAM-ITGB2-CD11 complex	1	0	0	0	0	0	0	0	2	0
+YBX1-AKT1 complex	0	1	1	0	0	0	0	0	0	0
+AR-AKT-APPL complex	0	2	0	0	1	0	0	0	0	0
+AOF2-AR complex	0	0	0	1	1	0	0	0	0	0
+APPBP1-UBA3 complex	0	2	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CDC34, CUL1, RBX1)	0	3	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CHEK1, CUL4A)	0	2	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CDT1, DDB1, CUL4A, RBX1)	0	3	0	0	1	0	0	0	0	0
+COP9 signalosome complex	0	8	0	1	0	0	0	0	0	0
+CNS-P53 complex	0	7	0	1	0	0	0	0	1	0
+Kaiso-NCOR complex	0	3	0	3	3	0	0	0	0	1
+Ubiquitin E3 ligase (NFKBIA, FBXW11, BTRC, CUL1, SKP1A)	0	3	0	0	0	0	0	0	0	2
+Ubiquitin E3 ligase (CDC34, NEDD8, BTRC, CUL1, SKP1A, RBX1)	0	4	0	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (SMAD3, BTRC, CUL1, SKP1A, RBX1)	1	3	0	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (FBXO18, SKP1A, CUL1, RBX1)	0	3	0	0	0	0	0	0	1	0
+Ubiquitin E3 ligase (NIPA, SKP1A, CUL1, RBX1)	0	3	0	0	0	0	0	0	1	0
+LIG1-9-1-1 complex	0	3	0	0	0	0	0	0	0	1
+FEN1-9-1-1 complex	0	3	0	0	0	1	0	0	0	0
+RAD9-RAD1-HUS1-POLB complex	0	3	0	0	0	0	0	0	0	1
+CTF18-RFC subcomplex	0	1	0	0	0	0	0	0	0	4
+RFC2-5 subcomplex	0	0	0	0	0	0	0	0	0	4
+PCNA-RFC2-5 complex	0	0	0	0	0	1	0	0	0	4
+CHL12-RFC2-5 complex	0	1	0	0	0	0	0	0	0	4
+BRD4-RFC complex	0	2	0	0	0	0	0	0	0	4
+MCM8-ORC2-CDC6 complex	0	1	0	0	0	2	0	0	0	0
+ORC5-ORC1 complex	0	1	0	0	0	1	0	0	0	0
+BRCA1-IRIS-pre-replication complex	0	1	0	0	0	2	0	0	0	0
+BARD1-BRCA1-CSTF complex	0	2	1	0	1	0	0	0	0	1
+BRCA1-BARD1-POLR2A complex	0	0	1	0	1	0	0	0	0	1
+LMO4-BRCA1-CTIP-LDB1 complex	2	1	1	0	0	0	0	0	0	0
+BRCA1-LMO4-CTIP complex	1	1	1	0	0	0	0	0	0	0
+MDC1-MRN-ATM-FANCD2 complex	1	3	0	1	0	0	0	0	0	1
+MDC1-MRE11-RAD50-NBS1 complex	1	1	0	1	0	0	0	0	0	1
+TERF1 homodimer complex	0	0	1	0	0	0	0	0	0	0
+RAD52-ERCC4-ERCC1 complex	0	2	1	0	0	0	0	0	0	0
+BLM complex II	1	2	0	0	0	1	0	0	1	1
+BLM-TOP3A complex	0	0	0	0	0	1	0	0	0	1
+MSH2/6-BLM-p53-RAD51 complex	0	0	0	2	0	1	0	0	1	1
+MutS-alpha-PK-zeta complex	0	0	0	3	0	0	0	0	0	0
+BLM-RAD51L3-XRCC2 complex	0	0	0	0	0	2	0	0	0	1
+PCNA homotrimer complex	0	0	0	0	0	1	0	0	0	0
+Replication-coupled CAF-1-MBD1-ETDB1 complex	0	0	2	0	1	0	0	0	0	0
+Chromatin assembly complex (CAF-1 complex)	0	0	1	1	0	0	0	0	0	1
+ASF1-interacting protein complex	0	2	1	0	0	0	0	1	0	2
+ASF1-histone containing complex	0	3	0	1	1	0	0	1	0	1
+SP1-MCAF2 complex	0	1	0	0	1	0	0	0	0	0
+MBD1-MCAF1-SETDB1 complex	0	1	1	0	1	0	0	0	0	0
+HD-RAB8A-OPTN complex	1	1	0	1	0	0	0	0	0	0
+TGM2-HD-CALM1 complex	2	1	0	0	0	0	0	0	0	0
+TGM2-HD complex	2	0	0	0	0	0	0	0	0	0
+CTGF/Hcs24-actin complex	0	2	0	0	1	0	0	0	0	0
+Cofilin-actin-CAP1 complex	0	3	0	0	0	0	0	0	0	0
+RIAM-Rap1-GTP complex	0	1	1	0	0	0	0	0	0	0
+VILIP-1-AChR-alpha-4-AChR-beta-2 complex	2	0	0	0	0	0	0	0	1	0
+PPP3CA-PPP3CA-RCAN1 complex	0	1	0	0	0	0	0	0	1	0
+PICK1-GRIP1-GLUR2 complex	0	1	0	0	1	0	0	0	1	0
+ABI1-WASF2 complex	0	0	0	0	1	0	0	0	0	0
+ABI1-WASL complex	0	0	0	0	1	0	0	0	1	0
+Profilin 2 complex	2	3	1	0	0	0	0	0	1	2
+AP3D1-AP3S2 complex	0	2	0	0	0	0	0	0	0	0
+AP3D1-AP3S1 complex	0	2	0	0	0	0	0	0	0	0
+ITGA6-ITGB4-Laminin10/12 complex	0	1	0	0	1	0	0	0	3	0
+ITGA6-ITGB4-Laminin10/12 complex	0	1	0	0	1	0	0	0	3	0
+ITGA6-ITGB4-CD151 complex	1	0	0	0	1	0	0	0	1	0
+ITGA6-ITGB4-FYN complex	0	0	0	0	2	0	0	0	1	0
+ITGA6-ITGB4-LAMA5 complex	0	0	0	0	1	0	0	0	2	0
+ITGA6-ITGB4 complex	0	0	0	0	1	0	0	0	1	0
+ITGAV-ITGB8-MMP14-TGFB1 complex	0	1	0	0	2	0	0	0	1	0
+ITGAV-ITGB5-PLAUR complex	0	0	0	0	2	0	0	0	1	0
+ITGAV-ITGB5-ICAM4 complex	0	0	1	0	1	0	0	0	1	0
+ITGAV-ITGB5-ADAM9 complex	0	0	0	0	1	0	0	0	2	0
+ITGAV-ITGB5-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+ITGAV-ITGB5-CYR61 complex	0	0	0	0	2	0	0	0	1	0
+ITGAV-ITGB5 complex	0	0	0	0	1	0	0	0	1	0
+ITGB6-FYN-FN1 complex	0	1	0	0	1	0	0	0	1	0
+ITGAV-ITGB6-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+ITGAV-ITGB6-TGFB3 complex	0	0	0	0	2	0	0	0	1	0
+ITGAV-ITGB6 complex	0	0	0	0	1	0	0	0	1	0
+ITGAV-ITGB3-CD47-FCER2 complex	0	0	1	1	1	0	0	0	1	0
+ITGB3-ITGAV-CD47 complex	0	0	1	0	1	0	0	0	1	0
+ITGAV-ITGB3-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+ITGAV-ITGB3-ADAM15 complex	0	0	0	0	1	0	0	0	2	0
+ITAGV-ITGB3-F11R complex	1	0	0	0	1	0	0	0	1	0
+ITGAV-ITGB3-PXN-PTK2b complex	0	0	0	0	2	0	0	0	2	0
+ITGAV-ITGB3-ADAM23 complex	0	0	0	0	1	0	0	0	2	0
+ITGAV-ITGB3-COL4A3 complex	0	0	0	0	1	0	0	0	2	0
+ITGAV-ITGB3-PPAP2b complex	0	1	0	0	1	0	0	0	1	0
+ITGAV-ITGB3-EGFR complex	0	0	0	0	1	0	0	0	2	0
+ITGA2b-ITGB3-CD9 complex	1	0	0	0	1	0	0	0	1	0
+ITGAV-ITGB3-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+ITGAV-ITGB3-LAMA4 complex	1	0	0	0	1	0	0	0	1	0
+FN1-TGM2 complex	1	1	0	0	0	0	0	0	0	0
+ITGA2B-ITGB3-FN1-TGM2 complex	1	1	0	0	1	0	0	0	1	0
+ITGA2b-ITGB3-CD47-SRC complex	0	0	1	0	2	0	0	0	1	0
+ITGA2b-ITGB3-TLN1 complex	0	1	0	0	1	0	0	0	1	0
+ITGA2B-ITGB3-CIB1 complex	0	1	0	0	1	0	0	0	1	0
+ITGA2B-ITGB3 complex	0	0	0	0	1	0	0	0	1	0
+ITGA2B-ITGB3-F11R complex	1	0	0	0	1	0	0	0	1	0
+ITGA5-ITGB1-FN1-TGM2 complex	1	1	0	0	1	0	0	0	1	0
+ITGA5-ITGB1-ADAM15 complex	0	0	0	0	1	0	0	0	2	0
+ITGA5-ITGB4 complex	0	0	0	0	1	0	0	0	1	0
+CD98-LAT2-ITGB1 complex	0	0	0	0	0	0	0	0	1	3
+ITGA7-ITGB1-CD151 complex	1	0	0	0	1	0	0	0	1	0
+ITGA7-ITGB1-CD9 complex	1	0	0	0	1	0	0	0	1	0
+ITGA7-ITGB1-ITGB1BP3 complex	0	0	0	1	1	0	0	0	1	0
+ITGA3-ITGB1-BSG complex	1	0	0	0	1	0	0	0	1	0
+ITGA3-ITGB1-CD63 complex	0	0	0	0	1	0	0	0	2	0
+ITGA3-ITGB1-CD151 complex	1	0	0	0	1	0	0	0	1	0
+ITGA3-ITGB1-THBS1 complex	0	0	0	0	1	0	0	0	2	0
+ITGA3-ITGB1 complex	0	0	0	0	1	0	0	0	1	0
+ITGA6-ITGB1-CD151 complex	1	0	0	0	1	0	0	0	1	0
+ITGA6-ITGB1 complex	0	0	0	0	1	0	0	0	1	0
+ITGB1-RAP1A-PKD1 complex	1	1	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-EMILIN1 complex	1	1	0	0	0	0	0	0	1	0
+ITGA4-ITGB1 complex	1	0	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-CD81 complex	2	0	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-CD53 complex	2	0	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-VCAM1 complex	2	0	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-JAM2 complex	2	0	0	0	0	0	0	0	1	0
+ITGA4-ITGB1-CD47 complex	1	0	1	0	0	0	0	0	1	0
+ITGA4-ITGB1-CD63 complex	1	0	0	0	0	0	0	0	2	0
+ITGA4-ITGB1-THBS1 complex	1	0	0	0	0	0	0	0	2	0
+ITGA4-ITGB1-THBS2 complex	1	1	0	0	0	0	0	0	1	0
+ITGA2-ITGB1-CD47 complex	1	0	1	0	0	0	0	0	1	0
+ITGA2-ITGB1-CHAD complex	1	1	0	0	0	0	0	0	1	0
+ITGA2-ITGB1-COL6A3 complex	2	0	0	0	0	0	0	0	1	0
+ITGA2-ITGB1 complex	1	0	0	0	0	0	0	0	1	0
+ITGA1-ITGB1-COL6A3 complex	2	0	0	0	0	0	0	0	1	0
+ITGA1-ITGB1-PTPN2 complex	1	0	0	0	0	0	0	0	2	0
+ITGAV-ITGB1 complex	0	0	0	0	1	0	0	0	1	0
+ITGA6-ITGB1-CYR61 complex	0	0	0	0	2	0	0	0	1	0
+ITGA8-ITGB1 complex	0	0	0	0	1	0	0	0	1	0
+ITGA9-ITGB1-ADAM9 complex	1	0	0	0	0	0	0	0	2	0
+ITGA9-ITGB1-VCAM1 complex	2	0	0	0	0	0	0	0	1	0
+ITGA9-ITGB1-TNC complex	1	0	0	0	0	0	0	0	2	0
+ITGB1-ITGA9 complex	1	0	0	0	0	0	0	0	1	0
+ITGA9-ITGB1-ADAM15 complex	1	0	0	0	0	0	0	0	2	0
+ITGA9-ITGB1-FIGF complex	2	0	0	0	0	0	0	0	1	0
+ITGA9-ITGB1-ADAM12 complex	1	0	0	0	1	0	0	0	1	0
+Multiprotein complex (monoubiquitination)	0	0	0	0	0	0	0	0	3	0
+CIN85-CBL-SH3GL2-EGFR complex, EGF stimulated	0	0	0	0	0	0	0	0	3	0
+CIN85-SH3GL2 complex	0	1	0	0	0	0	0	0	1	0
+MET-CIN85-SH3GL3-CBL complex, HGF stimulated	0	1	0	0	1	0	0	0	2	0
+CIN85-SH3GL3 complex	0	1	0	0	0	0	0	0	1	0
+eNOS-CAV1 complex	1	0	0	1	0	0	0	0	0	0
+Caveolin-1 homodimer complex	1	0	0	0	0	0	0	0	0	0
+p130Cas-ER-alpha-cSrc-kinase- PI3-kinase p85-subunit complex	0	1	0	0	3	0	0	0	0	0
+SRC-PRKCD-CDCP1 complex	0	1	1	0	1	0	0	0	0	0
+CRKL-PDGFRA-CRK-RAPGEF1 complex	0	1	0	0	0	0	0	0	3	0
+CIN85 complex (CIN85, CRK, BCAR1, CBL, PIK3R1, GRB2, SOS1)	0	2	0	0	1	0	0	0	4	0
+GIPC1-LHCGR complex	0	1	0	0	0	0	0	0	1	0
+GIPC1-NTRK1-RGS19 complex	0	2	0	0	0	0	0	0	1	0
+NCR3-CD247 complex	0	0	2	0	0	0	0	0	0	0
+ArgBP2a-CBL-PTK2B complex	0	0	1	0	1	0	0	0	1	0
+ZAP70-CRKL-WIPF1-WAS complex	0	0	1	0	1	0	0	0	2	0
+CRKL-WIPF1-WAS complex	0	0	1	0	0	0	0	0	2	0
+N-WASp homomer	0	0	0	0	0	0	0	0	1	0
+CIN85-CBL complex	0	0	0	0	0	0	0	0	2	0
+ERBB2-MEMO-SHC complex	1	0	0	0	0	0	0	0	1	1
+LAT-PLC-gamma-1-p85-GRB2-CBL-VAV-SLP-76 signaling complex, C305 activated	0	3	1	0	0	0	1	0	2	0
+Cbl-SLP-76-Grb2 complex, Fc receptor gamma-R1 stimulated	0	0	1	0	0	0	0	0	2	0
+SLP-76-Cbl-Grb2-Shc complex, Fc receptor gamma-R1 stimulated	1	0	1	0	0	0	0	0	2	0
+PLC-gamma-2-SLP-76-Lyn-Grb2 complex	0	1	1	1	0	0	0	0	1	0
+PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated	0	3	0	0	0	0	0	0	0	0
+BCR-ABL (p210 fusion protein)-GRB2 complex	0	0	0	0	0	0	0	0	1	0
+HGF-Met complex	0	1	0	0	1	0	0	0	0	0
+EGFR-CBL-GRB2 complex	0	0	0	0	0	0	0	0	3	0
+PLC-gamma-1-SLP-76-SOS1-LAT complex	0	2	1	0	0	0	1	0	0	0
+PDGFRA-PLC-gamma-1-PI3K-SHP-2 complex, PDGF stimulated	0	4	0	0	0	0	0	0	0	0
+p56(LCK)-CAML complex	0	0	1	1	0	0	0	0	0	0
+FGFR2-c-Cbl-Lyn-Fyn complex	0	1	0	1	1	0	0	0	1	0
+p21(ras)GAP-Fyn-Lyn-Yes complex, thrombin stimulated	1	1	0	1	1	0	0	0	0	0
+CD20-LCK-LYN-FYN-p75/80 complex, (Raji human B cell line)	0	0	0	2	2	0	0	0	0	0
+RAB5-EEA1 complex	0	1	0	0	0	0	0	0	0	1
+Class C VPS/HOPS complex	0	5	0	0	0	0	0	0	0	1
+CD19-Vav-PI 3-kinase (p85 subunit) complex	0	2	0	0	0	0	1	0	0	0
+Sam68-p85 P13K-IRS-1-IR signaling complex	1	2	0	0	1	0	0	0	0	0
+Sam68-p120GAP complex	1	1	0	0	0	0	0	0	0	0
+Chromosomal passenger complex CPC (INCENP, BIRC5, AURKB)	0	1	1	0	0	0	0	0	1	0
+Survivin homodimer complex	0	0	0	0	0	0	0	0	1	0
+RasGAP-AURKA/AURKB-survivin complex	1	1	0	1	0	0	0	0	1	0
+Chromosomal passenger complex CPC (CDCA8, AURKB, BIRC5)	1	1	0	0	0	0	0	0	1	0
+PGC-1-SRp40-SRp55-SRp75 complex	0	3	1	0	0	0	0	0	0	0
+FOXO1-FHL2-SIRT1 complex	0	1	1	0	0	0	0	0	0	1
+SIRT1 homotrimer complex	0	0	0	0	0	0	0	0	0	1
+FOXO3-SIRT1 complex, oxidative stress stimulated	0	0	1	0	0	0	0	0	0	1
+NELF complex (Negative elongation factor complex)	0	0	0	0	2	0	0	0	2	0
+POLR2A-CCNT1-CDK9-NCL-LEM6-CPSF2 complex	0	3	1	0	0	0	0	0	0	2
+BRD4 complex	2	3	1	0	2	0	0	0	0	0
+P-TEFb-BRD4-TRAP220 complex	0	3	1	0	0	0	0	0	0	0
+P-TEFb-7SKRNA-HEXIM1 complex	1	2	0	0	0	0	0	0	0	0
+Transcription elongation factor complex (SUPT5H, CDK9, CCNT1)	0	3	0	0	0	0	0	0	0	0
+P-TEFb-SKP2 complex	0	3	0	0	0	0	0	0	0	0
+Heterotrimeric complex (CCNT1, CDK9, GRN)	0	3	0	0	0	0	0	0	0	0
+CDK8-MED6-PARP1 complex	0	3	0	0	0	0	0	0	0	0
+CCNC-CDK8-MED1-MED6-MED7 xcomplex	0	4	1	0	0	0	0	0	0	0
+CCNC-CDK3 complex	0	1	0	1	0	0	0	0	0	0
+BETA2-Cyclin D1 complex	0	1	1	0	0	0	0	0	0	0
+HES1 promoter corepressor complex	2	2	0	0	0	0	0	0	1	1
+HES1 promoter-Notch enhancer complex	1	8	1	0	1	0	0	0	1	1
+p300/CBP-PCAF-MyoD complex	3	0	0	0	1	0	0	0	0	0
+SMAD1-P300 complex	2	0	0	0	0	0	0	0	0	0
+MYC-DNMT3A-ZBTB17 complex	2	1	0	0	0	0	0	0	0	0
+DNMT3B-DNMT3L complex	2	0	0	0	0	0	0	0	0	0
+DNMT3L-DNMT3A complex	2	0	0	0	0	0	0	0	0	0
+MYC-MAX-BLOC1S1 complex	0	3	0	0	0	0	0	0	0	0
+MYC-MAX complex	0	2	0	0	0	0	0	0	0	0
+ESR1-CDK7-CCNH-MNAT1-MTA1-HDAC2 complex	1	2	0	0	1	0	0	0	1	1
+ERCC2/CAK complex	0	2	0	0	0	0	0	0	1	1
+Er-alpha-p53-hdm2 complex	0	0	0	0	2	0	0	0	1	0
+FOXO3-TP53 complex, oxidative stress stimulated	0	0	1	0	0	0	0	0	1	0
+p53-SP1 complex	0	0	0	0	1	0	0	0	1	0
+p53 homotetramer complex	0	0	0	0	0	0	0	0	1	0
+RNA polymerase II (RNAPII)	1	6	0	0	1	6	0	0	1	2
+BRCA1-core RNA polymerase II complex	0	5	1	0	0	5	0	0	0	2
+MT1-MMP-claudin-1 complex	0	1	0	0	1	0	0	0	0	0
+SMAD3-SMAD4-cJun-cFos complex	3	0	0	0	1	0	0	0	0	0
+NFAT-JUN-FOS DNA-protein complex	1	0	1	0	1	0	0	0	0	0
+ERG-JUN-FOS DNA-protein complex	1	0	0	0	2	0	0	0	0	0
+ETS2-FOS-JUN complex	1	0	0	0	2	0	0	0	0	0
+ER-alpha-GRIP1-c-Jun complex	1	0	0	0	2	0	0	0	0	0
+ER-alpha-c-Jun complex	1	0	0	0	1	0	0	0	0	0
+Ectodermin-SMAD4 complex	1	1	0	0	0	0	0	0	0	0
+SMAD3-SMAD4-CTCF protein-DNA complex	2	0	0	0	1	0	0	0	0	0
+SMAD3-SMAD4-SP1 complex	2	0	0	0	1	0	0	0	0	0
+SMAD3-SMAD4-FOXO3-FOXG1 complex	2	0	2	0	0	0	0	0	0	0
+SMAD3-SMAD4-cJUN complex	3	0	0	0	0	0	0	0	0	0
+MMP-9-TIMP-1-LRP complex	1	1	0	0	1	0	0	0	0	0
+LRP-1-Alpha-2-M-annexin VI complex	0	2	0	1	0	0	0	0	0	0
+Amyloid beta protein oligomer	1	0	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CHEK1, CUL1)	0	2	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CSN1, CSN8, HRT1, SKP1, SKP2, CUL1, CUL2, CUL3)	0	8	0	0	0	0	0	0	0	0
+Elongator core complex	0	1	0	0	0	1	0	0	0	1
+Ubiquitin E3 ligase (TRIM25, DDX58)	0	0	0	0	1	1	0	0	0	0
+MAD2-CDC20 complex	0	1	0	1	0	0	0	0	0	0
+Casein kinase II-HMG1 complex	0	4	0	0	0	0	0	0	0	0
+Casein kinase II complex	0	3	0	0	0	0	0	0	0	0
+HCF-1 complex	0	3	2	4	1	0	0	0	2	6
+Ubiquitin E3 ligase (DDB1, CUL4A, RBX1)	0	3	0	0	0	0	0	0	0	0
+ATM-NBS1 complex	1	1	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (NFKBIA, BTRC, CUL1, SKP1A)	0	3	0	0	0	0	0	0	0	1
+Ubiquitin E3 ligase (NFKBIA, FBXW11, CUL1, SKP1A)	0	3	0	0	0	0	0	0	0	1
+PXN-ITGB5-PTK2 complex	0	1	0	0	0	0	0	0	2	0
+SRC-3 complex	1	2	0	2	2	0	0	0	0	0
+SRC-1 complex	1	0	0	1	2	0	0	0	0	0
+Set1B complex	0	1	1	2	0	0	0	0	1	1
+Set1A complex	0	1	1	2	0	0	0	0	1	1
+APH1A-PSEN1-NCSTN complex	0	3	0	0	0	0	0	0	0	0
+APH1A-PSEN2-NCSTN complex	0	3	0	0	0	0	0	0	0	0
+TAJ-NgR1-LINGO-1 signaling complex	1	1	1	0	0	0	0	0	0	0
+BLM complex II	1	2	0	0	0	1	0	0	1	1
+FA complex (Fanconi anemia complex)	1	2	4	0	2	1	0	0	0	1
+MutS-alpha complex	0	0	0	2	0	0	0	0	0	0
+TRAF6-MALT1 complex	1	0	0	0	0	0	0	0	1	0
+TRAF2-MALT1 complex	1	1	0	0	0	0	0	0	0	0
+Ubiquitin ligase complex (TRAF6, TAB2, MALT1, UEV1A, BCL10)	1	0	1	0	1	0	0	0	1	0
+Ubiquitin-protein ligase (UBE2N, UBE2V2/MMS2)	0	1	0	0	0	0	0	0	0	0
+SETDB1-containing HMTase complex	0	1	0	0	1	0	0	0	0	0
+CARMA1-BCL10-MALT1 complex	1	0	1	1	0	0	0	0	0	0
+FYB-CARMA1-BCL-10-MALT1 complex	1	0	2	1	0	0	0	0	0	0
+JUND-FOSB-SMAD3-SMAD4 complex	3	0	0	0	1	0	0	0	0	0
+17S U2 snRNP	1	21	0	4	0	2	0	0	1	2
+Ubiquitin-protein-ligase (UBE2N, UBE2V2/MMS2)	0	2	0	0	0	0	0	0	0	0
+SMN complex, U7 snRNA specific	0	3	1	0	0	2	0	0	0	0
+TRIKA2 protein kinase complex (TAK1, TAB1, TAB2)	1	0	0	0	1	0	0	0	0	0
+MBD1-MCAF complex	0	1	1	0	0	0	0	0	0	0
+SMAD3-SMAD4-FOXO3 complex	2	0	1	0	0	0	0	0	0	0
+SMAD3-SMAD4-FOXO1 complex	2	0	1	0	0	0	0	0	0	0
+SMAD3-SMAD4-FOXO4 complex	2	0	1	0	0	0	0	0	0	0
+MBD1-Suv39h1-HP1 complex	0	2	1	0	0	0	0	0	0	0
+PRMT5 complex	0	1	0	0	0	0	0	0	0	0
+PRMT1 complex	0	0	0	1	0	0	0	0	0	0
+TERF2-RAP1 complex	0	3	1	0	1	0	1	0	0	1
+RAD50-MRE11-NBN-p200-p350 complex	1	1	0	0	0	0	0	0	0	1
+ITGA6-ITGB4-CD9 complex	1	0	0	0	1	0	0	0	1	0
+Ubiquitin E3 ligase (CRY1, SKP1A, CUL1, FBXL3)	1	2	0	1	0	0	0	0	0	0
+Ubiquitin E3 ligase (CRY2, SKP1A, CUL1, FBXL3)	1	2	0	1	0	0	0	0	0	0
+MDC1-H2AFX-TP53BP1 complex	0	1	1	1	0	0	0	0	0	0
+MDC1-p53BP1-SMC1 complex	0	0	1	2	0	0	0	0	0	0
+RAD50-BRCA1 complex	0	0	1	0	0	0	0	0	0	1
+BARD1-BRCA1-CSTF64 complex	0	1	1	0	1	0	0	0	0	0
+BRCA1 A complex	0	1	2	0	1	0	0	0	0	0
+BRCA1 C complex	0	1	2	0	1	0	0	0	0	0
+BRCA1 B complex	0	0	2	0	1	0	0	0	0	0
+ETS2-ERG complex	0	0	0	0	2	0	0	0	0	0
+ETS2-ETS1 complex	0	0	0	0	2	0	0	0	0	0
+MCM4-MCM6-MCM7 complex	0	0	0	0	0	3	0	0	0	0
+MCM2-MCM4-MCM6-MCM7 complex	0	0	0	0	0	4	0	0	0	0
+PCNA-CHL12-RFC2-5 complex	0	1	0	0	0	1	0	0	0	4
+MMP-2-claudin-1 complex	0	1	0	0	1	0	0	0	0	0
+RFC complex	0	1	0	0	0	0	0	0	0	4
+OCT4-SOX2 DNA-protein complex	0	0	0	0	1	0	0	0	1	0
+OCT1-SOX2 DNA-protein complex	0	0	0	0	1	0	0	0	1	0
+PAX6-SOX2 DNA-protein complex	0	1	0	0	0	0	0	0	1	0
+CTF18-cohesion-RFC complex	0	2	0	0	0	0	0	0	0	4
+CTF8-DCC1 subcomplex	0	1	0	0	0	0	0	0	0	0
+CTF8-CTF18-DCC1 subcomplex	0	2	0	0	0	0	0	0	0	0
+RAD9-RAD1-HUS1-APE1 complex	0	3	0	0	0	0	0	0	0	1
+9-1-1 complex	0	3	0	0	0	0	0	0	0	0
+Rad17-RFC complex	0	0	0	0	0	0	0	0	0	5
+BRCA1-cABL complex	0	0	1	1	0	0	0	0	0	0
+RPAP1-RPB2-RPB3 complex	1	0	0	0	0	1	0	0	0	1
+BRCA1-SMAD3 complex	1	0	1	0	0	0	0	0	0	0
+BRCA1-HDAC1-HDAC2 complex	0	0	1	0	0	0	0	0	0	2
+BRCA1-BARD1-BACH1-DNA damage complex II	2	2	2	0	1	0	0	0	0	1
+ITGAV-ITGB3 complex	0	0	0	0	1	0	0	0	1	0
+BRCA1-BARD1-BACH1-DNA damage complex I	1	0	2	1	1	0	0	0	0	1
+BRCA1-BARD1-BRCA2-DNA damage complex III	0	1	1	0	1	0	0	0	0	0
+BRCA1-CtIP-CtBP complex	0	1	1	1	0	0	0	0	0	0
+BRCA1-VCP complex	0	0	1	0	0	0	0	0	0	1
+hSIR2-p53 complex	0	0	0	0	0	0	0	0	1	1
+BRCA1-BARD1-UbcH5c complex	0	1	1	0	1	0	0	0	0	0
+BRCA1-BARD1-UbcH7c complex	0	1	1	0	1	0	0	0	0	0
+BRCA1-RAD51 complex	0	0	1	0	0	0	0	0	0	1
+BRCA1-RNA polymerase II complex	0	11	1	0	1	7	0	0	2	4
+ITGB3-ITGAV-VTN complex	0	0	0	0	2	0	0	0	1	0
+RSmad complex	4	1	0	0	2	0	0	0	2	1
+TIF1gamma-SMAD2-SMAD3 complex	2	1	0	0	0	0	0	0	0	0
+SRm160-SRm300 complex	0	0	1	0	0	0	0	0	0	0
+SMAD4-SMAD2-SMAD3 complex	3	0	0	0	0	0	0	0	0	0
+Profilin 1 complex	0	2	0	0	0	0	1	0	1	2
+AR coactivator complex	0	2	0	0	0	0	0	0	1	0
+ATRX-DAXX complex	0	0	1	0	0	0	1	0	0	0
+DAXX-Axin-p53-HIPK2 complex	1	1	0	0	0	0	1	0	1	0
+ATRX-DAXX complex	0	0	1	0	0	0	1	0	0	0
+Axin-p53-HIPK2 complex	1	1	0	0	0	0	0	0	1	0
+ITGAV-ITGB3-THBS1 complex	0	0	0	0	1	0	0	0	2	0
+ING4 complex (ING4, MYST2, C1orf149, PHF15)	0	2	0	0	1	0	0	0	1	0
+ING4 complex (ING4, MYST2, C1orf149, PHF16)	0	2	0	0	1	0	0	0	1	0
+ITGAV-ITGB3-NOV complex	0	0	0	0	2	0	0	0	1	0
+ITGA5-ITGB1-FN-1-NOV complex	0	1	0	0	2	0	0	0	1	0
+ING2 complex	0	3	0	3	1	0	0	0	3	2
+Brg1-based SWI/SNF chromatin remodeling complex	0	1	0	0	0	0	0	0	3	0
+ITGA5-ITGB1-CAL4A3 complex	0	0	1	0	1	0	0	0	1	0
+NuA4/Tip60 HAT complex	1	6	0	0	2	1	0	0	0	0
+NuA4/Tip60 HAT complex	2	7	0	0	3	2	0	0	0	0
+HBO1 complex	0	3	0	0	1	0	0	0	3	0
+ING5 complex	0	2	0	0	3	0	0	0	6	0
+DSIF complex (DRB sensitivity-inducing factor complex)	0	2	0	0	0	0	0	0	0	0
+DSIF complex (DRB sensitivity-inducing factor complex)	0	2	0	0	0	0	0	0	0	0
+Serine-palmitoyltransferase (SPT) complex	0	0	0	3	0	0	0	0	0	0
+ITGA2b-ITGB3-CD9-GP1b-CD47 complex	1	0	1	1	2	0	0	0	1	0
+P-TEFb-7SKRNA-HEXIM1 complex	1	2	0	0	0	0	0	0	0	0
+BRD4-P-TEFb complex	0	3	0	0	0	0	0	0	0	0
+BRD4-P-TEFb complex	0	3	0	0	0	0	0	0	0	0
+P-TEFb-7SKRNA-HEXIM1 complex	1	2	0	0	0	0	0	0	0	0
+CD20-LCK-FYN-p75/80 complex	0	0	0	1	2	0	0	0	0	0
+SCF subcomplex (WEE1, SKP2, BTRC)	0	2	0	0	0	0	0	0	0	0
+Ubiquitin E3 ligase (CUL1, RBX1, SKP1A)	0	3	0	0	0	0	0	0	0	0
+ITGA5-ITGB3-COL6A3 complex	1	0	0	0	1	0	0	0	1	0
+Respiratory chain complex I (early intermediate NDUFAF1 assembly), mitochondrial	0	1	0	1	1	0	0	0	0	4
+ITGAV-ITGB1-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+Respiratory chain complex I (incomplete intermediate ND1, ND2, ND3, CIA30 assembly), mitochondrial	0	0	0	2	1	0	0	0	0	1
+Notch1-fraction 30 complex	0	1	0	0	1	0	0	0	1	0
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN)	0	4	0	0	0	0	0	0	0	0
+BCR-ABL (p185 fusion protein)-GRB2 complex	0	0	0	0	0	0	0	0	1	0
+BCR-ABL (p210 fusion protein)-GRB2-SOS1 complex	0	1	0	0	0	0	0	0	1	0
+SHC-GRB2 complex	1	0	0	0	0	0	0	0	1	0
+ITGA2b-ITGB3-CD47-FAK complex	0	1	1	0	1	0	0	0	1	0
+RBPJ-NotchIC-Mastermind complex	0	1	0	0	1	0	0	0	1	0
+Respiratory chain complex I (intermediate I/200kD and III/250kD), mitochondrial	0	0	0	0	0	0	0	0	0	3
+Respiratory chain complex I (intermediate IV/310kD), mitochondrial	0	0	0	0	0	0	0	0	0	4
+Respiratory chain complex I (intermediate V/380kD and VI/480kD), mitochondrial	0	1	0	0	0	0	0	0	0	4
+Respiratory chain complex I (intermediate VII/650kD), mitochondrial	0	2	0	2	1	0	0	0	0	5
+Respiratory chain complex I (holoenzyme), mitochondrial	0	2	0	2	2	0	0	0	0	5
+Respiratory chain complex I (intermediate II/230kD), mitochondrial	0	0	0	2	0	0	0	0	0	1
+RBP-Jkappa-Notch1 complex	0	1	0	0	0	0	0	0	1	0
+RBP-Jkappa-SHARP complex	0	0	1	0	0	0	0	0	1	0
+PLC-gamma-2-Syk-LAT-FcR-gamma complex	1	1	0	0	1	0	1	0	0	0
+PLC-gamma-2-Lyn-FcR-gamma complex	1	1	0	1	0	0	0	0	0	0
+SMRT-SKIP-CBF1 complex	0	1	0	0	1	0	0	0	1	0
+PLC-gamma-2-SLP-76 complex	0	1	1	0	0	0	0	0	0	0
+PLC-gamma-2-LAT complex	0	1	0	0	0	0	1	0	0	0
+Respiratory chain complex I (beta subunit) mitochondrial	1	1	2	0	8	0	0	0	2	2
+Grb2-Sos complex, Fc receptor gamma-R1 stimulated	0	1	0	0	0	0	0	0	1	0
+Ku antigen-YY1-alphaMyHC promoter complex	1	2	0	0	0	0	0	0	0	0
+Respiratory chain complex I (gamma subunit) mitochondrial	0	3	2	2	3	0	1	0	0	2
+Respiratory chain complex I (lambda subunit) mitochondrial	1	3	1	5	1	0	0	0	1	4
+SHARP-CtBP complex	0	0	1	2	0	0	0	0	0	0
+LAT-PLC-gamma-1-p85-GRB2-SOS signaling complex, C305 activated	0	3	0	0	0	0	1	0	1	0
+SHARP-CtBP1-CtIP complex	0	1	1	1	0	0	0	0	0	0
+SHARP-CtIP-RBP-Jkappa complex	0	1	1	0	0	0	0	0	1	0
+SHARP-CtBP1-CtIP-RBP-Jkappa corepressor complex	0	1	1	1	0	0	0	0	1	0
+Ecsit complex (ECSIT, MT-CO2, GAPDH, TRAF6, NDUFAF1)	1	0	0	2	0	0	0	0	1	1
+PTF1-bHLH complex	1	0	1	0	0	0	0	0	0	0
+Ecsit complex (ECSIT, NDUFS3, TOM20)	1	0	0	0	0	0	0	0	1	1
+Ecsit complex (ECSIT, MT-CO2, NDUFA1, MT-ND1, TRAF6, NDUFAF1)	1	0	0	1	1	0	0	0	1	2
+Ecsit complex (ECSIT, NDUFS3, NDUFAF1)	1	0	0	1	0	0	0	0	0	1
+Respiratory chain complex I (incomplete NDUFAF1 assembly), mitochondrial	0	0	0	1	0	0	0	0	0	1
+Notch1-p56lck-PI3K complex	0	2	0	1	0	0	0	0	0	0
+RBP-Jkappa-RING1-KyoT2 complex	0	2	0	0	0	0	0	0	1	0
+YY1-Notch1-RBP-Jkappa complex	1	1	0	0	0	0	0	0	1	0
+YY1-Notch1 complex	1	1	0	0	0	0	0	0	0	0
+Respiratory chain complex I (incomplete intermediate), mitochondrial	1	1	1	4	0	0	0	0	1	3
+LCK-SLP76-PLC-gamma-1-LAT complex, pervanadate-activated	0	1	1	1	0	0	1	0	0	0
+PLC-gamma-1-LAT-c-CBL complex, OKT3 stimulated	0	1	0	0	0	0	1	0	1	0
+LAT-GRB2 complex, Fyn-mLck(KA) or Syk kinase activated	0	0	0	0	0	0	1	0	1	0
+SMAD1-CBP complex	2	0	0	0	0	0	0	0	0	0
+SLP-76-PLC-gamma-1-ITK complex, alpha-TCR stimulated	0	1	1	0	0	0	0	0	1	0
+SLP-76-PLC-gamma-1-VAV complex, alpha-TCR stimulated	0	2	1	0	0	0	0	0	0	0
+CRK-BCAR1-DOCK1 complex	0	0	0	0	1	0	0	0	2	0
+ITK-SLP-76 complex, anti-TCR stimulated	0	0	1	0	0	0	0	0	1	0
+NuMA-LGN-G-alpha-i-1 complex	0	1	0	0	0	0	0	0	0	2
+Axin-SMAD3 complex	2	0	0	0	0	0	0	0	0	0
+mTORC2 complex (mTOR/FRAP1, LST8, mAVO3/RICTOR)	0	1	0	1	0	0	0	0	1	0
+mTORC1 complex (mTOR/FRAP1, LST8, RAPTOR)	0	2	0	1	0	0	0	0	0	0
+ITGA9-ITGB1-VEGFC complex	2	0	0	0	0	0	0	0	1	0
+ITGA9-ITGB1-VEGFA complex	2	0	0	0	0	0	0	0	1	0
+SMAD3-E2F4/5-p107-DP1 complex	1	3	0	0	0	0	0	0	1	0
+mTOR-signaling complex	0	2	0	0	0	0	0	0	0	0
+ITGA9-ITGB1-ADAM8 complex	1	0	0	0	0	0	0	0	2	0
+mTOR-signaling complex (FRAP1/mTOR, GBL, RAPTOR)	0	2	0	1	0	0	0	0	0	0
+mTOR-signaling complex (mTOR/FRAP1, RAPTOR)	0	2	0	0	0	0	0	0	0	0
+SMAD7-SMURF2 complex	0	1	0	0	1	0	0	0	0	0
+Axin-PP2A A-PP2A C-GSK3-beta-beta-catenin complex	1	3	0	0	0	0	0	0	0	0
+APC-Axin-1-beta-catenin complex	1	1	1	0	0	0	0	0	0	0
+60S APC containing complex	0	3	1	0	0	0	0	0	3	0
+TFIID complex	2	4	0	1	0	1	0	0	1	0
+TFIID subcomplex	1	2	0	1	0	0	0	0	1	0
+p27-cyclinE-Cdk2 - Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, CKS1B, RBX1) complex	0	6	0	1	1	0	0	0	0	0
+TGF-beta receptor II-TGF-beta3 complex	0	1	0	0	1	0	0	0	0	0
+TGF-beta receptor II-TGF-beta1 complex	0	1	0	0	1	0	0	0	0	0
+TGF-beta receptor II-TGF-beta receptor I-TGF-beta1 complex	0	2	0	0	1	0	0	0	0	0
+TGF-beta receptor II-TGF-beta receptor I-TGF-beta3 complex	0	2	0	0	1	0	0	0	0	0
+RNA-induced silencing complex, RISC	1	1	0	1	0	1	0	0	0	0
+PAC3-PAC4 complex	1	1	0	0	0	0	0	0	0	0
+PAC1-PAC2 complex	1	1	0	0	0	0	0	0	0	0
+LAT2-ITGB1 complex	0	0	0	0	0	0	0	0	1	1
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, CKS1B, RBX1)	0	5	0	0	0	0	0	0	0	0
+SMAD2-SMAD4-FAST1 complex	2	0	0	0	1	0	0	0	0	0
+SMAD2-FAST1 complex	1	0	0	0	1	0	0	0	0	0
+Multisynthetase complex	1	2	0	1	0	1	0	0	0	6
+TGF-beta-receptor type II homodimer complex	0	1	0	0	0	0	0	0	0	0
+TGF-beta-receptor II-TGF-beta1 complex	0	1	0	0	1	0	0	0	0	0
+BMP2-BRIA complex	2	1	0	0	0	0	0	0	0	0
+SKI-NCOR1-SIN3A-HDAC1 complex	0	1	1	0	1	0	0	0	0	1
+hs4 enhancer complex (faster migrating complex)	2	1	0	0	2	0	0	0	0	0
+hs4 enhancer complex (slow migrating complex)	2	0	0	0	0	0	0	0	0	0
+mSin3A complex	0	1	0	2	0	0	0	0	0	2
+MAD-MAX complex	1	1	0	0	0	0	0	0	0	0
+MYC-MAX complex	0	2	0	0	0	0	0	0	0	0
+mSin3A-HDAC1-HDAC2 complex	0	1	0	0	0	0	0	0	0	2
+MAD1-mSin3A-HDAC2 complex	1	1	0	0	0	0	0	0	0	1
+Nop56p-associated pre-rRNA complex	5	39	1	2	1	30	3	0	5	17
+Microprocessor complex	2	0	0	0	0	0	0	0	0	0
+ITGA10-ITGB1 complex	1	0	0	0	0	0	0	0	1	0
+ITGA11-ITGB1 complex	1	0	0	0	0	0	0	0	1	0
+ITGA11-ITGB1-COL1A1 complex	1	0	0	0	0	0	0	0	2	0
+RNA polymerase II complex (RPB1, RAP74, CDK8, CYCC, SRB7, BAF190, BAF47), chromatin structure modifying	0	2	0	0	1	0	0	0	2	3
+RNA polymerase II complex (CBP, PCAF, RPB1, BAF47, CYCC, CDK8), chromatin structure modifying	2	2	0	0	0	0	0	0	1	1
+RNA polymerase II complex, incomplete (CBP, RPBI, PCAF, BAF47), chromatin structure modifying	2	0	0	0	0	0	0	0	1	1
+Brg1-associated complex II	0	2	0	0	1	0	0	0	3	1
+RNA polymerase II complex, chromatin structure modifying	0	7	0	1	1	2	0	0	5	3
+RNA polymerase II complex, chromatin structure modifying	0	7	0	0	0	0	0	0	4	0
+RNA polymerase II complex, chromatin structure modifying	2	3	0	0	1	1	0	0	2	4
+RNA polymerase II complex, incomplete (CDK8 complex), chromatin structure modifying	0	3	0	0	1	0	0	0	4	0
+CTF18-cohesion-RFC-POLH complex	0	3	0	0	0	0	0	0	0	4
+CTLH complex	1	2	0	0	0	0	0	0	2	0
+UTX-MLL2/3 complex	1	1	4	2	2	0	1	0	1	0
+DGCR8-NCL complex	1	1	0	0	0	0	0	0	0	0
+DGCR8-ILF3 complex	2	0	0	0	0	0	0	0	0	0
+ILF3-XPO5 complex	1	1	0	0	0	0	0	0	0	0
+Microprocessor complex	2	0	0	0	0	0	0	0	0	0
+DGCR8 multiprotein complex	3	3	1	2	0	0	0	0	0	2
+Nucleic and chromatin Fanconi complex	0	0	4	0	1	0	0	0	0	0
+CCND1-CDK4 complex	0	2	0	0	0	0	0	0	0	0
+CCND2-CDK4 complex	0	2	0	0	0	0	0	0	0	0
+CCND3-CDK4 complex	0	2	0	0	0	0	0	0	0	0
+CCND1-CDK6 complex	0	1	0	1	0	0	0	0	0	0
+CCND2-CDK6 complex	0	1	0	1	0	0	0	0	0	0
+CCND3-CDK6 complex	0	1	0	1	0	0	0	0	0	0
+APP-TOMM40 complex	1	1	0	0	0	0	0	0	0	0
+APP-TIMM23 complex	1	1	0	0	0	0	0	0	0	0
+ITGA6-ITGB4-SHC1-GRB2 complex	1	0	0	0	1	0	0	0	2	0
+TIMM17-TIMM23 complex	0	2	0	0	0	0	0	0	0	0
+TIM50a-SMN1 complex	0	1	1	0	0	0	0	0	0	0
+TIM50a-coilin complex	0	1	0	0	1	0	0	0	0	0
+DHX9-ADAR-vigilin-DNA-PK-Ku antigen complex	0	5	0	1	0	0	0	0	0	0
+ITGAV-ITGB3-SLC3A2 complex	0	0	0	0	1	0	0	0	1	1
+ITGB1-NRP1 complex	1	0	0	0	0	0	0	0	1	0
+ITGAV-P2RY2-GNA12 complex	0	0	0	0	2	0	0	0	0	0
+ITGA9-ITGB1-SPP1 complex	1	0	0	0	0	0	1	0	1	0
+ITGA5-ITGB1-SPP1 complex	0	0	0	0	1	0	1	0	1	0
+MAML1-RBP-Jkappa-Notch1 complex	0	1	0	0	1	0	0	0	1	0
+ITGA2B-ITGB3-ICAM4 complex	0	0	1	0	1	0	0	0	1	0
+ITGB5-ITGAV-VTN complex	0	0	0	0	2	0	0	0	1	0
+SMN1-SIP1-SNRP complex	0	5	1	0	0	1	0	0	0	0
+OCT1-OBF1-DNA-TLE1 complex	0	0	1	0	1	0	0	0	1	0
+OCT2-TLE4 complex	0	0	0	0	1	0	0	0	1	0
+OCT1-OBF1-DNA complex	0	0	1	0	1	0	0	0	0	0
+TLE2 homodimer complex	0	0	0	0	0	0	0	0	1	0
+TLE1-TLE2 complex	0	0	0	0	0	0	0	0	2	0
+TLE1 homodimer complex	0	0	0	0	0	0	0	0	1	0
+TLE-Histone H3 complex	0	1	0	0	0	0	0	2	4	0
+Gamma-secretase complex (APH1B, PSEN1, PSENEN, NCSTN)	0	4	0	0	0	0	0	0	0	0
+STAT6-p100-RHA complex	1	1	0	1	0	0	0	0	0	0
+OCT1-OBF1-DNA complex	0	0	1	0	1	0	0	0	0	0
+Phosphatidylinositol 3-kinase (PIK3CA, PIK3R1)	0	2	0	0	0	0	0	0	0	0
+TLE1 corepressor complex (MASH1 promoter-corepressor complex)	2	3	0	0	0	0	0	0	1	2
+MASH1 promoter-coactivator complex	4	3	0	0	1	0	0	2	0	1
+POSH-AKT2 complex	0	1	0	0	1	0	0	0	0	0
+CRLR-RAMP2 complex	1	0	0	0	1	0	0	0	0	0
+CRLR-RAMP3 complex	1	0	0	0	1	0	0	0	0	0
+CAMK2-delta-MASH1 promoter-coactivator complex	4	1	0	1	1	0	0	0	0	1
+NK-3-Groucho-HIPK2-SIN3A-RbpA48-HDAC1 complex	0	3	1	1	0	0	0	0	5	1
+NK-3-Groucho complex	0	1	1	0	0	0	0	0	5	0
+Sulphiredoxin-peroxiredoxin complex	0	1	0	0	0	0	0	0	0	1
+GNAQ-GEFT-RHOA complex	0	2	0	0	0	0	0	0	1	0
+Notch2(N-TM)-Notch2(N-EC)-Delta complex	0	2	0	0	0	0	0	0	2	0
+Bipartite complex (TFC4, CTNNB1)	0	1	0	0	1	0	0	0	0	0
+CBF1-HDAC1-SMRT complex	0	0	0	0	1	0	0	0	1	1
+Prolactin (PRL) - PRL receptor (PRLR) complex	0	0	1	0	1	0	0	0	0	0
+RIAM-profilin complex	0	0	1	0	0	0	1	0	0	0
+RIAM-VASP complex	0	0	2	0	0	0	0	0	0	0
+PRL receptor (PRLR) dimer complex	0	0	0	0	1	0	0	0	0	0
+TF-FVIIa-FXa-TFPI complex	0	2	1	0	1	0	0	0	0	0
+HESX1-TLE1 complex	0	1	0	0	0	0	0	0	1	0
+AXIN-APC-betaCatenin-GSK3B complex	1	2	1	0	0	0	0	0	0	0
+NCOR-SIN3-HDAC-HESX1 complex	0	3	0	0	1	0	0	0	0	2
+DAXX-AXIN complex	1	0	0	0	0	0	1	0	0	0
+Daxx-Axin-p53 complex	1	0	0	0	0	0	1	0	1	0
+NUMB-TP53-MDM2 complex	0	0	0	0	2	0	0	0	1	0
+CIN85 homotetramer complex	0	0	0	0	0	0	0	0	1	0
+CIN85-BLNK complex	0	0	1	0	0	0	0	0	1	0
+CIN85-c-CBL complex	0	0	0	0	0	0	0	0	2	0
+USP1-UAF1 complex	0	1	0	1	0	0	0	0	0	0
+GNA14-p115RhoGEF complex	0	1	0	0	1	0	0	0	0	0
+LMO4-CREB complex	2	0	0	0	0	0	0	0	0	0
+FHL2 homodimer complex	0	1	0	0	0	0	0	0	0	0
+PDGFRA-SHP-2 complex, PDGF stimulated	0	2	0	0	0	0	0	0	0	0
+FHL3 homodimer complex	0	0	0	0	0	0	0	0	1	0
+ACT homodimer complex	1	0	0	0	0	0	0	0	0	0
+GRB2-SHP-2 complex, PDGF stimulated	0	1	0	0	0	0	0	0	1	0
+FHL2-FHL3 complex	0	1	0	0	0	0	0	0	1	0
+FHL2-ACT complex	1	1	0	0	0	0	0	0	0	0
+FHL2-CREB complex	1	1	0	0	0	0	0	0	0	0
+FHL3-CREB complex	1	0	0	0	0	0	0	0	1	0
+ACT-CREB complex	2	0	0	0	0	0	0	0	0	0
+FHL4/STX11-ACT complex	1	0	0	0	0	0	0	0	0	1
+SMAD4-SNO-SKI complex	1	0	2	0	0	0	0	0	0	0
+SMAD2-SKI complex	1	0	1	0	0	0	0	0	0	0
+SMAD3-SKI complex	1	0	1	0	0	0	0	0	0	0
+SMAD4-SKI complex	1	0	1	0	0	0	0	0	0	0
+SMAD2-SKI-NCOR complex	1	0	1	0	1	0	0	0	0	0
+SMAD3-SKI-NCOR complex	1	0	1	0	1	0	0	0	0	0
+SMAD4-SKI-NCOR complex	1	0	1	0	1	0	0	0	0	0
+LIN2-LIN7-SAP97-MINT1 complex	1	2	0	0	0	0	0	0	1	0
+LIN2-LIN7 complex	0	1	0	0	0	0	0	0	1	0
+ULBP1-KLRK1-HCST complex	0	1	1	0	0	0	1	0	0	0
+Heterodimer complex (CDK9, IL6ST)	1	1	0	0	0	0	0	0	0	0
+Eps15-stonin2 complex	0	2	0	0	0	0	0	0	0	0
+SCAMP1-SCAMP2-SCAMP3 complex	0	3	0	0	0	0	0	0	0	0
+HERP1/HEY2-NCOR-SIN3A complex	1	1	0	0	1	0	0	0	0	1
+RB1-HDAC1-BRG1 complex	0	1	0	0	0	0	0	0	0	2
+Delta1 homodimer complex	0	0	0	0	0	0	0	0	1	0
+Gamma-secretase-Delta1 complex	0	4	0	0	0	0	0	0	1	0
+SMN complex (GEMIN5,2,3,4, SMN)	0	1	1	0	1	0	0	0	1	1
+SMN complex (GEMIN5,4,3), SMN-independent intermediate	0	0	0	0	1	0	0	0	1	1
+SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate	1	0	1	1	0	0	0	0	0	0
+SMN complex (GEMIN2,5, SMN)	0	1	1	0	0	0	0	0	1	0
+Homotetrameric complex NIAP	1	0	0	0	0	0	0	0	0	0
+Bax homooligomeric complex, after apoptotic stimulation	1	0	0	0	0	0	0	0	0	0
+COG complex	0	8	0	0	0	0	0	0	0	0
+Tetrameric COG subcomplex	0	4	0	0	0	0	0	0	0	0
+Ternary COG subcomplex	0	3	0	0	0	0	0	0	0	0
+Binary COG subcomplex	0	2	0	0	0	0	0	0	0	0
+COG1-COG8 subcomplex	0	2	0	0	0	0	0	0	0	0
+COG2-COG3-COG4 subcomplex	0	3	0	0	0	0	0	0	0	0
+COG5-COG6-COG7 subcomplex	0	3	0	0	0	0	0	0	0	0
+COG1-COG8-COG2-COG3-COG4 subcomplex	0	5	0	0	0	0	0	0	0	0
+COG1-COG8-COG5-COG6-COG7 subcomplex	0	5	0	0	0	0	0	0	0	0
+COG complex	0	8	0	0	0	0	0	0	0	0
+GammaH2AFX-NDHII-Ku70-DNA complex	0	2	0	1	0	0	0	0	0	0
+NR3C2-UBC9-SRC-1 complex	0	1	0	0	2	0	0	0	0	0
+RIN1-STAM2-HRS complex	1	1	1	0	0	0	0	0	0	0
+RIN1-STAM2-EGFR complex, EGF stimulated	0	1	1	0	0	0	0	0	1	0
+CHL2-BMP2 complex	2	0	0	0	0	0	0	0	0	0
+CHL2-BMP2-TSG complex	2	0	0	0	1	0	0	0	0	0
+Pericentrin-GCP complex	0	3	0	0	0	0	0	0	0	0
+SKI-SMAD2 hexameric complex	1	0	1	0	0	0	0	0	0	0
+SKI-SMAD3 hexameric complex	1	0	1	0	0	0	0	0	0	0
+SKI-SMAD2-SMAD4  pentameric complex	2	0	1	0	0	0	0	0	0	0
+SKI-SMAD3-SMAD4  pentameric complex	2	0	1	0	0	0	0	0	0	0
+CREBBP-SMAD2 hexameric complex	2	0	0	0	0	0	0	0	0	0
+CREBBP-SMAD3 hexameric complex	2	0	0	0	0	0	0	0	0	0
+CREBBP-SMAD2-SMAD4 pentameric complex	3	0	0	0	0	0	0	0	0	0
+CREBBP-SMAD3-SMAD4 pentameric complex	3	0	0	0	0	0	0	0	0	0
+DRIP78-PHLP complex	0	1	1	0	0	0	0	0	0	0
+ADRB2 homodimer complex	1	0	0	0	0	0	0	0	0	0
+TCL1(trimer)-AKT1 complex	0	1	1	0	0	0	0	0	0	0
+TCL1(trimer)-AKT2 complex	0	1	1	0	0	0	0	0	0	0
+TCL1(homotrimer) complex	0	0	1	0	0	0	0	0	0	0
+Rb-HDAC1 complex	0	1	0	0	0	0	0	0	0	1
+GABP(gamma)1-E2F1-DP1 complex	0	1	0	1	0	0	0	0	1	0
+Ternary complex (GATA4, SRF, MYOCD)	0	0	2	0	1	0	0	0	0	0
+RCP-Rab11 complex	0	1	1	0	0	0	0	0	0	0
+SMAD3-SMAD4-cSKI, TGF(beta)-dependent	2	0	1	0	0	0	0	0	0	0
+SMAD3-cSKI-SIN3A-HDAC1 complex	1	1	1	0	0	0	0	0	0	1
+SMURF2-SMAD3-SnoN complex, TGF(beta)-dependent	1	1	1	0	0	0	0	0	0	0
+mTORC2 complex (mTOR/FRAP1, LST8, mAVO3/RICTOR, SIN1)	0	1	0	1	1	0	0	0	1	0
+mTOR-RAPTOR complex	0	2	0	1	0	0	0	0	0	0
+ClpP complex, heptameric	0	0	0	1	0	0	0	0	0	0
+ClpX complex, hexameric	0	0	0	1	0	0	0	0	0	0
+ClpXP complex	0	0	0	2	0	0	0	0	0	0
+Affixin-actinin(alpha) complex	1	1	0	0	0	0	0	0	0	0
+PAR4-BACE1 complex	1	1	0	0	0	0	0	0	0	0
+NEMO-HIF2(alpha)-ARNT complex	1	0	0	1	1	0	0	0	0	0
+NRP1-VEGFR2-VEGF(165) complex	2	1	0	0	0	0	0	0	0	0
+Heterotrimeric SKP1-CUL1-ROC1 complex	0	3	0	0	0	0	0	0	0	0
+Ku70/Ku86 complex	0	2	0	0	0	0	0	0	0	0
+Ku70/Ku86/Werner complex	0	2	0	0	0	0	0	0	0	1
+SMAD6-HOXC8 complex	0	1	0	0	1	0	0	0	0	0
+SMAD6-HOXA9 complex	0	0	0	0	2	0	0	0	0	0
+Catulin (alpha) - catenin (beta) complex	0	1	0	0	0	0	0	0	1	0
+Catenin (alpha) - catenin (beta) complex	0	1	0	0	0	0	0	0	1	0
+HSP90-FKBP38-CAM-Ca(2+) complex	0	1	0	2	0	0	0	0	0	0
+DLP1-hFIS1 complex	0	2	0	0	0	0	0	0	0	0
+GR-hnRNP U complex	1	0	0	0	1	0	0	0	0	0
+EIF3 core complex (EIF3A, EIF3B, EIF3G, EIF3I)	0	2	0	2	0	0	0	0	0	0
+EIF3 complex (EIF3A, EIF3B, EIF3G, EIF3I, EIF3C)	0	3	0	2	0	0	0	0	0	0
+EIF3 complex (EIF3B, EIF3G, EIF3I)	0	1	0	2	0	0	0	0	0	0
+EIF3 complex (EIF3B, EIF3J, EIF3I)	0	1	1	1	0	0	0	0	0	0
+EIF3 complex (EIF3A, EIF3B, EIF3G, EIF3I, EIF3J)	0	2	1	2	0	0	0	0	0	0
+CBF-DNA complex	0	1	1	0	1	0	0	0	0	0
+p32-CBF-DNA complex	0	2	1	0	1	0	0	0	0	0
+beta(1)-AR receptosome (ADRB1-SAP97-AKAP79-PRKAR2A)	1	1	1	1	0	0	0	0	0	0
+SVIP-p97/VCP-DERL1 complex	0	1	0	0	0	0	1	0	0	1
+gp78-p97/VCP-DERL1 complex	0	2	0	0	0	0	0	0	0	1
+p97/VCP-VIMP-DERL1 complex	0	1	0	0	1	0	0	0	0	1
+p97/VCP-VIMP-DERL2 complex	0	1	0	0	1	0	0	0	0	1
+p97/VCP-VIMP-DERL1-DERL2-HRD1-SEL1L complex	0	3	0	1	1	0	0	0	0	1
+ZO1-(beta)cadherin-(VE)cadherin-VEGFR2 complex	1	2	0	0	0	0	0	0	1	0
+RB1(hypophosphorylated)-E2F4 complex	0	2	0	0	0	0	0	0	0	0
+CyclinD3-CDK4-CDK6 complex	0	2	0	1	0	0	0	0	0	0
+CyclinD3-CDK4-CDK6-p21 complex	0	2	0	1	1	0	0	0	0	0
+p34(SEI-1)-CDK4-CyclinD2 complex	0	2	0	0	0	0	1	0	0	0
+pRb2/p130-multimolecular complex (DNMT1, E2F4, SuV39H1, HDAC1, RBL2)	0	4	0	0	0	0	0	0	0	1
+pRb2/p130-multimolecular complex (RB2, E2F4, HDAC1, SUV39H1, P300)	1	3	0	0	0	0	0	0	0	1
+E2F1-Rb complex	0	2	0	0	0	0	0	0	0	0
+E2F1-p107-cyclinA complex	0	3	0	0	0	0	0	0	0	0
+RB1-TFAP2A complex	0	1	0	0	1	0	0	0	0	0
+CTFC-TAF1 complex	0	1	0	0	1	0	0	0	0	0
+CTCF-nucleophosmin complex	1	0	0	0	1	0	0	0	0	0
+SMARCA2/BRM-BAF57-MECP2 complex	0	1	1	0	0	0	0	0	0	1
+E2F4-p107-cyclinE complex	0	3	0	0	0	0	0	0	0	0
+E2F4-p130 complex	0	2	0	0	0	0	0	0	0	0
+ELK1-SRF-ELK3 complex	0	0	2	0	1	0	0	0	0	0
+AP1G1-PACS1-FURIN complex	0	1	0	1	1	0	0	0	0	0
+SH3KBP1-CBLB-EGFR complex	0	0	0	0	0	0	0	0	3	0
+MGC1-DNA-PKcs-Ku complex	0	3	0	1	0	0	0	0	0	0
+Polycystin-1 multiprotein complex (ACTN1, CDH1, SRC, JUP, VCL, CTNNB1, PXN, BCAR1, PKD1, PTK2, TLN1)	2	5	0	0	2	0	0	0	2	0
+NCOA6-DNA-PK-Ku-PARP1 complex	0	4	1	0	0	0	0	0	0	0
+DNA-PK-Ku complex	0	3	0	0	0	0	0	0	0	0
+DNA-PK-Ku-eIF2-NF90-NF45 complex	2	4	0	0	0	2	0	0	0	0
+SWI/SNF chromatin-remodeling complex	0	2	1	0	0	0	0	0	0	2
+YWHAQ-CALM1-CABIN1 complex	0	2	0	0	1	0	0	0	0	0
+TIAM1-EFNB1-EPHA2 complex	1	1	0	0	1	0	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex (CHUK, KPNA3, NFKB2, NFKBIB, REL, IKBKG,  NFKB1, NFKBIE, RELB,  NFKBIA, RELA, TNIP2)	3	7	0	1	0	1	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex (SEC16A, CHUK, IKBKB, NFKB2, REL, IKBKG, MAP3K14, RELA, FBXW7, USP2)	2	4	2	2	0	0	0	0	0	0
+PTIP-HMT complex	1	1	2	2	3	0	0	0	1	0
+TNF-alpha/NF-kappa B signaling complex (CHUK, BTRC, NFKB2, PPP6C, REL, CUL1, IKBKE, SAPS2, SAPS1, ANKRD28, RELA, SKP1)	2	9	0	0	0	0	0	0	0	1
+PTIP-DNA damage response complex	1	1	1	0	1	1	0	0	0	1
+CBP-RARA-RXRA-DNA complex, ligand stimulated	2	0	0	0	1	0	0	0	0	0
+Kinase maturation complex 1	0	11	0	2	0	0	0	0	1	1
+TBP-TAF complex	1	0	0	0	1	1	1	0	0	0
+Ubiquilin-proteasome complex	0	3	0	0	0	3	0	0	0	0
+TANK-TRAF2-TRAF3 complex	0	2	1	0	0	0	0	0	0	0
+RAF1-PPP2-PIN1 complex	0	3	0	2	0	0	0	0	0	0
+Kinase maturation complex 2	0	3	1	3	0	0	0	0	0	0
+Pex26-Pex6-Pex1 complex	1	0	0	2	0	0	0	0	0	0
+CS-MAP3K7IP1-MAP3K7IP2 complex	1	0	0	0	1	0	0	0	0	1
+Calreticulin oligomer complex	0	1	0	0	0	0	0	0	0	0
+CHUK-IQGAP2-AKAP8L-RELA-TNIP2 complex	1	3	1	0	0	0	0	0	0	0
+p14-Mp1-MEK1 complex	0	2	0	0	0	0	0	0	1	0
+Casein kinase II (beta-dimer, alpha'-dimer)	0	2	0	0	0	0	0	0	0	0
+Casein kinase II (beta-dimer, alpha, alpha')	0	3	0	0	0	0	0	0	0	0
+Casein kinase II (beta-dimer, alpha-dimer)	0	2	0	0	0	0	0	0	0	0
+p14-Mp1-ERK2 complex	0	2	0	0	0	0	0	0	1	0
+REL-MAP3K8-RELA-TNIP2-PAPOLA complex	2	2	1	0	0	0	0	0	0	0
+RPA complex	0	2	0	0	0	0	0	0	1	0
+CHUK-NFKB2-REL-IKBKG-SPAG9-NFKB1-NFKBIE-COPB2-TNIP1-NFKBIA-RELA-TNIP2 complex	3	6	0	2	0	0	0	0	0	1
+53BP1-containing complex	0	4	1	0	0	0	0	0	0	0
+TNF-alpha/Nf-kappa B signaling complex (RPL6, RPL30, RPS13, CHUK, DDX3X, NFKB2, NFKBIB, REL, IKBKG, NFKB1, MAP3K8, RELB, GLG1, NFKBIA, RELA, TNIP2,  GTF2I)	4	7	2	2	0	2	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex 5	3	13	0	1	1	3	1	0	0	3
+IKBKB-CDC37-KIAA1967-HSP90AB1-HSP90AA1 complex	0	2	0	1	1	0	0	0	0	0
+WRN-Ku70-Ku80-PARP1 complex	0	3	0	0	0	0	0	0	0	1
+CAP(C)-CAP(E) complex	0	0	0	2	0	0	0	0	0	0
+SMC1-SMC3 complex	0	0	0	2	0	0	0	0	0	0
+XRCC1-LIG3-PNK-TDP1 complex	0	2	0	0	0	0	0	0	1	1
+Dolichol-phosphate mannose (DPM) synthase	0	2	0	0	0	0	0	0	0	1
+Ku-ORC complex	0	5	0	0	0	1	0	0	0	0
+MNK1-eIF4F complex	0	4	0	0	0	0	0	0	0	1
+TCF4-CTNNB1-SUMO1-EP300-HADAC6 complex	2	2	0	0	0	0	0	0	0	1
+TCF4-CTNNB1-EP300 complex	2	1	0	0	0	0	0	0	0	0
+TCF4-CTNNB1 complex	1	1	0	0	0	0	0	0	0	0
+TCF4-CTNNB1-CREBBP complex	2	1	0	0	0	0	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex 6	0	4	1	2	0	4	0	0	0	2
+VHL-VDU1-TCEB1-TCEB2 complex	1	2	0	0	1	0	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex 7	1	1	0	3	2	0	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex 8	0	2	0	2	0	0	0	0	0	1
+VHL-TCEB1-TCEB2 complex	1	1	0	0	1	0	0	0	0	0
+VHL-TBP1-HIF1A complex	0	0	0	0	2	0	0	0	0	1
+Cell-cell junction complex (ARHGAP10-CTNNA1)	0	1	0	0	0	0	0	0	1	0
+HIF1A-OS9-EGLN1 complex	0	0	1	1	1	0	0	0	0	0
+HIF1A-OS9-EGLN3 complex	0	0	1	1	1	0	0	0	0	0
+RAB9-TIP47-MPRI complex	0	1	0	0	0	0	0	0	2	0
+Cell-cell junction complex (CDH1-CTNNB1)	1	1	0	0	0	0	0	0	0	0
+CAS-SRC-FAK complex	0	1	0	0	2	0	0	0	0	0
+tRNA splicing endonuclease	1	0	0	0	0	1	0	0	3	0
+RNA endonuclease (SEN2deltaEx8, SEN54, CLP1)	1	0	0	0	0	1	0	0	1	0
+TNF-alpha/NF-kappa B signaling complex 9	0	3	0	2	0	0	0	0	0	0
+TNF-alpha/NF-kappa B signaling complex 10	0	4	0	3	1	0	0	0	0	1
+CDK4-CCND1 complex	0	2	0	0	0	0	0	0	0	0
+P53-BARD1-Ku70 complex	0	1	0	0	1	0	0	0	1	0
+ETS2-SMARCA4-INI1 complex	0	0	0	0	1	0	0	0	1	1
+LATS1-HTRA2-BIRC4 complex	0	1	0	0	0	0	0	0	1	1
+DDEF1-CTTN-PXN complex	0	1	0	0	0	0	0	0	2	0
+CDH1-CKS1B complex	1	1	0	0	0	0	0	0	0	0
+CDH1-SKP2 complex	1	1	0	0	0	0	0	0	0	0
+YY1-MDM2-p53 complex	1	0	0	0	1	0	0	0	1	0
+ELMO1-DOCK1 complex	0	0	0	0	0	0	0	0	2	0
+ELMO1-DOCK2 complex	0	0	0	0	0	0	0	0	2	0
+ELMO1-DOCK1-RAC1 complex	0	0	0	0	0	0	0	0	3	0
+ELMO1-DOCK1-CRKII complex	0	0	0	0	0	0	0	0	3	0
+AGO2-FXR1-TNF(alpha)ARE-RNP complex	0	1	0	0	0	0	0	0	1	0
+Cell division cycle complex (CDC27, CDC16, ANAPC7)	0	0	0	2	0	0	0	0	0	1
+Actin-ribonucleoprotein complex (POLR2A, GTF2F1, HNRNPU)	1	0	0	0	1	0	0	0	0	1
+THRB-RXRB complex	1	0	0	0	1	0	0	0	0	0
+ATM homodimer complex	0	1	0	0	0	0	0	0	0	0
+ERAP1-ERAP2 complex	0	0	0	0	0	0	0	0	0	2
+Grancalcin-sorcin complex	0	2	0	0	0	0	0	0	0	0
+SRI homodimer complex	0	1	0	0	0	0	0	0	0	0
+Chromatin remodeling complex (TACC2, TACC3, PCAF)	1	1	0	1	0	0	0	0	0	0
+EGR-EP300 complex	1	0	0	0	0	0	0	0	1	0
+RNA-induced silencing complex, RISC	1	1	0	0	0	1	0	0	0	0
+TRBP containing complex (DICER, TRBP, AGO2, RPL7A, EIF6, MOV10)	1	2	0	0	0	3	0	0	0	0
+TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle)	0	11	0	0	0	13	0	0	0	1
+RNA-induced silencing complex, RISC	1	1	0	0	0	1	0	0	0	0
+ARNT-HIF1A complex	1	0	0	0	1	0	0	0	0	0
+TRIB3-DDIT3 complex	0	2	0	0	0	0	0	0	0	0
+RAG1-RAG2 tetramer complex	0	0	2	0	0	0	0	0	0	0
+GAIT complex	0	1	0	1	0	1	0	0	0	1
+MLL1-WDR5 complex	4	8	5	3	1	2	0	0	3	1
+SERPINA1-ELA2 complex	1	0	0	0	0	0	0	0	0	1
+SERPINA3-CTSG complex	1	0	0	0	0	0	0	0	0	1
+SERPINA1-CTSG complex	1	0	0	0	0	0	0	0	0	1
+BRCC complex	0	3	1	0	0	0	0	0	0	1
+PLEKHM2-KIF5B complex	1	0	0	1	0	0	0	0	0	0
+NGF-TrkA complex	0	1	0	0	1	0	0	0	0	0
+Neurotrophin-3-p75 complex	0	1	0	0	1	0	0	0	0	0
+TIAM1-GRIN1 complex	0	1	0	0	1	0	0	0	0	0
+EDG1-HTR1D complex	2	0	0	0	0	0	0	0	0	0
+HTR1D  homodimer complex	1	0	0	0	0	0	0	0	0	0
+HTR1A-HTR1D complex	2	0	0	0	0	0	0	0	0	0
+HTR1B homodimer complex	1	0	0	0	0	0	0	0	0	0
+HTR1A-HTR1B complex	2	0	0	0	0	0	0	0	0	0
+HTR1D-HTR1B complex	2	0	0	0	0	0	0	0	0	0
+GABBR2-HTR1A complex	1	0	0	0	0	0	0	0	1	0
+HTR1A-GPR26 complex	2	0	0	0	0	0	0	0	0	0
+HTR1A-EDG3 complex	2	0	0	0	0	0	0	0	0	0
+HTR1A homodimer complex	1	0	0	0	0	0	0	0	0	0
+HTR1A-EDG1 complex	2	0	0	0	0	0	0	0	0	0
+HSP70-BAG5-PARK2 complex	0	1	0	0	0	1	0	0	0	2
+NGF-p75 complex	0	1	0	0	1	0	0	0	0	0
+ANCO1-HDAC3  complex	0	0	1	0	0	0	0	0	0	1
+Sororin-cohesin complex	0	2	1	2	0	0	0	0	1	0
+NRG1-IKZF4 complex	0	0	1	0	1	0	0	0	0	0
+EPOR receptor complex	0	0	1	0	0	0	0	0	0	0
+CRKII-C3G complex	0	0	0	0	0	0	0	0	2	0
+EPO-EPOR complex	0	0	2	0	0	0	0	0	0	0
+Splicing-associated factors complex	0	1	1	1	1	0	1	0	0	0
+Mediator complex	8	6	1	0	7	0	1	0	4	0
+MED18-MED20-MED29 mediator subcomplex	1	1	0	0	0	0	0	0	1	0
+p50-p65 NF(kappa)B complex	1	1	0	0	0	0	0	0	0	0
+p50-p65 NF(kappa)B-SRC1 complex	1	1	0	0	1	0	0	0	0	0
+I(kappa)B(alpha)-NF(kappa)Bp50-NF(kappa)Bp65 complex	1	2	0	0	0	0	0	0	0	0
+IKB(epsilon)-RELA-cREL complex	2	1	0	0	0	0	0	0	0	0
+IKB(beta)-RELA-cREL complex	2	1	0	0	0	0	0	0	0	0
+IKB(alpha)-RELA-cREL complex	2	1	0	0	0	0	0	0	0	0
+FAS-FADD-CASP8 complex	0	0	0	1	2	0	0	0	0	0
+MURR1-NF(kappa)Bp65-IKBA complex	1	1	0	0	0	0	0	0	1	0
+IKBA-NF(kappa)Bp65-NF(kappa)Bp50 complex	1	2	0	0	0	0	0	0	0	0
+TFIIH transcription factor complex (ERCC2, ERCC3, GTF2H1, CDK7, CCNH, GTF2H2)	0	4	0	0	0	0	0	0	0	2
+ILK-PARVB-ARHGEF6 complex	1	0	0	1	0	0	0	0	1	0
+PARVB-ARHGEF6 complex	1	0	0	0	0	0	0	0	1	0
+EED-EZH-YY1 polycomb complex	1	0	0	1	0	0	0	0	1	0
+Polycomb repressive complex	0	2	1	0	1	0	0	0	0	0
+BMI1-HPH1-HPH2 complex	0	1	0	0	2	0	0	0	0	0
+EED-EZH polycomb complex	0	0	0	1	0	0	0	0	1	0
+CALM1-FKBP38-BCL2 complex	0	1	0	1	1	0	0	0	0	0
+TRAF2-cIAP1/BIRC2 complex	0	1	0	0	0	0	0	0	1	0
+Homodimeric complex LTBR	0	1	0	0	0	0	0	0	0	0
+Tumor necrosis factor receptor 1 signaling complex	0	1	2	0	0	0	0	0	1	0
+PLCB1-PARD3-PARD6A complex	1	1	0	0	1	0	0	0	0	0
+PLCB3-PARD3-PARD6A complex	1	1	0	0	1	0	0	0	0	0
+TRAF2-TRADD complex	0	1	1	0	0	0	0	0	0	0
+Ternary complex (TRAF2, FADD, TRADD)	0	1	1	0	1	0	0	0	0	0
+CCNB2-CDC2 complex	0	2	0	0	0	0	0	0	0	0
+CCNB1-CDC2 complex	0	2	0	0	0	0	0	0	0	0
+CDC2-PCNA-CCNB1-GADD45A complex	0	3	0	0	0	1	0	0	0	0
+CDC2-PCNA-CCNB1-GADD45B complex	0	2	0	0	0	1	0	0	1	0
+CDC2-PCNA-CCNB1-GADD45G complex	0	2	0	0	0	1	0	0	1	0
+IL-12 heterodimer complex	0	0	1	0	1	0	0	0	0	0
+IL-12 subunit p40 homodimer complex	0	0	0	0	1	0	0	0	0	0
+CDC2-CCNB1-CCNF complex	0	3	0	0	0	0	0	0	0	0
+CDC2-CCNB1-PTCH1 complex	0	3	0	0	0	0	0	0	0	0
+CDK2-CCNA2 complex	0	1	0	1	0	0	0	0	0	0
+CDC2-CCNA2 complex	0	2	0	0	0	0	0	0	0	0
+PAR6-CDC42 complex	1	0	0	0	0	0	0	0	1	0
+CDC2-CCNA2-CDK2 complex	0	2	0	1	0	0	0	0	0	0
+CDK2-CCNE1 complex	0	1	0	1	0	0	0	0	0	0
+LMO4-gp130 complex	3	1	0	1	0	0	0	0	0	0
+Stat1-alpha-dimer-CBP DNA-protein complex	2	0	0	0	0	0	0	0	0	0
+SHP-NR5A2 complex	1	0	0	0	1	0	0	0	0	0
+CNTF-CNTFR-gp130-LIFR complex	2	0	1	0	1	0	0	0	0	0
+LIFR-LIF-gp130 complex	2	0	1	0	0	0	0	0	0	0
+LINC complex, S-phase	2	2	0	1	1	0	0	0	1	0
+LINC core complex	2	1	0	1	0	0	0	0	1	0
+LINC complex, quiescent cells	2	3	0	1	0	0	0	0	1	0
+Emerin complex 1	0	4	1	0	0	1	1	0	0	1
+Emerin-actin-NMI-(alphaII)spectrin complex	0	2	1	0	0	0	1	0	0	0
+Emerin-actin-NMI complex	0	1	1	0	0	0	1	0	0	0
+Emerin architectural complex	1	2	1	1	0	0	1	0	0	0
+Emerin regulatory complex	1	2	1	0	0	0	1	1	0	2
+Emerin complex 24	3	3	1	2	0	3	1	1	0	0
+Emerin complex 25	2	11	1	1	0	0	1	0	0	0
+Emerin complex 32	2	7	1	3	1	0	1	1	4	2
+Emerin complex 52	4	12	2	1	1	0	1	0	0	1
+HSP90-CIP1-FKBPL complex	0	0	0	1	1	0	0	0	0	0
+PSD95-FYN-NR2A complex	0	2	0	0	1	0	0	0	0	0
+Securin-separase complex	0	0	1	0	1	0	0	0	0	0
+ESPL1-CDC2 complex	0	1	0	0	1	0	0	0	0	0
+FARP2-NRP1-PlexinA1 complex	2	0	0	0	0	0	0	0	1	0
+FARP2-NRP1-PlexinA2 complex	2	0	0	0	0	0	0	0	1	0
+FARP2-NRP1-PlexinA3 complex	2	0	0	0	0	0	0	0	1	0
+FARP2-NRP1-PlexinA4 complex	2	0	0	0	0	0	0	0	1	0
+SEMA4A-PlexinD1 complex	2	0	0	0	0	0	0	0	0	0
+Ternary complex (LRRC7, CAMK2a, ACTN4)	0	3	0	0	0	0	0	0	0	0
+CEBPE-E2F1-RB1 complex	0	3	0	0	0	0	0	0	0	0
+SEMA3C-PlexinD1-Nrp1 complex	3	0	0	0	0	0	0	0	0	0
+PlexinC1-SEMA7A complex	2	0	0	0	0	0	0	0	0	0
+PlexinC1-SEMA7A complex	2	0	0	0	0	0	0	0	0	0
+TRIM27-RB1 complex	1	1	0	0	0	0	0	0	0	0
+PlexinA3-Nrp1 complex	2	0	0	0	0	0	0	0	0	0
+PlexinB1-Nrp1 complex	2	0	0	0	0	0	0	0	0	0
+hRAD51C-hXRCC3 complex	0	0	0	0	0	1	0	0	0	1
+Membrane protein complex (DERL1, SELS, VCP)	0	1	0	0	1	0	0	0	0	1
+Membrane protein complex (VCP, UFD1L, SEC61B)	1	1	0	0	0	0	0	0	0	1
+SEMA6D-PlexinA1-NRP1 complex	3	0	0	0	0	0	0	0	0	0
+TALL1 homo-oligomer complex	0	0	0	0	1	0	0	0	0	0
+Nucleolar remodeling complex (NoRC complex)	0	0	0	0	1	0	0	0	0	1
+TIP5-DNMT-HDAC1 complex	1	1	0	0	1	0	0	0	0	1
+VEGFA(165)-KDR-NRP1 complex	2	1	0	0	0	0	0	0	0	0
+VEGFA(165)-VEGFR2-NRP1 complex	2	1	0	0	0	0	0	0	0	0
+NRP1-VEGF(165/121) complex	2	0	0	0	0	0	0	0	0	0
+PRMT2 homo-oligomer complex	0	0	0	1	0	0	0	0	0	0
+CIN85-SH3GL3-CBL complex	0	1	0	0	0	0	0	0	2	0
+IKBKG homotrimer complex	0	0	0	1	0	0	0	0	0	0
+NRP1-VEGFC complex, heparin dependent	2	0	0	0	0	0	0	0	0	0
+NRP2-VEGFC complex	2	0	0	0	0	0	0	0	0	0
+NRP2-VEGFD complex, heparin dependent	2	0	0	0	0	0	0	0	0	0
+NRP1-VEGFD complex, heparin dependent	2	0	0	0	0	0	0	0	0	0
+TGF-beta receptor-SMAD3 complex	1	2	0	0	0	0	0	0	0	0
+Pre-initiation complex (PIC)	0	1	0	0	0	1	0	0	0	1
+NRP2-VEGFR3 complex	2	0	0	0	0	0	0	0	0	0
+PlexinA1-NRP1 complex	2	0	0	0	0	0	0	0	0	0
+PlexinA1-NRP1-SEMA3A complex	3	0	0	0	0	0	0	0	0	0
+2AR-mGluR2 complex	1	1	0	0	0	0	0	0	0	0
+2AR-mGluR2 complex	1	1	0	0	0	0	0	0	0	0
+MRIT complex	1	0	0	1	1	0	0	0	0	0
+SUMO1-SUA1-UBA2 complex	0	3	0	0	0	0	0	0	0	0
+SUA1-UBA2 complex	0	2	0	0	0	0	0	0	0	0
+PLXNA2-RANBPM complex	1	0	0	0	0	0	0	0	1	0
+PLXNA3-RANBPM complex	1	0	0	0	0	0	0	0	1	0
+PLXNA4-RANBPM complex	1	0	0	0	0	0	0	0	1	0
+CRMP-MICAL-PlexinA1 complex, induced by SEMA3A	2	0	0	0	0	0	0	0	0	1
+RUNX1-CBF-beta-DNA complex	1	0	0	0	1	0	0	0	0	0
+Death induced signaling complex II (FADD, CASP8, CFLAR), cytosolic, CD95L induced	1	0	0	1	1	0	0	0	0	0
+Death induced signaling complex DISC (FAS, FADD, CASP8, CFLAR), membrane-associated, CD95L induced	1	0	0	1	2	0	0	0	0	0
+Death-inducing signaling complex DISC (type I cells associated), stimulated	0	0	0	1	2	0	0	0	0	0
+PGAM5-KEAP1-NRF2 complex	0	1	0	0	1	0	0	0	0	0
+GABAA receptor 	3	0	0	0	0	0	0	0	0	0
+Apoptosome-procaspase 9 complex	0	0	0	2	0	0	0	0	0	1
+MCL1-BAK1 complex	2	0	0	0	0	0	0	0	0	0
+IKBKG tetramer complex	0	0	0	1	0	0	0	0	0	0
+IKBKG-IKBKB  complex	0	1	0	1	0	0	0	0	0	0
+IKBKG-CHUK complex	0	1	0	1	0	0	0	0	0	0
+DJ-1-SNCA complex, high molecular weight complex	0	0	1	0	0	0	0	0	0	1
+MAP2K1-BRAF-RAF1-YWHAE-KSR1 complex	0	5	0	0	0	0	0	0	0	0
+PINK1-MIRO2-Milton complex	0	3	0	0	0	0	0	0	0	0
+MIRO2-Milton complex	0	2	0	0	0	0	0	0	0	0
+PPD complex	0	2	0	0	0	0	0	0	0	1
+AIF-CYPA-DNA complex	0	0	0	1	0	0	0	0	0	1
+I-kappa-B kinase (IKK) complex	0	2	0	1	0	0	0	0	0	0
+HSP90-CDC37-LRRK2 complex	0	1	0	1	0	0	0	0	1	0
+FAS-FADD-CASP8-CASP10 complex	0	0	0	2	2	0	0	0	0	0
+FAS-FADD-CASP8 complex	0	0	0	1	2	0	0	0	0	0
+FAS-FADD-CASP10 complex	0	0	0	1	2	0	0	0	0	0
+CAV1-VDAC1-ESR1 complex	1	1	0	0	1	0	0	0	0	0
+FE65-TSHZ3-HDAC1 complex	1	0	1	0	0	0	0	0	0	1
+BRAF-MAP2K1-MAP2K2-YWHAE complex	0	4	0	0	0	0	0	0	0	0
+RAF1-MAP2K1-YWHAE complex	0	3	0	0	0	0	0	0	0	0
+PPP2R1A-PPP2R1B-PPP2CA-PPME1-EIF4A1 complex	0	2	0	2	0	0	0	0	0	1
+KSR1 homooligomer complex	0	1	0	0	0	0	0	0	0	0
+BRAF-RAF1-14-3-3 complex	0	9	0	0	0	0	0	0	0	0
+KSR1-RAF1-MEK complex	0	4	0	0	0	0	0	0	0	0
+KSR1-BRAF-MEK complex	0	4	0	0	0	0	0	0	0	0
+RAF1-RAS complex, EGF induced	0	4	0	0	0	0	0	0	0	0
+RAF1-BRAF complex, RAS stimulated	0	2	0	0	0	0	0	0	0	0
+RAF1-CNK1 complex, RAS stimulated	0	1	0	0	0	0	0	0	1	0
+BRAF-CNK1 complex, not RAS stimulated	0	1	0	0	0	0	0	0	1	0
+CNK1 homodimer complex	0	0	0	0	0	0	0	0	1	0
+CNK1-SRC-RAF1 complex	0	1	0	0	1	0	0	0	1	0
+LRRK2-CHIP-HSP90 complex	0	0	0	2	0	0	0	0	1	0
+LRRK2-FADD-CASP8	0	0	0	1	1	0	0	0	1	0
+Calcineurin	0	2	0	0	0	0	0	0	0	0
+UBC13-UEV1a complex	0	1	0	0	0	0	0	0	0	0
+PARK2-EPS15-EGFR	0	2	0	0	0	0	0	0	1	0
+CHIP-HSC70 complex	0	0	0	1	0	0	0	0	0	1
+DISC-FEZ1 complex	0	0	1	0	1	0	0	0	0	0
+DISC-FEZ1-F-actin complex	0	0	1	0	1	0	0	0	0	0
+missing1	0	0	2	0	0	0	0	0	0	0
+missing2	0	1	1	0	0	0	0	0	0	0
+BAG3-HSC70-HSPB8-CHIP complex	1	0	0	1	1	0	0	0	0	1
+LKB1-STRAD-MO25 complex	0	3	0	0	0	0	0	0	0	0
+DISC1-ZNF365 complex	0	0	1	0	1	0	0	0	0	0
+Xanthine oxidase	0	0	0	0	0	0	0	0	0	1
+ESR1-SP1 complex	0	0	0	0	2	0	0	0	0	0
+ESR1-CEBPB complex	0	0	1	0	1	0	0	0	0	0
+ESR1-GRIP1 complex	0	0	0	0	2	0	0	0	0	0
+TRA2B1-SRp30c-SRp55 complex	0	2	0	1	0	0	0	0	0	0
+SRp30c-SRp55 complex	0	2	0	0	0	0	0	0	0	0
