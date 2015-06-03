@@ -2,7 +2,7 @@
 #*#
 *~
 *.pyc
-./topics/notebooks/.ipynb_checkpoints/puma-checkpoint.ipynb
 deprecated/*
 testing/*
 one-offs/*
+topics/notebooks/.ipynb_checkpoints/puma-checkpoint.ipynb
