@@ -3,3 +3,6 @@
 *~
 *.pyc
 ./topics/notebooks/.ipynb_checkpoints/puma-checkpoint.ipynb
+deprecated/*
+testing/*
+one-offs/*
