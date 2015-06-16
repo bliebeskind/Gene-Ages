@@ -76,6 +76,9 @@ def get_db_age_nodes(infile,tree):
 	ageD = {}
 	for db in dbD:
 		species_set = set(dbD[db])
+		if len(species_set) == 0: # shouldn't be, maybe some error handling is in order here.
+			ageD[db] = None
+			continue
 		try:
 			ageNode = tree.mrca(taxon_labels=species_set).label
 		except KeyError:
