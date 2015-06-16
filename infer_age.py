@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import dendropy
-import sys
+import sys, pickle
 
 def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
 	'''Read in a tree using dendropy. Tree should have node labels for ancestral nodes that will be
@@ -28,6 +28,23 @@ def counts_gen(src,tree):
 		assert len(count_cols) == len(infile_taxa)
 		yield line[0], {i:j for i,j in zip(infile_taxa,count_cols) if j > 0} # skip zero counts
 	
+def read_dbComp(infile):
+	'''Read in one of Claire's ortholog X database files, and return the name of the human protein and
+	a dictionary mapping each database to a list of the species with identified orthologs.'''
+	protein = infile.split(".")[0]
+	with open(infile) as f:
+		header = f.readline().strip().split(",")
+		dbList = header[3:]
+		dbDict = {dbname:[] for dbname in dbList}
+		for line in f:
+			line = line.strip().split(",")
+			species = line[1].split("_")[1]
+			for db,value in zip(dbList,line[3:]):
+				if value == "1":
+					dbDict[db].append(species)
+	return protein, dbDict
+	
+	
 def age_generator(src,tree_source,format='nexus',source_type='file'):
 	'''Return generator of tuples where i,j are group,age'''
 	tree = get_dendropy_tree(tree_source,format,source_type)
@@ -49,6 +66,32 @@ def age_generator(src,tree_source,format='nexus',source_type='file'):
 		else: # just one branch
 			yield group, count.keys()[0] # should add error checking if all zeros
 		
+def get_db_age_nodes(infile,tree_source,format='nexus',source_type='file'):
+	'''Open one of Claire's DBcomp files and infer the age of the protein for each database therein.
+	Uses a species tree with annotated interior nodes and returns a dictionary mapping each database
+	name to the ancestral node representing the inferred age.
+	
+	Calls read_dbComp'''
+	tree = get_dendropy_tree(tree_source,format,source_type)
+	prot, dbD = read_dbComp(infile)
+	ageD = {}
+	for db in dbD:
+		species_set = set(dbD[db])
+		try:
+			ageNode = tree.mrca(taxon_labels=species_set).label
+		except KeyError:
+			taxon_labels = [i.label for i in tree.taxon_set]
+			es = [i for i in species_set if i not in taxon_labels]
+			raise Exception("Couldn't find taxa: %s" % str(es))
+		ageD[db] = ageNode
+	return prot, ageD
+	
+def serialize_dbAgeNodes(infile,tree_source,format='nexus',source_type='file'):
+	'''Pickle the output of get_db_age_nodes to a file <prot>.p'''
+	prot, ageD = get_db_age_nodes(infile,tree_source,format='nexus',source_type='file')
+	with open(prot+".p",'w') as out:
+		pickle(ageD,out)
+
 				
 if __name__ == '__main__':
 	try:
