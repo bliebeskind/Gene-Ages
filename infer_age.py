@@ -66,13 +66,12 @@ def age_generator(src,tree_source,format='nexus',source_type='file'):
 		else: # just one branch
 			yield group, count.keys()[0] # should add error checking if all zeros
 		
-def get_db_age_nodes(infile,tree_source,format='nexus',source_type='file'):
+def get_db_age_nodes(infile,tree):
 	'''Open one of Claire's DBcomp files and infer the age of the protein for each database therein.
 	Uses a species tree with annotated interior nodes and returns a dictionary mapping each database
 	name to the ancestral node representing the inferred age.
 	
 	Calls read_dbComp'''
-	tree = get_dendropy_tree(tree_source,format,source_type)
 	prot, dbD = read_dbComp(infile)
 	ageD = {}
 	for db in dbD:
@@ -86,11 +85,13 @@ def get_db_age_nodes(infile,tree_source,format='nexus',source_type='file'):
 		ageD[db] = ageNode
 	return prot, ageD
 	
-def serialize_dbAgeNodes(infile,tree_source,format='nexus',source_type='file'):
+def serialize_dbAgeNodes(infile_stream,tree_source,format='nexus',source_type='file'):
 	'''Pickle the output of get_db_age_nodes to a file <prot>.p'''
-	prot, ageD = get_db_age_nodes(infile,tree_source,format='nexus',source_type='file')
-	with open(prot+".p",'w') as out:
-		pickle(ageD,out)
+	tree = get_dendropy_tree(tree_source,format,source_type)
+	for f in infile_stream:
+		prot, ageD = get_db_age_nodes(f,tree)
+		with open(prot+".p",'w') as out:
+			pickle(ageD,out)
 
 				
 if __name__ == '__main__':
