@@ -94,7 +94,7 @@ def serialize_dbAgeNodes(infile_stream,tree_source,format='nexus',source_type='f
 	for f in infile_stream:
 		prot, ageD = get_db_age_nodes(f,tree)
 		with open(prot+".p",'w') as out:
-			pickle(ageD,out)
+			pickle.dump(ageD,out)
 
 				
 if __name__ == '__main__':
