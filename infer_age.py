@@ -84,7 +84,7 @@ def get_db_age_nodes(infile,tree):
 		except KeyError:
 			taxon_labels = [i.label for i in tree.taxon_set]
 			es = [i for i in species_set if i not in taxon_labels]
-			print "Couldn't find taxon %s in protein %s" % (str(es),prot))
+			print "Couldn't find taxon %s in protein %s" % (str(es),prot)
 			return prot, None
 		ageD[db] = ageNode
 	return prot, ageD
