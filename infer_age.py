@@ -84,7 +84,8 @@ def get_db_age_nodes(infile,tree):
 		except KeyError:
 			taxon_labels = [i.label for i in tree.taxon_set]
 			es = [i for i in species_set if i not in taxon_labels]
-			raise Exception("Couldn't find taxa: %s" % str(es))
+			print "Couldn't find taxon %s in protein %s" % (str(es),prot))
+			return prot, None
 		ageD[db] = ageNode
 	return prot, ageD
 	
@@ -93,6 +94,8 @@ def serialize_dbAgeNodes(infile_stream,tree_source,format='nexus',source_type='f
 	tree = get_dendropy_tree(tree_source,format,source_type)
 	for f in infile_stream:
 		prot, ageD = get_db_age_nodes(f,tree)
+		if ageD == None:
+			continue
 		with open(prot+".p",'w') as out:
 			pickle.dump(ageD,out)
 
