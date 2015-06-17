@@ -3,6 +3,28 @@
 import dendropy
 import sys, pickle
 
+alternate_names = {'ASPFC': 'ASPFU',
+	'BACT4': 'BACTN',
+	'CAEBR': 'CAEEL',
+	'CANAW': 'CANAL',
+	'CANAX': 'CANAL',
+	'CHLTA': 'CHLTR',
+	'CRYNE': 'CRYNJ',
+	'GEOSN': 'GEOSL',
+	'HALS3': 'HALSA',
+	'LEPIR': 'LEPIN',
+	'MYCTO': 'MYCTX',
+	'MYCTU': 'MYCTX',
+	'NEUCS': 'NEUCR',
+	'PHAND': 'PHANO',
+	'PSEA7': 'PSEAE',
+	'STRCH': 'STRCO',
+	'SULSF': 'SULSO',
+	'THEMT': 'THEMA',
+	'USTMD': 'USTMA',
+	'YARLL': 'YARLI',
+	'YEASX': 'YEAST'}
+
 def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
 	'''Read in a tree using dendropy. Tree should have node labels for ancestral nodes that will be
 	used for aging. They should be of format: [&age: "Metazoa"]'''
@@ -39,6 +61,8 @@ def read_dbComp(infile):
 		for line in f:
 			line = line.strip().split(",")
 			species = line[1].split("_")[1]
+			if species in alternate_names:
+				species = alternate_names[species]
 			for db,value in zip(dbList,line[3:]):
 				if value == "1":
 					dbDict[db].append(species)
