@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
-import sys,pickle
+import sys
+import cPickle as pickle
 import os.path
 
 def flatten(tuple_gen,group_col=0,value_col=1):
