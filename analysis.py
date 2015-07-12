@@ -3,12 +3,14 @@ from collections import OrderedDict, Counter
 import cPickle as pickle
 import pandas as pd
 
+# Sum distances
+
 def load_pickle(infile):
 	'''Read in pickled files'''
 	with open(infile) as f:
 		return pickle.load(f)
 		
-def calc_dists(infile,node_distsD):
+def all_by_all_dists(infile,node_distsD):
 	'''Read a database age file created by infer_age.serialize_dbAgeNodes and return a dictionary holding
 	distances (in number of branches) between every non-redundant, non-self pairs of databases.'''
 	dbAgeD = load_pickle(infile)
@@ -22,7 +24,26 @@ def calc_dists(infile,node_distsD):
 		dbDists[db1][db2] = node_distsD[node1][node2] # get distance between nodes 
 	return OrderedDict(sorted(dbDists.iteritems(), key=lambda x: x[0]))
 	
-def add_dicts(d1,d2):
+def one_by_all_dists(infile,node_distsD,database):
+	'''Read in database age file created by infer_age.serialize_dbAgeNodes and calculate the total distance
+	between an input database and all other databases. Return a tuple of the protein (from infile) and the
+	distance.'''
+	dbAgeD = load_pickle(infile)
+	prot = infile.split(".")[0]
+	assert database in dbAgeD, "Database %s not found" % database
+	otherDBs = dbAgeD.keys()
+	otherDBs.remove(database)
+	totalDist = 0
+	for i in otherDBs:
+		node1,node2 = dbAgeD[database],dbAgeD[i]
+		if node1 == None or node2 == None: # NOT IDEAL - if node == None make distance largest possible
+			return prot, 20
+			continue
+		dist = node_distsD[node1][node2]
+		totalDist += dist
+	return prot,totalDist
+	
+def add_dicts(d1,d2): # should be done with counter addition
 	'''
 	Given two nested dictionaries, each of depth 2, add the sums held at the second level, e.g.:
 	
@@ -51,12 +72,14 @@ def sum_dist(infile_stream,nodeDistsFile):
 	count = 0
 	for f in infile_stream:
 		if is_first:
-			D = calc_dists(f,dists)
+			D = all_by_all_dists(f,dists)
 			is_first = False
 		else:
-			D = add_dicts(D,calc_dists(f,dists))
+			D = add_dicts(D,all_by_all_dists(f,dists))
 		count +=1
 	return D, count
+
+# Binned ages	
 
 def node2taxonAge(infile,conversion_dictionary):
 	'''Convert database node label mapping to a dictionary containing taxonomic names. Input conversion
@@ -87,4 +110,6 @@ def taxonAgeCount(infile_stream,conversion_file):
 				else:
 					taxAgeCounter[db] = Counter([age])
 	return taxAgeCounter
-		
+			
+	
+	
