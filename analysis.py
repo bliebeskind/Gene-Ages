@@ -37,7 +37,7 @@ def one_by_all_dists(infile,node_distsD,database):
 	for i in otherDBs:
 		node1,node2 = dbAgeD[database],dbAgeD[i]
 		if node1 == None or node2 == None: # NOT IDEAL - if node == None make distance largest possible
-			return prot, 20
+			return prot, "None"
 			continue
 		dist = node_distsD[node1][node2]
 		totalDist += dist
