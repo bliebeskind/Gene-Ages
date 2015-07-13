@@ -1,7 +1,10 @@
+import sys
+import pandas as pd
+import cPickle as pickle
 from itertools import combinations
 from collections import OrderedDict, Counter
-import cPickle as pickle
-import pandas as pd
+
+
 
 # Sum distances
 
@@ -46,7 +49,11 @@ def one_by_all_dists(infile,node_distsD,database):
 			dist = node_distsD[node][focalDBAge]
 			totalDist += dist
 			totalDBs += 1
-	return prot,totalDist/totalDBs
+	try:
+		avgDist = totalDist/totalDBs
+	except ZeroDivisionError:
+		continue
+	return prot, avgDist
 	
 def add_dicts(d1,d2): # should be done with counter addition
 	'''
