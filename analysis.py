@@ -25,23 +25,28 @@ def all_by_all_dists(infile,node_distsD):
 	return OrderedDict(sorted(dbDists.iteritems(), key=lambda x: x[0]))
 	
 def one_by_all_dists(infile,node_distsD,database):
-	'''Read in database age file created by infer_age.serialize_dbAgeNodes and calculate the total distance
-	between an input database and all other databases. Return a tuple of the protein (from infile) and the
-	distance.'''
+	'''Read in database age file created by infer_age.serialize_dbAgeNodes and calculate the average 
+	distance between an input database and all other databases. Return a tuple of the protein 
+	(from infile) and the distance.'''
 	dbAgeD = load_pickle(infile)
 	prot = infile.split(".")[0]
 	assert database in dbAgeD, "Database %s not found" % database
 	otherDBs = dbAgeD.keys()
 	otherDBs.remove(database)
 	totalDist = 0
+	totalDBs = 0.0
+	focalDBAge = dbAgeD[database]
+	if focalDBAge == None:
+		return prot, "None"
 	for i in otherDBs:
-		node1,node2 = dbAgeD[database],dbAgeD[i]
-		if node1 == None or node2 == None: # NOT IDEAL - if node == None make distance largest possible
-			return prot, "None"
+		node = dbAgeD[i]
+		if node == None:
 			continue
-		dist = node_distsD[node1][node2]
-		totalDist += dist
-	return prot,totalDist
+		else:
+			dist = node_distsD[node][focalDBAge]
+			totalDist += dist
+			totalDBs += 1
+	return prot,totalDist/totalDBs
 	
 def add_dicts(d1,d2): # should be done with counter addition
 	'''
