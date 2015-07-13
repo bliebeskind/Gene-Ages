@@ -52,7 +52,7 @@ def one_by_all_dists(infile,node_distsD,database):
 	try:
 		avgDist = totalDist/totalDBs
 	except ZeroDivisionError:
-		continue
+		return prot, 0
 	return prot, avgDist
 	
 def add_dicts(d1,d2): # should be done with counter addition
