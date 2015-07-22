@@ -1,17 +1,23 @@
 import sys
 import pandas as pd
 import cPickle as pickle
+import multiprocessing as mult
 from itertools import combinations
 from collections import OrderedDict, Counter
 
-
-
-# Sum distances
+# shared funcs
 
 def load_pickle(infile):
 	'''Read in pickled files'''
 	with open(infile) as f:
 		return pickle.load(f)
+
+def _paraStream(func,instream):
+	chunk = mult.cpu_count() - 1
+	pool = mult.Pool(processes=chunk)
+	return pool.imap_unordered(func,instream,chunk)
+
+# Sum distances
 		
 def all_by_all_dists(infile,node_distsD):
 	'''Read a database age file created by infer_age.serialize_dbAgeNodes and return a dictionary holding
@@ -106,12 +112,16 @@ def node2taxonAge(infile,conversion_dictionary):
 		taxonAgeD[db] = conversion_dictionary[age]
 	return taxonAgeD
 
+def _deTuppler(args): # crappy workaround to pass pickleable function with only 1 argument to Pool
+	return node2taxonAge(*args)
+
 def taxonAgeCount(infile_stream,conversion_file):
 	'''Create distribution of taxon-based ages for each database'''
 	conversion_dictionary = load_pickle(conversion_file)
 	is_first = True
-	for f in infile_stream:
-		taxonAgeD = node2taxonAge(f,conversion_dictionary)
+	ingen = ((f,conversion_dictionary) for f in infile_stream)
+	outgen = _paraStream(_deTuppler,ingen) # create parallelized generator
+	for taxonAgeD in outgen:
 		if is_first:
 			taxAgeCounter = {i:Counter([j]) for i,j in taxonAgeD.iteritems()}
 			is_first = False
@@ -122,6 +132,3 @@ def taxonAgeCount(infile_stream,conversion_file):
 				else:
 					taxAgeCounter[db] = Counter([age])
 	return taxAgeCounter
-			
-	
-	
