@@ -132,3 +132,27 @@ def taxonAgeCount(infile_stream,conversion_file):
 				else:
 					taxAgeCounter[db] = Counter([age])
 	return taxAgeCounter
+	
+## Get ages
+
+def ages_to_csv(infile_stream,as_taxa=False,conversion_dictionary=None):
+	'''Print pickled age dictionaries to a csv'''
+	is_first = True
+	if conversion_dictionary and None not in conversion_dictionary:
+		conversion_dictionary[None] = "None"
+	for f in infile_stream:
+		protein = f.split(".")[0]
+		ages = load_pickle(f)
+		if is_first: # print header
+			dbs = sorted(ages.keys())
+			print "\t".join(dbs)
+			is_first = False
+		else:
+			assert sorted(ages.keys()) == dbs, "Databases don't match: %s" % protein
+			if as_taxa:
+				try:
+					print "\t".join([protein] + [conversion_dictionary[ages[i]] for i in dbs])
+				except TypeError:
+					raise Exception("conversion dictionary must be supplied if as_taxa is True")
+			else:
+				print "\t".join([protein] + [str(ages[i]) for i in dbs])
