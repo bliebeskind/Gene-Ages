@@ -135,7 +135,7 @@ def taxonAgeCount(infile_stream,conversion_file):
 	
 ## Get ages
 
-def ages_to_csv(infile_stream,as_taxa=False,conversion_dictionary=None):
+def ages_to_tsv(infile_stream,as_taxa=False,conversion_dictionary=None):
 	'''Print pickled age dictionaries to a csv'''
 	is_first = True
 	if conversion_dictionary and None not in conversion_dictionary:
