@@ -121,7 +121,7 @@ def get_db_age_nodes(infile,tree,as_clades=False,conversion_dictionary=None):
 			return prot, None
 		if as_clades: # use clade names instead of numerical internal node labels
 			ageNode = conversion_dictionary[ageNode]
-			if ageNode == "LUCA":
+			if ageNode == "Cellular_organisms":
 				for i in species_set:
 					if i in Archaea:
 						break
