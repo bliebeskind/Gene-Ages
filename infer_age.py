@@ -24,17 +24,9 @@ alternate_names = {'ASPFC': 'ASPFU',
 	'USTMD': 'USTMA',
 	'YARLL': 'YARLI',
 	'YEASX': 'YEAST'}
+	
+# From taxon count file
 
-def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
-	'''Read in a tree using dendropy. Tree should have node labels for ancestral nodes that will be
-	used for aging. They should be of format: [&age: "Metazoa"]'''
-	format,source = format.lower(),source_type.lower()
-	tree_funcD = {'string':dendropy.Tree.get_from_string,
-				'file':dendropy.Tree.get_from_path,
-				'stream':dendropy.Tree.get_from_stream}
-	tree = tree_funcD[source_type](tree_source,format,extract_comment_metadata=True)
-	return tree
-				
 def counts_gen(src,tree):
 	'''
 	Read from taxon_count file and yield two-element tuples:
@@ -49,26 +41,7 @@ def counts_gen(src,tree):
 		count_cols = [int(i) for i in line[1:]]
 		assert len(count_cols) == len(infile_taxa)
 		yield line[0], {i:j for i,j in zip(infile_taxa,count_cols) if j > 0} # skip zero counts
-	
-def read_dbComp(infile):
-	'''Read in one of Claire's ortholog X database files, and return the name of the human protein and
-	a dictionary mapping each database to a list of the species with identified orthologs.'''
-	protein = infile.split(".")[0]
-	with open(infile) as f:
-		header = f.readline().strip().split(",")
-		dbList = header[3:]
-		dbDict = {dbname:[] for dbname in dbList}
-		for line in f:
-			line = line.strip().split(",")
-			species = line[1].split("_")[1]
-			if species in alternate_names:
-				species = alternate_names[species]
-			for db,value in zip(dbList,line[3:]):
-				if value == "1":
-					dbDict[db].append(species)
-	return protein, dbDict
-	
-	
+		
 def age_generator(src,tree_source,format='nexus',source_type='file'):
 	'''Return generator of tuples where i,j are group,age'''
 	tree = get_dendropy_tree(tree_source,format,source_type)
@@ -89,6 +62,37 @@ def age_generator(src,tree_source,format='nexus',source_type='file'):
 				yield group, age
 		else: # just one branch
 			yield group, count.keys()[0] # should add error checking if all zeros
+		
+# from DataBase comparison files (Claire's format)
+
+def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
+	'''Read in a tree using dendropy. Tree should have node labels for ancestral nodes that will be
+	used for aging. They should be of format: [&age: "Metazoa"]'''
+	format,source = format.lower(),source_type.lower()
+	tree_funcD = {'string':dendropy.Tree.get_from_string,
+				'file':dendropy.Tree.get_from_path,
+				'stream':dendropy.Tree.get_from_stream}
+	tree = tree_funcD[source_type](tree_source,format,extract_comment_metadata=True)
+	return tree
+	
+def read_dbComp(infile):
+	'''Read in one of Claire's ortholog X database files, and return the name of the human protein and
+	a dictionary mapping each database to a list of the species with identified orthologs.'''
+	protein = infile.split(".")[0]
+	with open(infile) as f:
+		header = f.readline().strip().split(",")
+		dbList = header[3:]
+		dbDict = {dbname:[] for dbname in dbList}
+		for line in f:
+			line = line.strip().split(",")
+			species = line[1].split("_")[1]
+			if species in alternate_names:
+				species = alternate_names[species]
+			for db,value in zip(dbList,line[3:]):
+				if value == "1":
+					dbDict[db].append(species)
+	return protein, dbDict
+
 		
 def get_db_age_nodes(infile,tree):
 	'''Open one of Claire's DBcomp files and infer the age of the protein for each database therein.
