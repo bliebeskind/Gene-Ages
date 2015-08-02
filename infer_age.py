@@ -25,6 +25,8 @@ alternate_names = {'ASPFC': 'ASPFU',
 	'YARLL': 'YARLI',
 	'YEASX': 'YEAST'}
 	
+Archaea = ["THECO","METAC","METJA","HALSA","SULSO"]
+
 # From taxon count file
 
 def counts_gen(src,tree):
@@ -94,7 +96,7 @@ def read_dbComp(infile):
 	return protein, dbDict
 
 		
-def get_db_age_nodes(infile,tree):
+def get_db_age_nodes(infile,tree,as_clades=False,conversion_dictionary=None):
 	'''Open one of Claire's DBcomp files and infer the age of the protein for each database therein.
 	Uses a species tree with annotated interior nodes and returns a dictionary mapping each database
 	name to the ancestral node representing the inferred age.
@@ -109,23 +111,40 @@ def get_db_age_nodes(infile,tree):
 			continue
 		try:
 			ageNode = tree.mrca(taxon_labels=species_set).label
+			if ageNode == None:
+				ageD[db] = None
+				continue
 		except KeyError:
 			taxon_labels = [i.label for i in tree.taxon_set]
 			es = [i for i in species_set if i not in taxon_labels]
 			print "Couldn't find taxon %s in protein %s" % (str(es),prot)
 			return prot, None
+		if as_clades: # use clade names instead of numerical internal node labels
+			ageNode = conversion_dictionary[ageNode]
+			if ageNode == "LUCA":
+				for i in species_set:
+					if i in Archaea:
+						break
+				else:
+					ageNode = "Euk+Bac"
 		ageD[db] = ageNode
 	return prot, ageD
 	
-def serialize_dbAgeNodes(infile_stream,tree_source,format='nexus',source_type='file'):
+def serialize_dbAgeNodes(infile_stream,tree_source,as_clades=False,conversion_dictionary=None):
 	'''Pickle the output of get_db_age_nodes to a file <prot>.p'''
-	tree = get_dendropy_tree(tree_source,format,source_type)
+	tree = get_dendropy_tree(tree_source)
+	if as_clades:
+			assert conversion_dictionary != None, \
+			"Must supply a dictionary converting age nodes to taxa"
+			with open(conversion_dictionary) as f:
+				convD = pickle.load(f)
 	for f in infile_stream:
-		prot, ageD = get_db_age_nodes(f,tree)
+		prot, ageD = get_db_age_nodes(f,tree,as_clades,convD)
 		if ageD == None:
 			continue
 		with open(prot+".p",'w') as out:
 			pickle.dump(ageD,out)
+		print prot
 
 				
 if __name__ == '__main__':
