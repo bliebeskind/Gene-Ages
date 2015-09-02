@@ -143,8 +143,8 @@ def ages_to_tsv(infile_stream,as_taxa=False,conversion_dictionary=None):
 	for f in infile_stream:
 		protein = f.split(".")[0]
 		ages = load_pickle(f)
-		if is_first: # print header
-			dbs = sorted(ages.keys())
+		if is_first: # print header with leading tab character
+			dbs = sorted([''] + ages.keys())
 			print "\t".join(dbs)
 			is_first = False
 		else:
