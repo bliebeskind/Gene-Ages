@@ -213,4 +213,63 @@ def polarization(infile,node_distsD,class1,class2):
 	return "\t".join([gene, str(ratio)])
 	
 	
+### LDO analysis - see whether InParanoid and OMA are collapsing co-orthologous groups
+
+def findLDObreak(orthoAges,odb,ydb):
+	for gene in orthoAges.index:
+		youngAge,oldAge = orthoAges.ix[gene,ydb], orthoAges.ix[gene,odb]
+		if youngAge > oldAge: # skip genes where 'young' db calls older value
+			continue # watch for cases where these all fail
+		else:
+			ldos = len(orthoAges.loc[orthoAges[ydb] == oldAge]) # num rows where young db found the older age
+			try:
+				assert ldos <= 1 # not currently being used
+				yield gene, bool(ldos) # 1/0 --> True/False - i.e. LDOs were found or not
+			except:
+				# These will be found - do something else here?
+				# print "Found several LDOs in these genes: %s" % str([i for i in orthoAges.index])
+				pass
+				
 	
+## Would like this to spit out a tuple of gene, whether an LDO split was detected (T/F), for which database pair
+def LDOcomp(orthoAges,oldGroup,youngGroup):
+	'''Do the analysis for a single orthogroup'''
+	for odb in oldGroup:
+		for ydb in youngGroup:
+			orthoAgesTrimmed = orthoAges[[odb,ydb]] # trim DF - now just orthos and two DBs.
+			for gene, value in findLDObreak(orthoAgesTrimmed,odb,ydb):
+				yield gene, value, odb, ydb
+
+def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup):
+	'''coOrthos is a file like coOrthoGroups.txt
+	ageFile is a file like newAges.txt
+	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
+	'''
+	ages = pd.read_table(ageFile,index_col=0)
+	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
+	comps = 0
+	with open(coOrthoFile) as f:
+		for line in f:
+			orthos = line.split(",")
+			orthoAges = ages.loc[orthos].dropna() # trim DF - row will be NaN if gene is missing
+			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
+				continue
+			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup):
+				if gene in outD:
+					dbs = (odb,ydb)
+					if dbs in outD[gene]: # only care that it's True once
+						if value == True and outD[gene][dbs] == False:
+							outD[gene][dbs] = value
+					else:
+						outD[gene][dbs] = value
+				else:
+					outD[gene] = {(odb,ydb):value}
+				comps +=1
+				if comps % 100 == 0:
+					print comps
+	return outD
+	
+def percTrue(resultD):
+	calc = lambda d: float(len([i for i in d.itervalues() if i == True]))/len(d)
+	for gene in resultD:
+		yield gene, calc(resultD[gene])
