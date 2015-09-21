@@ -218,10 +218,16 @@ def polarization(infile,node_distsD,class1,class2):
 def findLDObreak(orthoAges,odb,ydb):
 	for gene in orthoAges.index:
 		youngAge,oldAge = orthoAges.ix[gene,ydb], orthoAges.ix[gene,odb]
-		if youngAge > oldAge: # skip genes where 'young' db calls older value
+		if youngAge == None or oldAge == None:
+			continue
+		elif youngAge > oldAge: # skip genes where 'young' db calls older value
 			continue # watch for cases where these all fail
 		else:
-			ldos = len(orthoAges.loc[orthoAges[ydb] == oldAge]) # num rows where young db found the older age
+			try:
+				ldos = len(orthoAges.loc[orthoAges[ydb] == oldAge]) # num rows where young db found the older age
+			except ValueError:
+				print ydb,oldAge,gene
+				raise
 			try:
 				assert ldos <= 1 # not currently being used
 				yield gene, bool(ldos) # 1/0 --> True/False - i.e. LDOs were found or not
@@ -232,29 +238,34 @@ def findLDObreak(orthoAges,odb,ydb):
 				
 	
 ## Would like this to spit out a tuple of gene, whether an LDO split was detected (T/F), for which database pair
-def LDOcomp(orthoAges,oldGroup,youngGroup):
+def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 	'''Do the analysis for a single orthogroup'''
 	for odb in oldGroup:
 		for ydb in youngGroup:
 			orthoAgesTrimmed = orthoAges[[odb,ydb]] # trim DF - now just orthos and two DBs.
+			if binnedConversion:
+				func = lambda x: binnedConversion[x]
+				orthoAgesTrimmed = orthoAgesTrimmed.applymap(func)
 			for gene, value in findLDObreak(orthoAgesTrimmed,odb,ydb):
 				yield gene, value, odb, ydb
 
-def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup):
+## binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,'None':None}
+
+def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 	'''coOrthos is a file like coOrthoGroups.txt
 	ageFile is a file like newAges.txt
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
 	'''
-	ages = pd.read_table(ageFile,index_col=0)
+	ages = pd.read_table(ageFile,index_col=0,na_values=["None"]) # now genes with only one None age value will be dropped - too stringent?
 	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
 	comps = 0
 	with open(coOrthoFile) as f:
 		for line in f:
 			orthos = line.split(",")
-			orthoAges = ages.loc[orthos].dropna() # trim DF - row will be NaN if gene is missing
+			orthoAges = ages.loc[orthos].dropna() # trim DF - row will be NaN if gene is missing values (define cutoff?)
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
-			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup):
+			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 				if gene in outD:
 					dbs = (odb,ydb)
 					if dbs in outD[gene]: # only care that it's True once
