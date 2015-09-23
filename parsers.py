@@ -1,7 +1,12 @@
 #! /usr/bin/env python
 
 def phylome_parser(infile,as_taxid=False,taxonD=None,type_filter=None):
-	'''For parsing a phylomeDB ortholog file'''
+	'''
+	Parses a phylomeDB ortholog file
+	type_filter is a list of ortholog relation types to consider. Must be one of:
+		"many-to-many","many-to-one","one-to-many", or "one-to-one"
+		All types not in type_filter are returned by this function
+	'''
 	values = ("gene","ortholog","type","CS","trees","co-orthologs")
 	with open(infile) as f:
 		for line in f:
@@ -12,7 +17,7 @@ def phylome_parser(infile,as_taxid=False,taxonD=None,type_filter=None):
 				types = ["many-to-many","many-to-one","one-to-many","one-to-one"]
 				type = line[2]
 				assert type in types, "type %s not recognized" % type
-				if type != type_filter.lower():
+				if type not in type_filter.lower():
 					continue
 			lineD = dict(map(None,values,line))
 			if as_taxid:
