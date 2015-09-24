@@ -17,7 +17,7 @@ def phylome_parser(infile,as_taxid=False,taxonD=None,type_filter=None):
 				types = ["many-to-many","many-to-one","one-to-many","one-to-one"]
 				type = line[2]
 				assert type in types, "type %s not recognized" % type
-				if type not in type_filter.lower():
+				if type not in type_filter:
 					continue
 			lineD = dict(map(None,values,line))
 			if as_taxid:
