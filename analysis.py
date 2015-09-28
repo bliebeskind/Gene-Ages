@@ -228,13 +228,7 @@ def findLDObreak(orthoAges,odb,ydb):
 			except ValueError:
 				print ydb,oldAge,gene
 				raise
-			try:
-				assert ldos <= 1 # not currently being used
-				yield gene, bool(ldos) # 1/0 --> True/False - i.e. LDOs were found or not
-			except:
-				# These will be found - do something else here? For now it's missing data.
-				# print "Found several LDOs in these genes: %s" % str([i for i in orthoAges.index])
-				pass
+			yield gene, bool(ldos) # 1/0 --> True/False - i.e. LDOs were found or not
 				
 	
 ## Would like this to spit out a tuple of gene, whether an LDO split was detected (T/F), for which database pair
