@@ -218,7 +218,7 @@ def polarization(infile,node_distsD,class1,class2):
 def findLDObreak(orthoAges,odb,ydb):
 	for gene in orthoAges.index:
 		youngAge,oldAge = orthoAges.ix[gene,ydb], orthoAges.ix[gene,odb]
-		if youngAge == None or oldAge == None:
+		if np.isnan(youngAge) or np.isnan(oldAge): # skip missing values
 			continue
 		elif youngAge > oldAge: # skip genes where 'young' db calls older value
 			continue # watch for cases where these all fail
@@ -232,7 +232,7 @@ def findLDObreak(orthoAges,odb,ydb):
 				assert ldos <= 1 # not currently being used
 				yield gene, bool(ldos) # 1/0 --> True/False - i.e. LDOs were found or not
 			except:
-				# These will be found - do something else here?
+				# These will be found - do something else here? For now it's missing data.
 				# print "Found several LDOs in these genes: %s" % str([i for i in orthoAges.index])
 				pass
 				
@@ -256,13 +256,13 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 	ageFile is a file like newAges.txt
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
 	'''
-	ages = pd.read_table(ageFile,index_col=0,na_values=["None"]) # now genes with only one None age value will be dropped - too stringent?
+	ages = pd.read_table(ageFile,index_col=0,na_values=["None"])
 	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
 	comps = 0
 	with open(coOrthoFile) as f:
 		for line in f:
 			orthos = line.split(",")
-			orthoAges = ages.loc[orthos].dropna() # trim DF - row will be NaN if gene is missing values (define cutoff?)
+			orthoAges = ages.loc[orthos] # trim DF
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
 			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
