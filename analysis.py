@@ -243,13 +243,14 @@ def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 			for gene, value in findLDObreak(orthoAgesTrimmed,odb,ydb):
 				yield gene, value, odb, ydb
 
-## binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,'None':None}
 
 def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 	'''coOrthos is a file like coOrthoGroups.txt
 	ageFile is a file like newAges.txt
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
 	'''
+	if binnedConversion:
+		binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,'None':None}
 	ages = pd.read_table(ageFile,index_col=0,na_values=["None"])
 	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
 	comps = 0
@@ -274,7 +275,12 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 					print comps
 	return outD
 	
-def percTrue(resultD):
+def percLDOs(resultD):
+	'''Return a Dataframe giving, for each gene the percent of pairwise 
+	DB comparisons for which an LDO break was found.'''
 	calc = lambda d: float(len([i for i in d.itervalues() if i == True]))/len(d)
+	D = {}
 	for gene in resultD:
-		yield gene, calc(resultD[gene])
+		assert gene not in D, "Gene: %s found twice" % gene
+		D[gene] = calc(resultD[gene])
+	return pd.DataFrame(D)
