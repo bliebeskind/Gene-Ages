@@ -245,8 +245,9 @@ def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 
 
 def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
-	'''coOrthos is a file like coOrthoGroups.txt
-	ageFile is a file like newAges.txt
+	'''
+	coOrthos is a file like coOrthoGroups.txt
+	ages is a DataFrame holding either node ages or categorical. If categorical, set binnedConversion = True
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
 	'''
 	if binnedConversion:
@@ -256,8 +257,8 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 	comps = 0
 	with open(coOrthoFile) as f:
 		for line in f:
-			orthos = line.split(",")
-			orthoAges = ages.loc[orthos] # trim DF
+			orthos = [o for o in line.strip().split(",") if o in ages.index]
+			orthoAges = ages.loc[orthos].dropna(how='all') # trim DF
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
 			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
