@@ -220,7 +220,7 @@ def findLDObreak(orthoAges,odb,ydb):
 		youngAge,oldAge = orthoAges.ix[gene,ydb], orthoAges.ix[gene,odb]
 		if np.isnan(youngAge) or np.isnan(oldAge): # skip missing values
 			continue
-		elif youngAge > oldAge: # skip genes where 'young' db calls older value
+		elif youngAge >= oldAge: # skip genes where 'young' db calls older value
 			continue # watch for cases where these all fail
 		else:
 			try:
@@ -247,18 +247,19 @@ def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 	'''
 	coOrthos is a file like coOrthoGroups.txt
-	ages is a DataFrame holding either node ages or categorical. If categorical, set binnedConversion = True
+	ageFile is a csv file holding either node ages or categorical. If categorical, set binnedConversion = True
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
 	'''
 	if binnedConversion:
-		binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,'None':None}
-	ages = pd.read_table(ageFile,index_col=0,na_values=["None"])
+		binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,np.nan:np.nan}
+	ages = pd.read_csv(ageFile,index_col=0,na_values=["None"])
 	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
 	comps = 0
 	with open(coOrthoFile) as f:
 		for line in f:
 			orthos = [o for o in line.strip().split(",") if o in ages.index]
-			orthoAges = ages.loc[orthos].dropna(how='all') # trim DF
+			orthoAges = ages.loc[orthos] # trim DF
+			orthoAges.dropna(how='all',inplace=True)
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
 			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
@@ -284,4 +285,4 @@ def percLDOs(resultD):
 	for gene in resultD:
 		assert gene not in D, "Gene: %s found twice" % gene
 		D[gene] = calc(resultD[gene])
-	return pd.DataFrame(D)
+	return D
