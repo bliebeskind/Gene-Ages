@@ -161,6 +161,7 @@ def ages_to_tsv(infile_stream,as_taxa=False,conversion_dictionary=None):
 ## Polarization stat
 
 def _within(L1,L2,node_distsD,dbAgeD):
+	'''Calculate the average within group dists for the two groups L1 and L2'''
 	dists = []
 	for l in [L1,L2]:
 		for i,j in combinations(l,r=2):
@@ -172,6 +173,7 @@ def _within(L1,L2,node_distsD,dbAgeD):
 
 	
 def _between(L1,L2,node_distsD,dbAgeD):
+	'''Calculate the between groups dists for L1 and L2'''
 	dists = []
 	for i in L1:
 		n1 = dbAgeD[i] # convert dbs to nodes
@@ -191,9 +193,21 @@ def _checkNames(L,D):
 		except AssertionError:
 			raise Exception("%s not found" % name)
 
-def polarization(dbAgeD,gene,node_distsD,class1,class2):
-	#class1 = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG"] # should maybe leave EggNOG out?
-	#class2 = ["Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
+def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
+	'''
+	Calculate the polarization score statistic or metricfor a give set of age calls. The
+	score is a ratio of the within/between patristic distances for the two classes. The
+	metric is the absolute value of the difference (between - within) and can be used
+	as a penalty.
+	
+	Input should
+	be a dictionary mapping each database to its inferred age node. These nodes must match the
+	entries in the node_distsD, which gives the patristic distance between each pairs of nodes.
+	
+	Suggested classes to compare are:
+	class1 = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD"]
+	class2 = ["Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
+	'''
 	_checkNames(class1,dbAgeD)
 	_checkNames(class2,dbAgeD)
 	try:
@@ -202,13 +216,16 @@ def polarization(dbAgeD,gene,node_distsD,class1,class2):
 	except ZeroDivisionError:
 		sys.stderr.write("%s: too many None's to calculate\n" % gene)
 		return
-	ratio = wInDists/betweenDists # won't raise zerodivision error because these are type numpy.float64
-	if np.isnan(ratio):
-		if wInDists == 0.0:
-			return "\t".join([gene,"1"])
-		else:
-			raise Exception("%s: between dist is zero, but within is >0\n" % gene)
-	return "\t".join([gene, str(ratio)])
+	if polMetric:
+		score = abs(betweenDists - wInDists)
+	else:
+		score = wInDists/betweenDists # won't raise zerodivision error because these are type numpy.float64
+		if np.isnan(score): # but will return nan
+			if wInDists == 0.0:
+				return "\t".join([gene,"1"])
+			else:
+				raise Exception("%s: between dist is zero, but within is >0\n" % gene)
+	return ",".join([gene, str(score)])
 	
 	
 ### LDO analysis - see whether InParanoid and OMA are collapsing co-orthologous groups
