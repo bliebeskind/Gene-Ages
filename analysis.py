@@ -230,7 +230,7 @@ def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
 	
 ### LDO analysis - see whether InParanoid and OMA are collapsing co-orthologous groups
 
-def findLDObreak(orthoAges,odb,ydb):
+def _findLDObreak(orthoAges,odb,ydb):
 	for gene in orthoAges.index:
 		youngAge,oldAge = orthoAges.ix[gene,ydb], orthoAges.ix[gene,odb]
 		if np.isnan(youngAge) or np.isnan(oldAge): # skip missing values
@@ -247,7 +247,7 @@ def findLDObreak(orthoAges,odb,ydb):
 				
 	
 ## Would like this to spit out a tuple of gene, whether an LDO split was detected (T/F), for which database pair
-def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
+def _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 	'''Do the analysis for a single orthogroup'''
 	for odb in oldGroup:
 		for ydb in youngGroup:
@@ -255,7 +255,7 @@ def LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 			if binnedConversion:
 				func = lambda x: binnedConversion[x]
 				orthoAgesTrimmed = orthoAgesTrimmed.applymap(func)
-			for gene, value in findLDObreak(orthoAgesTrimmed,odb,ydb):
+			for gene, value in _findLDObreak(orthoAgesTrimmed,odb,ydb):
 				yield gene, value, odb, ydb
 
 
@@ -277,7 +277,7 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
 			orthoAges.dropna(how='all',inplace=True)
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
-			for gene,value,odb,ydb in LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
+			for gene,value,odb,ydb in _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 				if gene in outD:
 					dbs = (odb,ydb)
 					if dbs in outD[gene]: # only care that it's True once
