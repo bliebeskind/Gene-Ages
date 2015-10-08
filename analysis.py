@@ -165,7 +165,7 @@ def _within(L1,L2,node_distsD,dbAgeD):
 	for l in [L1,L2]:
 		for i,j in combinations(l,r=2):
 			n1,n2 = dbAgeD[i],dbAgeD[j] # convert dbs to nodes
-			if n1 == None or n2 == None:
+			if n1 == None or n2 == None or n1 == 'None' or n2 == 'None':
 				continue
 			dists.append(node_distsD[n1][n2]) # get dist between nodes
 	return sum(dists)/float(len(dists))
@@ -175,11 +175,11 @@ def _between(L1,L2,node_distsD,dbAgeD):
 	dists = []
 	for i in L1:
 		n1 = dbAgeD[i] # convert dbs to nodes
-		if n1 == None:
+		if n1 == None or n1 == 'None':
 			continue
 		for j in L2:
 			n2 = dbAgeD[j] # convert dbs to nodes
-			if n2 == None:
+			if n2 == None or n2 == 'None':
 				continue
 			dists.append(node_distsD[n1][n2]) # get dist between nodes
 	return sum(dists)/float(len(dists))
@@ -189,27 +189,25 @@ def _checkNames(L,D):
 		try:
 			assert name in D
 		except AssertionError:
-			raise Exception("%s not found in infile databases" % name)
+			raise Exception("%s not found" % name)
 
-def polarization(infile,node_distsD,class1,class2):
+def polarization(dbAgeD,gene,node_distsD,class1,class2):
 	#class1 = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG"] # should maybe leave EggNOG out?
 	#class2 = ["Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
-	dbAgeD = load_pickle(infile)
-	gene = infile.split(".")[0]
 	_checkNames(class1,dbAgeD)
 	_checkNames(class2,dbAgeD)
 	try:
 		wInDists = _within(class1,class2,node_distsD,dbAgeD)
 		betweenDists = _between(class1,class2,node_distsD,dbAgeD)
 	except ZeroDivisionError:
-		sys.stderr.write("%s: too many None's to calculate\n" % infile)
+		sys.stderr.write("%s: too many None's to calculate\n" % gene)
 		return
 	ratio = wInDists/betweenDists # won't raise zerodivision error because these are type numpy.float64
 	if np.isnan(ratio):
 		if wInDists == 0.0:
 			return "\t".join([gene,"1"])
 		else:
-			raise Exception("%s: between dist is zero, but within is >0\n" % infile)
+			raise Exception("%s: between dist is zero, but within is >0\n" % gene)
 	return "\t".join([gene, str(ratio)])
 	
 	
