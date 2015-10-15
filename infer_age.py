@@ -87,7 +87,10 @@ def read_dbComp(infile):
 		dbDict = {dbname:[] for dbname in dbList}
 		for line in f:
 			line = line.strip().split(",")
-			species = line[1].split("_")[1]
+			try:
+				species = line[1].split("_")[1]
+			except IndexError:
+				raise Exception("bad format: %s, species %s" % (infile, line[1]))
 			if species in alternate_names:
 				species = alternate_names[species]
 			for db,value in zip(dbList,line[3:]):
@@ -133,6 +136,7 @@ def get_db_age_nodes(infile,tree,as_clades=False,conversion_dictionary=None):
 def serialize_dbAgeNodes(infile_stream,tree_source,as_clades=False,conversion_dictionary=None):
 	'''Pickle the output of get_db_age_nodes to a file <prot>.p'''
 	tree = get_dendropy_tree(tree_source)
+	convD = None
 	if as_clades:
 			assert conversion_dictionary != None, \
 			"Must supply a dictionary converting age nodes to taxa"
@@ -146,15 +150,27 @@ def serialize_dbAgeNodes(infile_stream,tree_source,as_clades=False,conversion_di
 			pickle.dump(ageD,out)
 		print prot
 
-				
-if __name__ == '__main__':
-	try:
-		infile,tree = sys.argv[1],sys.argv[2]
-		with open(infile) as f:
-			for i,j in age_generator(f,tree,'nexus','file'):
-				print "\t".join(i,j)
-	except IndexError:
-		src = sys.stdin
-		for i,j in age_generator(src,tree,'nexus','file'):
-			print "\t".join(i,j)
+def ages_from_tables(infile_stream,tree_source,as_clades=False,conversion_dictionary=None,dbs=None):
+	'''
+	Create a csv file of ages for each gene from age call tables.
+	Takes a stream of infiles (e.g. from iglob) and a species tree as input
+	By default outputs node labels as ages, but if you want to bin these nodes into clades,
+	must supply a conversion dictionary mapping each node to its clade and set as_clades=True
+	'''
+	if dbs == None:
+		columns = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
+				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
+	tree = get_dendropy_tree(tree_source)
+	convD = None
+	if as_clades:
+			assert conversion_dictionary != None, \
+			"Must supply a dictionary converting age nodes to taxa"
+			with open(conversion_dictionary) as f:
+				convD = pickle.load(f)
+	yield ",".join(['']+columns)
+	for f in infile_stream:
+		prot, ageD = get_db_age_nodes(f,tree,as_clades,convD)
+		if ageD == None:
+			continue
+		yield ",".join([prot]+[str(ageD[i]) for i in columns])
 
