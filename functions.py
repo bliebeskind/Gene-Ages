@@ -4,6 +4,30 @@ import sys
 import cPickle as pickle
 import os.path
 
+def csv_parser(infile):
+	'''Parse a csv file and return index and values dictionary
+	File must have a header with no first column
+	The rest of the file has an index value in first column
+	After index there are the same number of fields as header
+	
+	E.g.
+	,col1,col2
+	1,val1,val2
+	2,val3,val4
+	
+	Returns a generator:
+	(1,{col1:val1,col2:val2})
+	(2,{col1:val3,col2:val4})
+	'''
+	with open(infile) as f:
+		header = f.readline().strip().split(",")[1:]
+		for line in f:
+			line = line.strip().split(",")
+			index, values = line[0], line[1:]
+			assert len(values) == len(header), "Header dimensions don't match body: %s" % prot
+			valuesD = dict(zip(header,values))
+			yield index, valuesD
+
 def flatten(tuple_gen,group_col=0,value_col=1):
 	'''
 	(a,1)(a,2)(b,1) ---> (a,(1,2))(b,1)
