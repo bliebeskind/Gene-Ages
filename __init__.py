@@ -1,5 +1,4 @@
-from parsers import *
 from functions import *
-import analysis
-import taxon_count
+from parsers import *
 import infer_age
+import db_comp
