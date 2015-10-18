@@ -1,7 +1,6 @@
 from LECA.node_stats import polarization
 from LECA import csv_parser
 import cPickle as pickle
-import sys
 
 ### This program will calculate the polarization statistic or metric.
 ### It prints a comma separated stream (gene,pol)
