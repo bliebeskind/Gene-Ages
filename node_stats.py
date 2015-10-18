@@ -87,10 +87,10 @@ def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
 		score = wInDists/betweenDists # won't raise zerodivision error because these are type numpy.float64
 		if np.isnan(score): # but will return nan
 			if wInDists == 0.0:
-				return ",".join([gene,"1"])
+				return 1
 			else:
 				raise Exception("%s: between dist is zero, but within is >0\n" % gene)
-	return ",".join([gene, str(score)])
+	return score
 	
 	
 ### LDO analysis - see whether DBs are over-splitting co-orthologous groups
