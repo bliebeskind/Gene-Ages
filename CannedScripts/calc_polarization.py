@@ -21,4 +21,4 @@ with open("NodeDists.p") as f:
 print ",".join(['',"Polarization"])
 
 for gene,ageD in csv_parser(INFILE):
-    print polarization(ageD,gene,nodeDistsD,CLASS1,CLASS2,METRIC)
+    print ",".join([gene,str(polarization(ageD,gene,nodeDistsD,CLASS1,CLASS2,METRIC))])
