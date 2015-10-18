@@ -124,7 +124,7 @@ def _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 				yield gene, value, odb, ydb
 
 
-def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=None):
+def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=False):
 	'''
 	coOrthos is a file like coOrthoGroups.txt
 	ageFile is a csv file holding either node ages or categorical. If categorical, set binnedConversion = True
