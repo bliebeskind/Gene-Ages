@@ -1,7 +1,6 @@
 from LECA.node_stats import ageConsistency
 from LECA import csv_parser
 import cPickle as pickle
-import sys
 
 ### This program will calculate the consistency score for each gene
 ### It prints a comma separated stream (gene,conScore)
