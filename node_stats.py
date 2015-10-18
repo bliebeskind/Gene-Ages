@@ -3,6 +3,26 @@ import numpy as np
 import pandas as pd
 from itertools import combinations
 
+## Consistency
+
+def ageConsistency(ages,node_distsD):
+	'''Calculate the age consistency score for a single parsed row of age calls
+	ages: a dictionary mapping each database to it's node age call
+	node_distsD: a dictionary giving the distances between nodes'''
+	length = 0.0
+	totalDists = 0.0
+	ageCalls = [a for a in ages.itervalues()]
+	for i,j in combinations(ageCalls,r=2):
+		if i != 'None' and j != 'None':
+			assert i in node_distsD, "Node %s not found in supplied dictionary" % i
+			assert j in node_distsD, "Node %s not found in supplied dictionary" % j
+			totalDists += int(node_distsD[i][j])
+			length += 1
+	if length == 0:
+		return None
+	else:
+		return totalDists/length
+
 ## Polarization stat
 
 def _within(L1,L2,node_distsD,dbAgeD):
@@ -73,7 +93,7 @@ def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
 	return ",".join([gene, str(score)])
 	
 	
-### LDO analysis - see whether InParanoid and OMA are collapsing co-orthologous groups
+### LDO analysis - see whether DBs are over-splitting co-orthologous groups
 
 def _findLDObreak(orthoAges,odb,ydb):
 	for gene in orthoAges.index:
