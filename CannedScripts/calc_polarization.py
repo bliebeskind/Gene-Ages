@@ -17,6 +17,8 @@ METRIC=False
 
 with open("NodeDists.p") as f:
     nodeDistsD = pickle.load(f)
+	
+print ",".join(['',"Polarization"])
 
 for gene,ageD in csv_parser(INFILE):
     print polarization(ageD,gene,nodeDistsD,CLASS1,CLASS2,METRIC)
