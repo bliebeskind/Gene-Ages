@@ -2,15 +2,6 @@ import math
 import cPickle as pickle
 from LECA import csv_parser
 from collections import Counter
-
-## Some dbs will have "None" but I will ignore them here - they get converted to NaN below
-ages = ['Cellular_organisms',
- 'Euk_Archaea',
- 'Eukaryota',
- 'Opisthokonta',
- 'Eumetazoa',
- 'Vertebrata',
- 'Mammalia']
 	
 ### Functions to calculate LDO-corrected consensus
 
@@ -46,7 +37,7 @@ def _ageDist_gen(infile,LDO_dict=None,filterLDOs=False):
 		normCounts = [(i,float(j)/numDBsContributing) for i,j in ageCounts.iteritems()] # normalize
 		yield gene, sorted(normCounts, key=lambda x:x[1]), numDBsContributing, num_ldos # sort
 	
-def consensus_ages(infile,LDO_dict=None,filterLDOs=True):
+def consensus_ages(infile,ages,LDO_dict=None,filterLDOs=True):
 	'''
 	Create csv file holding the distribution over age calls and the score columns "modeAge", 
 	"NumDBsContributing", "NumDBsFiltered", "entropy"
