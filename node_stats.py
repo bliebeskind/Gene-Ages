@@ -144,14 +144,13 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=False):
 				continue
 			for gene,value,odb,ydb in _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 				if gene in outD:
-					dbs = (odb,ydb)
-					if dbs in outD[gene]: # only care that it's True once
-						if value == True and outD[gene][dbs] == False:
-							outD[gene][dbs] = value
+					if ydb in outD[gene]: # only care that it's True once
+						if value == True and outD[gene][ydb] == False:
+							outD[gene][ydb] = value
 					else:
-						outD[gene][dbs] = value
+						outD[gene][ydb] = value
 				else:
-					outD[gene] = {(odb,ydb):value}
+					outD[gene] = {ydb:value}
 				comps +=1
 				if comps % 100 == 0:
 					print comps
