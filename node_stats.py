@@ -80,9 +80,9 @@ def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
 		betweenDists = _between(class1,class2,node_distsD,dbAgeD)
 	except ZeroDivisionError:
 		sys.stderr.write("%s: too many None's to calculate\n" % gene)
-		return ",".join([gene,''])
+		return ""
 	if polMetric:
-		score = abs(betweenDists - wInDists)
+		score = betweenDists - wInDists
 	else:
 		score = wInDists/betweenDists # won't raise zerodivision error because these are type numpy.float64
 		if np.isnan(score): # but will return nan
