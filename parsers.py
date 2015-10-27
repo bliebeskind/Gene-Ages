@@ -5,7 +5,6 @@ def phylome_parser(infile,as_taxid=False,taxonD=None,type_filter=None):
 	Parses a phylomeDB ortholog file
 	type_filter is a list of ortholog relation types to consider. Must be one of:
 		"many-to-many","many-to-one","one-to-many", or "one-to-one"
-		All types not in type_filter are returned by this function
 	'''
 	values = ("gene","ortholog","type","CS","trees","co-orthologs")
 	with open(infile) as f:
