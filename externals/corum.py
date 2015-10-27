@@ -8,13 +8,10 @@ def parse(infile):
 		length = len(header)
 		for line in f:
 			line = line.strip().split("\t")
-			if len(line) != length:
-				print "Line %s is not complete" % line[0]
-				continue
 			outD = dict(zip(header,line))
 			try:
 				outD["subunits (UniProt IDs)"] = \
-				outD["subunits (UniProt IDs)"].strip().replace("(","").replace(")","").split(",")
+				outD["subunits (UniProt IDs)"].strip().strip('"').replace("(","").replace(")","").split(",")
 			except KeyError:
 				raise Exception("Must have column 'subunits (UniProt IDs)'")
 			yield outD
