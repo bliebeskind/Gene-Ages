@@ -2,6 +2,8 @@
 
 import dendropy
 import sys, pickle
+from functions import flatten
+from parsers import phylome_parser
 
 alternate_names = {'ASPFC': 'ASPFU',
 	'BACT4': 'BACTN',
@@ -27,45 +29,7 @@ alternate_names = {'ASPFC': 'ASPFU',
 	
 Archaea = ["THECO","METAC","METJA","HALSA","SULSO"]
 
-# From taxon count file
-
-def counts_gen(src,tree):
-	'''
-	Read from taxon_count file and yield two-element tuples:
-	(NOG, {Metazoa:10, Bilateria:90...}
-	'''
-	tree_taxa = [str(i) for i in tree.taxon_set]
-	infile_taxa = src.next().strip().split()[1:] # taxa should be columns 2-end
-	assert sorted(tree_taxa) == sorted(infile_taxa), \
-	"Taxa from infile and tree don't match:\n %s\n%s" % (str(tree_taxa),str(infile_taxa))
-	for line in src:
-		line = line.strip().split()
-		count_cols = [int(i) for i in line[1:]]
-		assert len(count_cols) == len(infile_taxa)
-		yield line[0], {i:j for i,j in zip(infile_taxa,count_cols) if j > 0} # skip zero counts
-		
-def age_generator(src,tree_source,format='nexus',source_type='file'):
-	'''Return generator of tuples where i,j are group,age'''
-	tree = get_dendropy_tree(tree_source,format,source_type)
-	for group, count in counts_gen(src,tree):
-		if len(count.keys()) > 1:
-			count_node = tree.mrca(taxon_labels=count.keys())
-			age = count_node.annotations.get_value("age")
-			if age == "LUCA": # This block reduces the generality, might think about breaking it out
-				if "Bacteria" not in count:# into another function
-					assert "Archaea" in count, "Neither Archea nor Bacteria found in LUCA group: %s" % group
-					yield group, "Euk+A"
-				elif "Archaea" not in count:
-					assert "Bacteria" in count
-					yield group, "Euk+B"
-				else:
-					yield group, age
-			else:
-				yield group, age
-		else: # just one branch
-			yield group, count.keys()[0] # should add error checking if all zeros
-		
-# from DataBase comparison files (Claire's format)
+# Shared Functions
 
 def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
 	'''Read in a tree using dendropy. Tree should have node labels for ancestral nodes that will be
@@ -77,6 +41,42 @@ def get_dendropy_tree(tree_source,format='nexus',source_type='file'):
 	tree = tree_funcD[source_type](tree_source,format,extract_comment_metadata=True)
 	return tree
 	
+# From a single database
+
+def _stream_from_phylome(infile,type_filter=["many-to-many","many-to-one","one-to-many","one-to-one"]):
+	'''Return stream of (protein,(species1,species2)) from a phylomeDB orthologs file.
+	
+	species output: if call is Phy003II51_MACMU , MACMU will be returned.
+	type_filter: list of what kinds of orthology relationship to consider.'''
+	return flatten(((i["gene"],i["ortholog"].split("_")[1]) for i in phylome_parser(infile,type_filter=type_filter)))
+		
+def age_generator(src,tree_source,conversion_dictionary=None,as_clades=False,tree_format='nexus'):
+	'''Takes in a stream of (prot,[taxon1,taxon2]) tuples, and returns a stream 
+	of (protein,age) tuples calculated by phylostratigraphy on a supplied tree.'''
+	tree = get_dendropy_tree(tree_source,tree_format)
+	strTaxonSet = [i.label for i in tree.taxon_namespace] # get strings of taxa in tree
+	count = 0
+	for prot, taxa in src:
+		callSet = set([i for i in taxa if i in strTaxonSet]+["HUMAN"]) # ignore taxa not in tree
+		if len(callSet) <=1:
+			print "nothing found for %s" % prot
+			continue
+		ageNode = tree.mrca(taxon_labels=callSet).label # can be None
+		if as_clades: # use clade names instead of numerical internal node labels
+			ageNode = conversion_dictionary[ageNode]
+			if ageNode == "Cellular_organisms":
+				for i in callSet:
+					if i in Archaea:
+						break
+				else:
+					ageNode = "Euk+Bac"
+		yield prot, ageNode
+		count +=1
+		if count % 100 == 0:
+			sys.stderr.write(str(count)+"\n")
+		
+# from DataBase comparison files (Claire's format)
+
 def read_dbComp(infile):
 	'''Read in one of Claire's ortholog X database files, and return the name of the human protein and
 	a dictionary mapping each database to a list of the species with identified orthologs.'''
