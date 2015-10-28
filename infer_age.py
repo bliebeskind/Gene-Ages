@@ -2,8 +2,8 @@
 
 import dendropy
 import sys, pickle
-from functions import flatten
-from parsers import phylome_parser
+from LECA.functions import flatten
+from LECA.parsers import phylome_parser
 
 alternate_names = {'ASPFC': 'ASPFU',
 	'BACT4': 'BACTN',
@@ -158,7 +158,7 @@ def ages_from_tables(infile_stream,tree_source,as_clades=False,conversion_dictio
 	must supply a conversion dictionary mapping each node to its clade and set as_clades=True
 	'''
 	if dbs == None:
-		columns = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
+		dbs = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
 				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
 	tree = get_dendropy_tree(tree_source)
 	convD = None
@@ -167,10 +167,36 @@ def ages_from_tables(infile_stream,tree_source,as_clades=False,conversion_dictio
 			"Must supply a dictionary converting age nodes to taxa"
 			with open(conversion_dictionary) as f:
 				convD = pickle.load(f)
-	yield ",".join(['']+columns)
+	yield ",".join(['']+dbs)
 	for f in infile_stream:
 		prot, ageD = get_db_age_nodes(f,tree,as_clades,convD)
 		if ageD == None:
 			continue
-		yield ",".join([prot]+[str(ageD[i]) for i in columns])
+		yield ",".join([prot]+[str(ageD[i]) for i in dbs])
 
+def count_losses(infile_stream,tree_source,dbs=None):
+	'''
+	Create csv file of number of inferred gene losses for each database. The losses are calculated by 
+	subtracting the number of species with orthologs from the total number of descendants of the ancestral
+	node.
+	'''
+	if dbs == None:
+		dbs = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
+				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
+	tree = get_dendropy_tree(tree_source)
+	yield ",".join(['']+dbs)
+	for f in infile_stream:
+		lossD = {}
+		prot, parsed = read_dbComp(f)
+		prot, ageD = get_db_age_nodes(f,tree)
+		if ageD == None:
+			continue
+		for db in dbs:
+			assert db in ageD, "Database %s not found in %s" % (db,f)
+			node = ageD[db]
+			nodeObj = tree.find_node_with_label(node)
+			assert nodeObj != None, "Internal label %s not found" % node
+			numDescendants = len(set((i.taxon.label for i in nodeObj.leaf_nodes())))
+			numOrthologs = len(set(parsed[db]))
+			lossD[db] = numDescendants - numOrthologs
+		yield ",".join([prot]+[str(lossD[i]) for i in dbs])
