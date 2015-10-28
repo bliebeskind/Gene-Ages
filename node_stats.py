@@ -165,3 +165,22 @@ def percLDOs(resultD):
 		assert gene not in D, "Gene: %s found twice" % gene
 		D[gene] = calc(resultD[gene])
 	return D
+	
+## Loss Taxa
+
+def loss_stats(infile,stdDevs=3):
+	'''From a file of taxon losses, return a generator of csv lines holding:
+	gene, mean, variance, and outliers.'''
+	df = pd.read_csv(infile,index_col=0)
+	count = 0
+	yield ",".join(['']+["mean","variance","outliers"])
+	for ind, row in df.iterrows():
+		mean,var = row.mean(), row.var()
+		if var == 0:
+			outliers = ''
+		else:
+			outliers = ' '.join((i for i in row[(row-row.mean()) > row.std()*stdDevs].index))
+		yield ",".join([ind, str(mean), str(var), outliers])
+		count +=1
+		if count % 100 == 0:
+			sys.stderr.write(str(count)+"\n")
