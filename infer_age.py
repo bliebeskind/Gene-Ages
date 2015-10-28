@@ -174,11 +174,11 @@ def ages_from_tables(infile_stream,tree_source,as_clades=False,conversion_dictio
 			continue
 		yield ",".join([prot]+[str(ageD[i]) for i in dbs])
 
-def count_losses(infile_stream,tree_source,dbs=None):
+def count_lossTaxa(infile_stream,tree_source,dbs=None):
 	'''
-	Create csv file of number of inferred gene losses for each database. The losses are calculated by 
-	subtracting the number of species with orthologs from the total number of descendants of the ancestral
-	node.
+	Create csv file of taxa that have lost an ortholgous group for each database and gene. The losses are 
+	calculated by subtracting the number of species with orthologs from the total number of descendants of 
+	the ancestral node. Note that this is not the same as number of loss events.
 	'''
 	if dbs == None:
 		dbs = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
