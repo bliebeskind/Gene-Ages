@@ -1,5 +1,5 @@
 from LECA.consensus import consensus_ages
-import cPickle as pickle
+import sys
 
 ### This program will create the consensus (mode) age calls 
 ### by trimming databases that oversplit co-orthologous groups.
@@ -9,6 +9,7 @@ import cPickle as pickle
 
 INFILE = "binAges_human.csv"
 LDORESULTS = "LDO_results.p"
+FALSEPOSITIVES = "falsePos.p"
 AGES = ['Cellular_organisms',
  'Euk+Bac',
  'Euk_Archaea',
@@ -20,5 +21,5 @@ AGES = ['Cellular_organisms',
 
 ############ Don't change #######################
 
-for line in consensus_ages(INFILE,AGES,LDORESULTS,True):
-	print line
+for line in consensus_ages(INFILE,AGES,LDORESULTS,FALSEPOSITIVES):
+    print line
