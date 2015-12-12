@@ -158,7 +158,7 @@ def ages_from_tables(infile_stream,tree_source,as_clades=False,conversion_dictio
 	must supply a conversion dictionary mapping each node to its clade and set as_clades=True
 	'''
 	if dbs == None:
-		dbs = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD",
+		dbs = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG",
 				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
 	tree = get_dendropy_tree(tree_source)
 	convD = None
