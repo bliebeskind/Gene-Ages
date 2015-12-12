@@ -1,71 +1,65 @@
+import numpy as np
 import pandas as pd
 import cPickle as pickle
 from functions import csv_parser
-from itertools import combinations
-from collections import OrderedDict
-
+from itertools import combinations_with_replacement
+from collections import OrderedDict,Counter
 
 def load_pickle(infile):
 	'''Read in pickled files'''
 	with open(infile) as f:
 		return pickle.load(f)
 	
-def all_by_all_dists(infile,node_distsD):
+def all_by_all_dists(infile,node_distsD,nonePenalty=None):
 	'''Read a csv file of node age calls and return a generator of OrderedDicts
 	that give the distances between databases for each gene. These will be tallied
 	by sum_dists.'''
 	parsed = csv_parser(infile)
 	for prot, dbAgeD in parsed:
 		dbs = sorted(dbAgeD.keys())
-		dbDists = {db: {} for db in dbs}
-		for db1, db2 in combinations(dbs,r=2): # corner matrix, off diagonal
+		dbDists = Counter({db: Counter({}) for db in dbs})
+		for db1, db2 in combinations_with_replacement(dbs,r=2): # corner matrix, off diagonal
 			node1,node2 = dbAgeD[db1],dbAgeD[db2] # get inferred ages
 			if node1 == 'None' or node2 == 'None': # If node == None make distance largest possible
-				dbDists[db1][db2] = 20
-				continue
-			dbDists[db1][db2] = node_distsD[node1][node2] # get distance between nodes 
-		yield OrderedDict(sorted(dbDists.iteritems(), key=lambda x: x[0]))
-	
-def add_dicts(d1,d2): # should be done with counter addition
-	'''
-	Given two nested dictionaries, each of depth 2, add the sums held at the second level, e.g.:
-	
-	d1 = {'a':{'b':1,'c':3}}
-	d2 = {'a':{'b':3,'c':2}}
-	add_dicts(d1,d2)
-		{'a':{'b':4,'c':5}}
-	'''
-	out = {}
-	for col in d1:
-		assert col not in out, "Repeat column names: %s" % col
-		out[col] = {}
-		for row in d1[col]:
-			assert row not in out[col], "Repeat row names: %s" % row
-			try:
-				d2_value = d2[col][row]
-			except KeyError, e:
-				raise Exception("Couldn't find value %s" % (e))
-			out[col][row] = d1[col][row] + d2_value
-	return out
+				if nonePenalty == None:
+					continue
+				else:
+					dbDists[db1][db2] = nonePenalty
+					continue
+			dbDists[db1][db2] = node_distsD[node1][node2] # get distance between nodes
+		yield dbDists
 		
-def sum_dist(infile,nodeDistsFile):
+def sum_dist(infile,nodeDistsFile,nonePenalty=None):
 	'''Sum of patristic distances between database age calls'''
 	dists = load_pickle(nodeDistsFile)
 	is_first = True
 	count = 0
-	for distD in all_by_all_dists(infile,dists):
+	for distD in all_by_all_dists(infile,dists,nonePenalty):
 		if is_first:
 			D = distD
+			dbCounts = {db:0 for db in distD.keys()}
 			is_first = False
 		else:
-			D = add_dicts(D,distD)
+			D = D + distD # add Counter objects
+		for db in distD:
+			if distD[db] != Counter(): # skip dbs missing gene
+				dbCounts[db] += 1
 		count += 1
 		if count % 100 == 0:
 			print count
-	return pd.DataFrame(D), count
+	return pd.DataFrame(D).fillna(np.nan), dbCounts # replace None with NaN
 	
-def avg_dist(infile,nodeDistsFile):
-	'''Return a pandas DataFrame holding average patristic distances between 
-	database age calls'''
-	sumDistDF,count = sum_dist(infile,nodeDistsFile)
-	return sumDistDF.applymap(lambda x: x/float(count))
+def avg_dist(infile,nodeDistsFile,nonePenalty=None):
+	'''
+	Return a pandas DataFrame holding average patristic distances between 
+	database age calls. 
+	
+	Missing data is not penalized by default, but can be by setting nonePenalty
+	to the number of branches (patristic distance) to penalize a database for 
+	missing data. When nonePenalty is None, the average for each pair of databases
+	is calculated only on genes found in both databases.
+	'''
+	sumDistDF,counts = sum_dist(infile,nodeDistsFile)
+	return pd.DataFrame(
+		{col:sumDistDF[col].map(lambda x: x/float(counts[col]))
+		for col in sumDistDF.columns})
