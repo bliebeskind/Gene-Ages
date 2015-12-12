@@ -10,6 +10,10 @@ import sys
 ####
 #### Output will be written to "binAges.csv" if you set BINNED to True, or to "nodeAges.csv" if you
 #### set it to False
+####
+#### By default, the following databases will be in the output:
+#### 	"InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG",
+#### 	"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"
 
 #### User Input ####
 
