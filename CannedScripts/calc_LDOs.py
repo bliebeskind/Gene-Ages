@@ -7,7 +7,9 @@ import pandas as pd
 
 ORTHOFILE = "coOrthoGroups.txt"
 AGEFILE = "nodeAges_HUMAN.csv"
-YOUNGGROUP = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD"]
+YOUNGGROUP = ["InParanoid","InParanoidCore","PANTHER8_LDO","OMA_Groups",
+	"OMA_Pairs","RSD","EggNOG","Orthoinspector","Hieranoid_2",
+	"EnsemblCompara_v2","PhylomeDB","PANTHER8_all"]
 OLDGROUP = ["Metaphors"]
 BINNED=False
 
