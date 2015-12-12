@@ -19,6 +19,6 @@ with open("patristic_distances.nex",'w') as out:
 	out.write(";\nend;\n\n")
 	
 	# Write PAUP commands
-	out.write("begin paup;\nlog file= ;\ndset distance=user;\nhsearch;\nsavetrees file=  brlens=yes;\nend;")
+	out.write("begin paup;\nlog file=paup.log;\ndset distance=user;\nhsearch;\nsavetrees file=patristicDistances.tre brlens=yes;\nend;")
 
 
