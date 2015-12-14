@@ -10,6 +10,13 @@ import sys
 INFILE = "binAges_human.csv"
 LDORESULTS = "LDO_results.p"
 FALSEPOSITIVES = "falsePos.p"
+
+## Set one or other to None to create a consensus output without
+## filtering algorithms by oversplitting or false positive criteria
+
+#FALSEPOSITIVES = None
+#LDORESULTS = None
+
 AGES = ['Cellular_organisms',
  'Euk+Bac',
  'Euk_Archaea',
