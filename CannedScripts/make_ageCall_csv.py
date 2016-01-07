@@ -20,6 +20,8 @@ import sys
 BINNED=False # whether you want node ages or binned ages
 TREEFILE = "../OtherInput/RefSetSpeciesTree2014_pruned.nex"
 MAPPING = "../OtherInput/nodes2taxa_bos.p"   # pickled dictionary mapping node labels to clade names
+DBS = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG",
+				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
 
 
 #### Don't change #####
@@ -28,14 +30,14 @@ MAPPING = "../OtherInput/nodes2taxa_bos.p"   # pickled dictionary mapping node l
 temp_iter = iglob("*.csv")
 file_iter = (i for i in temp_iter if i != "binAges.csv" and i!= "nodeAges.csv")
 if BINNED:
-    lineGen = ages_from_tables(file_iter,TREEFILE,True,MAPPING)
+    lineGen = ages_from_tables(file_iter,TREEFILE,True,MAPPING,DBS)
     with open("binAges.csv",'w') as out:
         for line in lineGen:
 	    prot = line.split(",")[0]
 	    sys.stderr.write(prot+"\n")
 	    out.write(line+"\n")
 else:
-    lineGen = ages_from_tables(file_iter,TREEFILE)
+    lineGen = ages_from_tables(file_iter,TREEFILE,dbs=DBS)
     with open("nodeAges.csv",'w') as out:
         for line in lineGen:
             prot = line.split(",")[0]
