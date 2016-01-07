@@ -80,20 +80,27 @@ def age_generator(src,tree_source,conversion_dictionary=None,as_clades=False,tre
 def read_dbComp(infile):
 	'''Read in one of Claire's ortholog X database files, and return the name of the human protein and
 	a dictionary mapping each database to a list of the species with identified orthologs.'''
-	protein = infile.split(".")[0]
+	split_header = infile.split("-")
+	if split_header[0] == 'nan':
+		if split_header[2] != 'nan':
+			protein = split_header[2] # is Ensembl
+	else:
+		protein = split_header[0] # is Uniprot, or both
 	with open(infile) as f:
 		header = f.readline().strip().split(",")
-		dbList = header[3:]
+		dbList = header[5:]
 		dbDict = {dbname:[] for dbname in dbList}
 		for line in f:
 			line = line.strip().split(",")
 			try:
-				species = line[1].split("_")[1]
+				species = line[3]
+				if species == 'nan':
+					continue
 			except IndexError:
 				raise Exception("bad format: %s, species %s" % (infile, line[1]))
 			if species in alternate_names:
 				species = alternate_names[species]
-			for db,value in zip(dbList,line[3:]):
+			for db,value in zip(dbList,line[5:]):
 				if value == "1":
 					dbDict[db].append(species)
 	return protein, dbDict
