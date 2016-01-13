@@ -14,7 +14,7 @@ INFILE = "nodeAges_HUMAN.csv"
 with open("NodeDists.p") as f:
     nodeDistsD = pickle.load(f)
 
-print ",".join(['',"Consistency"])
+print ",".join(['',"NodeError"])
 	
 for gene,ageD in csv_parser(INFILE):
     print ",".join([gene,str(ageConsistency(ageD,nodeDistsD))])
