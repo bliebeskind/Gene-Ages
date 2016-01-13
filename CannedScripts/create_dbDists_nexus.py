@@ -1,13 +1,16 @@
 import pandas as pd
 from LECA.db_comp import avg_dist
 
+##### User Input ########################
+
 INFILE = "nodeAges_HUMAN.csv"
 NODEDISTS = "NodeDists.p"
 
-#####
+##### Don't Change ######################
 
 avgDistsDF = avg_dist(INFILE,NODEDISTS)
-with open("patristic_distances.nex",'w') as out:
+organism = INFILE.split("_")[1].split(".")[0]
+with open("patristic_distances_"+organism+".nex",'w') as out:
 	# Write nexus headers
 	out.write("#NEXUS\n\n\n")
 	out.write("Begin distances;\nDimensions ntax=%i;\nformat nodiagonal;\nmatrix\n" % len(avgDistsDF.columns))
