@@ -5,8 +5,8 @@ from itertools import combinations
 
 ## Consistency
 
-def ageConsistency(ages,node_distsD):
-	'''Calculate the age consistency score for a single parsed row of age calls
+def nodeError(ages,node_distsD):
+	'''Calculate the node error score for a single parsed row of age calls
 	ages: a dictionary mapping each database to it's node age call
 	node_distsD: a dictionary giving the distances between nodes'''
 	length = 0.0
@@ -58,9 +58,9 @@ def _checkNames(L,D):
 		except AssertionError:
 			raise Exception("%s not found" % name)
 
-def polarization(dbAgeD,gene,node_distsD,class1,class2,polMetric=False):
+def bimodality(dbAgeD,gene,node_distsD,class1,class2,polMetric=True):
 	'''
-	Calculate the polarization score statistic or metric for a give set of age calls. The
+	Calculate the bimodality score statistic or metric for a give set of age calls. The
 	score is a ratio of the within/between patristic distances for the two classes. The
 	metric is the absolute value of the difference (between - within) and can be used
 	as a penalty.

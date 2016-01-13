@@ -1,4 +1,4 @@
-from LECA.node_stats import ageConsistency
+from LECA.node_stats import nodeError
 from LECA import csv_parser
 import cPickle as pickle
 
@@ -17,4 +17,4 @@ with open("NodeDists.p") as f:
 print ",".join(['',"NodeError"])
 	
 for gene,ageD in csv_parser(INFILE):
-    print ",".join([gene,str(ageConsistency(ageD,nodeDistsD))])
+    print ",".join([gene,str(nodeError(ageD,nodeDistsD))])
