@@ -1,8 +1,10 @@
 #! /usr/bin/env python
 
 import sys
-import cPickle as pickle
+import glob
 import os.path
+import cPickle as pickle
+from collections import Counter
 
 def csv_parser(infile):
 	'''Parse a csv file and return index and values dictionary
@@ -103,6 +105,47 @@ def taxon_lookup(DB='eggnog'):
 	with open(taxon_path) as f:
 		taxonD = pickle.load(f)
 	return taxonD
+
+	
+def _extract_prot(file):
+	split_file = file.split("-")
+	if split_file[0] == 'nan':
+		return split_file[2]
+	else:
+		return split_file[0]
+	
+def _get_redundant_prots():
+	file_iter = (i for i in glob.iglob("*-*-*-*.csv"))
+	return [i for i,j in 
+		Counter((_extract_prot(file) for file in file_iter)).iteritems() 
+			if j>1]
+		
+def _count_sum(infile,protein):
+	for prot, lineD in csv_parser(infile):
+		if prot == protein:
+			return float(lineD["COUNT"])
+	else:
+		raise Exception("Protein %s not found in %s" % (protein,infile))
+	
+def nonRedundant_filestream():
+	'''
+	Get a file stream of Claire's tables where no protein ids are repeated. There are
+	repeats due to one-to-many mapping between Uniprot and Ensembl, e.g.:
+		'O00241-SIRB1_HUMAN-ENSP00000371016-HUMAN.csv',
+		'O00241-SIRB1_HUMAN-nan-HUMAN.csv'
+	This function takes only the table with the highest "COUNT" column for the 
+	target protein, i.e. the one with the fewest missing algorithms.
+	'''
+	file_iter = glob.iglob("*-*-*-*.csv")
+	redundant_prots = _get_redundant_prots()
+	for file in file_iter:
+		prot = _extract_prot(file)
+		if prot not in redundant_prots:
+			yield file
+	for p in redundant_prots:
+		files = glob.iglob("*%s*.csv" % p)
+		yield max(((f,_count_sum(f,p)) for f in files),key=lambda x: x[1])[0]
+		
 	
 if __name__ == '__main__':
 	infile = sys.argv[1]
