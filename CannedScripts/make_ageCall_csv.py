@@ -1,4 +1,5 @@
 from LECA.infer_age import ages_from_tables
+from LECA.functions import nonRedundant_filestream as stream
 from glob import iglob
 import sys
 
@@ -27,8 +28,7 @@ DBS = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RS
 #### Don't change #####
 
 
-temp_iter = iglob("*.csv")
-file_iter = (i for i in temp_iter if i != "binAges.csv" and i!= "nodeAges.csv")
+file_iter = stream()
 if BINNED:
     lineGen = ages_from_tables(file_iter,TREEFILE,True,MAPPING,DBS)
     with open("binAges.csv",'w') as out:
