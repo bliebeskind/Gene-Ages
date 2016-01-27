@@ -168,15 +168,19 @@ def percLDOs(resultD):
 	
 ## Loss Taxa
 
-def loss_stats(infile,stdDevs=3):
+def loss_stats(infile,stdDevs=2,var_filter=3):
 	'''From a file of taxon losses, return a generator of csv lines holding:
-	gene, mean, variance, and outliers.'''
+	gene, mean, variance, and outliers.
+	
+	stdDevs: Number of stdevs above the mean loss taxa at which to call and algorithm an outlier
+	var_filter: Amount of variance at which to consider the possibility of outliers.
+	'''
 	df = pd.read_csv(infile,index_col=0)
 	count = 0
 	yield ",".join(['']+["mean","variance","outliers"])
 	for ind, row in df.iterrows():
 		mean,var = row.mean(), row.var()
-		if var == 0:
+		if var <= var_filter:
 			outliers = ''
 		else:
 			outliers = ' '.join((i for i in row[(row-row.mean()) > row.std()*stdDevs].index))
