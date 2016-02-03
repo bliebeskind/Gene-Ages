@@ -122,19 +122,32 @@ def _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
 				orthoAgesTrimmed = orthoAgesTrimmed.applymap(func)
 			for gene, value in _findLDObreak(orthoAgesTrimmed,odb,ydb):
 				yield gene, value, odb, ydb
+				
+def _get_falsePos(infile,dbs):
+	'''Read a false positive (lossStats) file, and return list of genes where
+	reference algorithms used for LDO analysis are flagged as being a false positive'''
+	genes = []
+	with open(infile) as f:
+		for line in f:
+			line = line.strip().split(",")
+			outliers = line[3].split()
+			if len(set(outliers).intersection(set(dbs))) > 0: # reference LDO algorithm has a false positive flag
+				genes.append(line[0])
+	return genes
 
-
-def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=False):
+def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,falsePos,binnedConversion=False):
 	'''
 	coOrthos is a file like coOrthoGroups.txt
 	ageFile is a csv file holding either node ages or categorical. If categorical, set binnedConversion = True
 	oldGroup and youngGroup are lists of databases for comparison. Must match headers in ageFile
+	falsePos is a file output by loss_stats
 	'''
 	if binnedConversion:
 		binnedConversion = {'Cellular_organisms':7,'Euk_Archaea':6,'Eukaryota':5,'Opisthokonta':4,'Eumetazoa':3,'Vertebrata':2,'Mammalia':1,np.nan:np.nan}
 	ages = pd.read_csv(ageFile,index_col=0,na_values=["None"])
 	outD = {} # {gene : {[oldDB, younDB]:True/False,...}}
 	comps = 0
+	falsePosGenes = _get_falsePos(falsePos,oldGroup)
 	with open(coOrthoFile) as f:
 		for line in f:
 			orthos = [o for o in line.strip().split(",") if o in ages.index]
@@ -143,6 +156,8 @@ def run_LDOcomp(coOrthoFile,ageFile,oldGroup,youngGroup,binnedConversion=False):
 			if len(orthoAges.index) <= 1: # so must check that more than one gene found after drop
 				continue
 			for gene,value,odb,ydb in _LDOcomp(orthoAges,oldGroup,youngGroup,binnedConversion):
+				if gene in falsePosGenes:
+					continue
 				if gene in outD:
 					if ydb in outD[gene]: # only care that it's True once
 						if value == True and outD[gene][ydb] == False:
