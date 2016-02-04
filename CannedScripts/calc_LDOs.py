@@ -11,13 +11,14 @@ YOUNGGROUP = ["InParanoid","InParanoidCore","PANTHER8_LDO","OMA_Groups",
 	"OMA_Pairs","RSD","EggNOG","Orthoinspector","Hieranoid_2",
 	"EnsemblCompara_v2","PhylomeDB","PANTHER8_all"]
 OLDGROUP = ["Metaphors"]
+FALSEPOS = "../lossStats_HUMAN.csv"
 BINNED=False
 
 
 ############ Don't change #######################
 
 print "Running LDO analysis"
-LDO_results = run_LDOcomp(ORTHOFILE,AGEFILE,OLDGROUP,YOUNGGROUP,BINNED)
+LDO_results = run_LDOcomp(ORTHOFILE,AGEFILE,OLDGROUP,YOUNGGROUP,FALSEPOS,BINNED)
 
 print "Pickling results to 'LDO_results.p'"
 with open("LDO_results.p",'w') as out:
