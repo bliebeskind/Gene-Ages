@@ -7,13 +7,13 @@ import cPickle as pickle
 
 ############# User input #######################
 
-INFILE = "nodeAges_HUMAN.csv"
+INFILE = "nodeAges_<SPECIES>.csv"
 CLASS1 = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD"]
 CLASS2 = ["EggNOG","Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
 
 ############ Don't change #######################
 
-with open("NodeDists.p") as f:
+with open("../nodeDists/<SPECIES>_nodeDists.p") as f:
     nodeDistsD = pickle.load(f)
 
 print ",".join(['',"NodeError","Bimodality"])

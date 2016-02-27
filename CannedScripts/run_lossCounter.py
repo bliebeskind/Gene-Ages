@@ -3,7 +3,8 @@ from LECA.functions import nonRedundant_filestream as stream
 from glob import iglob
 import sys
 
-### Write number of loss taxa from Claire's files ###
+### This script infers the number of taxa lost for each gene and algorithm
+### It is used for inferring false positives
 
 INFILES=stream() 
 DBS=["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO",\

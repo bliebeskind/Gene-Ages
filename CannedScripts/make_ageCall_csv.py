@@ -18,9 +18,9 @@ import sys
 
 #### User Input ####
 
-BINNED=False # whether you want node ages or binned ages
+BINNED=True #False ### whether you want node ages or binned ages. Values=True/False
 TREEFILE = "../OtherInput/RefSetSpeciesTree2014_pruned.nex"
-MAPPING = "../OtherInput/nodes2taxa_bos.p"   # pickled dictionary mapping node labels to clade names
+MAPPING = "../OtherInput/nodes2taxa_<SPECIES>.p"   # pickled dictionary mapping node labels to clade names
 DBS = ["InParanoid","InParanoidCore","OMA_Groups","OMA_Pairs","PANTHER8_LDO","RSD","EggNOG",
 				"Orthoinspector","Hieranoid_2","EnsemblCompara_v2","PANTHER8_all","Metaphors","PhylomeDB"]
 

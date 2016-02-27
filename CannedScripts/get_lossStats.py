@@ -1,11 +1,19 @@
 from LECA.node_stats import loss_stats
 import cPickle as pickle
 
+### Calculates statistics for false positive analysis.
+### Writes two files, one .csv file and one pickle file (binary) used for
+### generating a consensus.
+###
+### The user can tweak the sensitivity of this analysis by changing how many std. devs.
+### above the mean number of loss taxa an algorithm must be before being flagged as a
+### false positive.
+
 ###### USER INPUT #######
 
-INFILE="lossTaxa.csv"
-STATSOUTFILE="lossStats.csv"
-PICKLEOUTFILE="FalsePos.p"
+INFILE="lossTaxa_<SPECIES>.csv"
+STATSOUTFILE="lossStats_<SPECIES>.csv"
+PICKLEOUTFILE="FalsePos_<SPECIES>.p"
 PICKLEPROTOCOL=pickle.HIGHEST_PROTOCOL
 STDEVS=2 # throw out algorithm if lossTaxa are this many stdevs above the mean
 

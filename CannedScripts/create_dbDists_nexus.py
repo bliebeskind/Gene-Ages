@@ -4,7 +4,7 @@ from LECA.db_comp import avg_dist
 ##### User Input ########################
 
 INFILE = "nodeAges_HUMAN.csv"
-NODEDISTS = "NodeDists.p"
+NODEDISTS = "../nodeDists/HUMAN_nodeDists.p"
 
 ##### Don't Change ######################
 
