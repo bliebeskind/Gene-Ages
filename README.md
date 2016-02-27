@@ -78,7 +78,7 @@ running again with some different parameters. You should run the code using scri
 CannedScripts/. Here's a flowchart to show how the scripts in CannedScripts/, some of the
 ipyton notebooks in Notebooks/, and the output files in Data/ are all related:
 
-![Flowchart](pics/Flowchart.png)
+![Flowchart](https://github.com/bliebeskind/Gene-Ages/blob/master/pics/FlowChart.png)
 
 
 And because you can now add emojis to GitHub markdown, I will
