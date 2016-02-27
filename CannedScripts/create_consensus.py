@@ -1,5 +1,5 @@
 from LECA.consensus import consensus_ages
-import sys
+import sys, os
 
 ### This program will create the consensus (mode) age calls 
 ### by trimming databases that oversplit co-orthologous groups.
@@ -7,7 +7,7 @@ import sys
 
 ############# User input #######################
 
-INFILE = "binAges_human.csv"
+INFILE = "binAges_HUMAN.csv"
 LDORESULTS = "LDO_results.p"
 FALSEPOSITIVES = "falsePos.p"
 
@@ -28,5 +28,9 @@ AGES = ['Cellular_organisms',
 
 ############ Don't change #######################
 
-for line in consensus_ages(INFILE,AGES,LDORESULTS,FALSEPOSITIVES):
-    print line
+if os.path.exists(LDORESULTS):
+	for line in consensus_ages(INFILE,AGES,LDORESULTS,FALSEPOSITIVES):
+		print line
+else:
+	for line in consensus_ages(INFILE,AGES,LDO_dict=None,lossTaxa_dict=FALSEPOSITIVES):
+		print line

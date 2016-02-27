@@ -1,5 +1,6 @@
 import sys
 import math
+import pandas as pd
 import cPickle as pickle
 from LECA import csv_parser
 from collections import Counter
@@ -48,6 +49,13 @@ def _ageDist_gen(infile,LDO_dict=None,lossTaxa_dict=None):
 			continue
 		normCounts = [(i,float(j)/numDBsContributing) for i,j in ageCounts.iteritems()] # normalize
 		yield gene, sorted(normCounts, key=lambda x:x[1]), numDBsContributing, num_ldos+num_lossTaxa # sort
+		
+def _get_ages(infile):
+	df = pd.read_csv(infile,index_col=0,na_values=["None"])
+	ages = set()
+	for i in df:
+		ages = ages.union(set(df[i].value_counts().index))
+	return ages
 	
 def consensus_ages(infile,ages,LDO_dict=None,lossTaxa_dict=None):
 	'''
