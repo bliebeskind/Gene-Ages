@@ -7,6 +7,8 @@ This repository contains scripts, data, and ipython notebooks in support of our 
 **"Towards Consensus Gene Ages"** 
 Benjamin J. Liebeskind, Claire D. McWhite, and Edward M. Marcotte
 
+If you use any of the information or code in this repository, please cite the paper above.
+
 ### How old is my gene?
 
 If you study a certain gene or gene family, you might be interested in knowing how many other organisms share orthologs of that gene. Or maybe you want to annotate genomic datasets with gene ages to get an idea of how deep in evolutionary time different pathways were assembled. If so, look no further!
@@ -19,37 +21,37 @@ You can find consensus tables for the following organisms in the Main/ directory
 
 | **Common Name** | **Uniprot ID** | 
 | --------------- | -------------- |
-| Anopheles gambiae (Mosquito) | ANOGA | 
-| Bos taurus (Cattle) | BOVIN | 
-| Branchiostoma floridae (Lancelet) | BRAFL | 
-| Caenorhabditis elegans (Worm) | CAEEL | 
-| Candida albicans | CANAL | 
-| Canis lupus familiaris (Dog) | CANFA | 
-| Gallus gallus (Chicken) | CHICK | 
-| Ciona intestinalis (Tunicate) | CIOIN | 
-| Cryptococcus neoformans | CRYNJ | 
-| Danio rerio (Zebrafish) | DANRE | 
-| Drosophila melanogaster (Fly) | DROME | 
-| Homo sapiens (Human) | HUMAN | 
-| Ixodes scapularis (Tick) | IXOSC | 
-| Macaca mulatta (Rhesus macaque) | MACMU | 
-| Monosiga brevicollis (Choanoflagellate) | MONBE | 
-| Monodelphis domestica (Opossum) | MONDO | 
-| Mus musculus (Mouse) | MOUSE | 
-| Nematostella vectensis (Sea anemone) | NEMVE | 
-| Neurospora crassa | NEUCR | 
-| Ornithorhynchus anatinus (Platypus) | ORNAN | 
-| Pan troglodytes (Chimp) | PANTR | 
-| Phaeosphaeria nodorum | PHANO | 
-| Rattus rattus (Rat) | RAT | 
-| Saccaromyces cerevisiae (Budding yeast) | YEAST | 
-| Schistosoma mansoni (Blood fluke) | SCHMA | 
-| Schizosaccharomyces pombe (Fission yeast) | SCHPO | 
-| Sclerotinia sclerotiorum | SCLS1 | 
-| Takifugu rubripes (Pufferfish) | TAKRU | 
-| Ustilago maydis (Corn smut/Huitlacoche | USTMA | 
-| Xenopus tropicalis (Frog) | XENTR | 
-| Yarrowia lipolytica | YARLI |
+| *Anopheles gambiae* (Mosquito) | ANOGA | 
+| *Bos taurus* (Cattle) | BOVIN | 
+| *Branchiostoma floridae* (Lancelet) | BRAFL | 
+| *Caenorhabditis elegans* (Worm) | CAEEL | 
+| *Candida albicans* | CANAL | 
+| *Canis lupus familiaris* (Dog) | CANFA | 
+| *Gallus gallus* (Chicken) | CHICK | 
+| *Ciona intestinalis* (Tunicate) | CIOIN | 
+| *Cryptococcus neoformans* | CRYNJ | 
+| *Danio rerio* (Zebrafish) | DANRE | 
+| *Drosophila melanogaster* (Fly) | DROME | 
+| *Homo sapiens* (Human) | HUMAN | 
+| *Ixodes scapularis* (Tick) | IXOSC | 
+| *Macaca mulatta* (Rhesus macaque) | MACMU | 
+| *Monosiga brevicollis* (Choanoflagellate) | MONBE | 
+| *Monodelphis domestica* (Opossum) | MONDO | 
+| *Mus musculus* (Mouse) | MOUSE | 
+| *Nematostella vectensis* (Sea anemone) | NEMVE | 
+| *Neurospora crassa* | NEUCR | 
+| *Ornithorhynchus anatinus* (Platypus) | ORNAN | 
+| *Pan troglodytes* (Chimp) | PANTR | 
+| *Phaeosphaeria nodorum* | PHANO | 
+| *Rattus rattus* (Rat) | RAT | 
+| *Saccaromyces cerevisiae* (Budding yeast) | YEAST | 
+| *Schistosoma mansoni* (Blood fluke) | SCHMA | 
+| *Schizosaccharomyces pombe* (Fission yeast) | SCHPO | 
+| *Sclerotinia sclerotiorum* | SCLS1 | 
+| *Takifugu rubripes* (Pufferfish) | TAKRU | 
+| *Ustilago maydis* (Corn smut/Huitlacoche | USTMA | 
+| *Xenopus tropicalis* (Frog) | XENTR | 
+| *Yarrowia lipolytica* | YARLI |
 
 ### Age-categories
 
