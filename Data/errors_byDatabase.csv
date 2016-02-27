@@ -1,0 +1,14 @@
+,FalseNegative,FalsePositive
+InParanoid,3462.0,195
+InParanoidCore,4496.0,216
+OMA_Groups,4676.0,439
+OMA_Pairs,5032.0,529
+PANTHER8_LDO,5692.0,224
+RSD,5628.0,630
+EggNOG,3460.0,224
+Orthoinspector,4292.0,88
+Hieranoid_2,2993.0,1309
+EnsemblCompara_v2,2766.0,971
+Metaphors,1693.0,810
+PhylomeDB,,1805
+PANTHER8_all,1104.0,2006
