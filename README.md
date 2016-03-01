@@ -77,7 +77,7 @@ a posterior.
 
 We provide scripts and ipython notebooks if you're interested in replicating the analysis or
 running again with some different parameters. You should run the code using scripts in 
-CannedScripts/. Raw orthology prediction alignments available from
+CannedScripts/. Raw orthology prediction alignments are available from
 https://github.com/qfo/OrthologTables/.  Here's a flowchart to show how the scripts in CannedScripts/, some of the
 ipyton notebooks in Notebooks/, and the output files in Data/ are all related:
 
