@@ -39,15 +39,15 @@ You can find consensus tables for the following organisms in the Main/ directory
 | *Monodelphis domestica* (Opossum) | MONDO | 
 | *Mus musculus* (Mouse) | MOUSE | 
 | *Nematostella vectensis* (Sea anemone) | NEMVE | 
-| *Neurospora crassa* | NEUCR | 
+| *Neurospora crassa* (Bread mold) | NEUCR | 
 | *Ornithorhynchus anatinus* (Platypus) | ORNAN | 
 | *Pan troglodytes* (Chimp) | PANTR | 
-| *Phaeosphaeria nodorum* | PHANO | 
+| *Phaeosphaeria nodorum* (Wheat fungus) | PHANO | 
 | *Rattus rattus* (Rat) | RAT | 
 | *Saccaromyces cerevisiae* (Budding yeast) | YEAST | 
 | *Schistosoma mansoni* (Blood fluke) | SCHMA | 
 | *Schizosaccharomyces pombe* (Fission yeast) | SCHPO | 
-| *Sclerotinia sclerotiorum* | SCLS1 | 
+| *Sclerotinia sclerotiorum* (White mold) | SCLS1 | 
 | *Takifugu rubripes* (Pufferfish) | TAKRU | 
 | *Ustilago maydis* (Corn smut/Huitlacoche | USTMA | 
 | *Xenopus tropicalis* (Frog) | XENTR | 
