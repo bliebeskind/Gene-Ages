@@ -77,7 +77,8 @@ a posterior.
 
 We provide scripts and ipython notebooks if you're interested in replicating the analysis or
 running again with some different parameters. You should run the code using scripts in 
-CannedScripts/. Here's a flowchart to show how the scripts in CannedScripts/, some of the
+CannedScripts/. Raw orthology prediction alignments available from
+https://github.com/qfo/OrthologTables/.  Here's a flowchart to show how the scripts in CannedScripts/, some of the
 ipyton notebooks in Notebooks/, and the output files in Data/ are all related:
 
 ![Flowchart](https://github.com/bliebeskind/Gene-Ages/blob/master/pics/FlowChart.png)
